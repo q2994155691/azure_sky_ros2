@@ -12,11 +12,15 @@ find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(ros2_socketcan REQUIRED)
+find_package(controller_interface REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(realtime_tools REQUIRED)
 
 
 add_library(
   my_hardware_interface
   SHARED
+  src/custom_mecanum_controller.cpp
   src/rrbot_hardware_interface.cpp
   src/tide_motor.cpp
 )
@@ -29,16 +33,23 @@ target_include_directories(
 
 ament_target_dependencies(
   my_hardware_interface
+  controller_interface
   hardware_interface
   rclcpp
   rclcpp_lifecycle
   ros2_socketcan
+  
+  geometry_msgs
+  realtime_tools
 )
 # prevent pluginlib from using boost
 target_compile_definitions(my_hardware_interface PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")
 
 pluginlib_export_plugin_description_file(
   hardware_interface my_hardware_interface.xml)
+pluginlib_export_plugin_description_file(
+  controller_interface my_hardware_interface.xml)
+
 
 install(
   TARGETS
@@ -51,6 +62,11 @@ install(
 install(
   DIRECTORY include/
   DESTINATION include
+)
+
+install(FILES
+  my_hardware_interface.xml
+  DESTINATION share/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)

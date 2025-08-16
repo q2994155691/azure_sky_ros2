@@ -359,6 +359,7 @@ hardware_interface::return_type RRBotHardwareInterface::read(
 
 
   auto current_time = time;
+  constexpr double RAD_PER_SEC_TO_RPM = (2 * M_PI) / 60;
 
   for (size_t i = 0; i < joint_count; i++)
   {
@@ -414,6 +415,9 @@ hardware_interface::return_type RRBotHardwareInterface::write(
     }
   }
 
+ constexpr double RPM_TO_RAD_PER_SEC = 60.0 / (2 * M_PI);
+
+
   for (size_t i = 0; i < joint_count; i++)
   {
     double command = 0.0;
@@ -425,6 +429,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
              info_.joints[i].command_interfaces[0].name == "velocity")
     {
       command = cmd_velocities_[i];  
+      RCLCPP_INFO(rclcpp::get_logger("HW"), "cmd: %.3f", command);
     }
 
     auto motor = motors_[i];

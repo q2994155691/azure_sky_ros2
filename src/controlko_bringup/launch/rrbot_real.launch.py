@@ -59,8 +59,8 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "robot_controller",
-            default_value="mecanum_drive_controller",
-            choices=["mecanum_drive_controller", "joint_trajectory_controller"],
+            default_value="custom_mecanum_controller",
+            choices=["custom_mecanum_controller", "joint_trajectory_controller"],
             description="Robot controller to start.",
         )
     )

@@ -1,15 +1,12 @@
 controller_manager:
   ros__parameters:
-    update_rate: 100  # Hz
+    update_rate: 100
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-    forward_velocity_controller:
-      type: forward_command_controller/ForwardCommandController
-      
-    mecanum_drive_controller:
-      type: mecanum_drive_controller/MecanumDriveController
+    custom_mecanum_controller:
+      type: my_hardware_interface/CustomMecanumController
 
     joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
@@ -17,89 +14,42 @@ controller_manager:
     displacement_controller:
       type: displacement_controller/DisplacementController
 
-
-mecanum_drive_controller:
+# 你的簡化麥輪控制器配置
+custom_mecanum_controller:
   ros__parameters:
-    # 輪子關節名稱配置
-    front_left_wheel_command_joint_name: friction_wheel1_joint
-    front_right_wheel_command_joint_name: friction_wheel2_joint
-    rear_left_wheel_command_joint_name: friction_wheel3_joint
-    rear_right_wheel_command_joint_name: friction_wheel4_joint
-    
-    # 狀態關節名稱
-    front_left_wheel_state_joint_name: friction_wheel1_joint
-    front_right_wheel_state_joint_name: friction_wheel2_joint
-    rear_left_wheel_state_joint_name: friction_wheel3_joint
-    rear_right_wheel_state_joint_name: friction_wheel4_joint
-    
-    # 介面類型配置
-    command_interfaces:
-      - velocity
-    state_interfaces:
-      - velocity
-      - position
-    
-    # 運動學參數（使用層次化結構）
-    kinematics:
-      wheels_radius: 0.0325              # 輪子半徑（米）
-      wheels_separation_x: 0.16          # 前後輪軸間距（米）
-      wheels_separation_y: 0.169         # 左右輪間距（米）
-      wheels_separation_multiplier: 1.0
-      front_left_wheel_radius_multiplier: 1.0
-      front_right_wheel_radius_multiplier: 1.0
-      rear_left_wheel_radius_multiplier: 1.0
-      rear_right_wheel_radius_multiplier: 1.0
-    
-    # TF座標系配置
-    tf_frame_prefix_enable: false
-    tf_frame_prefix: ""
-    odom_frame_id: odom
-    base_frame_id: base_footprint
-    
-    # 里程計協方差參數
-    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
-    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
-    
-    # 控制器運行參數
-    reference_timeout: 0.9
-    publish_rate: 50.0
+    wheel_names:
+      - "friction_wheel1_joint"
+      - "friction_wheel2_joint" 
+      - "friction_wheel3_joint"
+      - "friction_wheel4_joint"
+    velocity_conversion_factor: 4.0
 
-
-
-
+# 保留其他控制器的原有配置
 joint_trajectory_controller:
   ros__parameters:
     joints:
       - joint1
       - joint2
-
     command_interfaces:
       - position
-
     state_interfaces:
       - position
       - velocity
-
-    state_publish_rate: 50.0 # Defaults to 50
-    action_monitor_rate: 20.0 # Defaults to 20
-
-    allow_partial_joints_goal: false # Defaults to false
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
     constraints:
-      stopped_velocity_tolerance: 0.01 # Defaults to 0.01
-      goal_time: 0.0 # Defaults to 0.0 (start immediately)
-
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
 
 displacement_controller:
   ros__parameters:
     joints:
       - joint1
       - joint2
-
     interface_name: position
-
     command_interfaces:
       - position
-
     state_interfaces:
       - position
       - velocity
