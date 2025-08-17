@@ -1,0 +1,749 @@
+[0.000000] (-) TimerEvent: {}
+[0.000220] (-) JobUnselected: {'identifier': 'controlko_bringup'}
+[0.000267] (-) JobUnselected: {'identifier': 'controlko_controllers'}
+[0.000302] (-) JobUnselected: {'identifier': 'controlko_description'}
+[0.000333] (-) JobUnselected: {'identifier': 'controlko_hardware_interface'}
+[0.000381] (-) JobUnselected: {'identifier': 'my_hardware_interface'}
+[0.000439] (-) JobUnselected: {'identifier': 'ros2_socketcan'}
+[0.000471] (-) JobUnselected: {'identifier': 'ros2_socketcan_msgs'}
+[0.000502] (-) JobUnselected: {'identifier': 'roscon2022_control_workshop'}
+[0.000533] (-) JobUnselected: {'identifier': 'serial'}
+[0.000564] (-) JobUnselected: {'identifier': 'tide_gimbal_controller'}
+[0.000595] (-) JobUnselected: {'identifier': 'tide_shooter_controller'}
+[0.000628] (tide_msgs) JobQueued: {'identifier': 'tide_msgs', 'dependencies': OrderedDict()}
+[0.000665] (tide_msgs) JobStarted: {'identifier': 'tide_msgs'}
+[0.010464] (tide_msgs) JobProgress: {'identifier': 'tide_msgs', 'progress': 'cmake'}
+[0.011214] (tide_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/luis/workshop_ws/src/tide_msgs', '-DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_msgs'], 'cwd': '/home/luis/workshop_ws/build/tide_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luis'), ('LC_TIME', 'zh_HK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/luis/STM32CubeMX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luis/workshop_ws/install/tide_shooter_controller/lib:/home/luis/workshop_ws/install/tide_gimbal_controller/lib:/home/luis/workshop_ws/install/tide_msgs/lib:/home/luis/workshop_ws/install/my_hardware_interface/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:/home/luis/workshop_ws/install/controlko_hardware_interface/lib:/home/luis/workshop_ws/install/controlko_controllers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luis'), ('OLDPWD', '/home/luis/workshop_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_HK.UTF-8'), ('MANAGERPID', '1743'), ('SYSTEMD_EXEC_PID', '1901'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15383'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luis/workshop_ws/install:/home/luis/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luis'), ('JOURNAL_STREAM', '8:8872'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luis-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1873,unix/luis-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1873'), ('INVOCATION_ID', 'f57b4a9cd86b44deb334fcd6b0727ee3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_HK.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_HK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IJ7OB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_HK.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aa149621-9d3f-4b19-b91c-3a790dc7b291'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_HK.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_HK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luis/workshop_ws/build/tide_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_HK.UTF-8'), ('LC_PAPER', 'zh_HK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble')]), 'shell': False}
+[0.025744] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.099320] (-) TimerEvent: {}
+[0.147791] (tide_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.167565] (tide_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.199484] (-) TimerEvent: {}
+[0.208707] (tide_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.210947] (tide_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.216098] (tide_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.225045] (tide_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.236786] (tide_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299637] (-) TimerEvent: {}
+[0.400048] (-) TimerEvent: {}
+[0.500493] (-) TimerEvent: {}
+[0.600891] (-) TimerEvent: {}
+[0.701287] (-) TimerEvent: {}
+[0.782032] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.783533] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.785474] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.12 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.787896] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.801425] (-) TimerEvent: {}
+[0.901728] (-) TimerEvent: {}
+[1.002040] (-) TimerEvent: {}
+[1.102409] (-) TimerEvent: {}
+[1.202828] (-) TimerEvent: {}
+[1.303233] (-) TimerEvent: {}
+[1.376470] (tide_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.403431] (-) TimerEvent: {}
+[1.503857] (-) TimerEvent: {}
+[1.604441] (-) TimerEvent: {}
+[1.635123] (tide_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.669798] (tide_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.704604] (-) TimerEvent: {}
+[1.707201] (tide_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.707320] (tide_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.707388] (tide_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.778058] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.778504] (tide_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.785716] (tide_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.799350] (tide_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.799969] (tide_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.800325] (tide_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.802705] (tide_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.804696] (-) TimerEvent: {}
+[1.887560] (tide_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.902852] (tide_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/luis/workshop_ws/build/tide_msgs\n'}
+[1.904824] (-) TimerEvent: {}
+[1.913941] (tide_msgs) CommandEnded: {'returncode': 0}
+[1.914846] (tide_msgs) JobProgress: {'identifier': 'tide_msgs', 'progress': 'build'}
+[1.916271] (tide_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luis/workshop_ws/build/tide_msgs', '--', '-j12', '-l12'], 'cwd': '/home/luis/workshop_ws/build/tide_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luis'), ('LC_TIME', 'zh_HK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/luis/STM32CubeMX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luis/workshop_ws/install/tide_shooter_controller/lib:/home/luis/workshop_ws/install/tide_gimbal_controller/lib:/home/luis/workshop_ws/install/tide_msgs/lib:/home/luis/workshop_ws/install/my_hardware_interface/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:/home/luis/workshop_ws/install/controlko_hardware_interface/lib:/home/luis/workshop_ws/install/controlko_controllers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luis'), ('OLDPWD', '/home/luis/workshop_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_HK.UTF-8'), ('MANAGERPID', '1743'), ('SYSTEMD_EXEC_PID', '1901'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15383'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luis/workshop_ws/install:/home/luis/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luis'), ('JOURNAL_STREAM', '8:8872'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luis-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1873,unix/luis-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1873'), ('INVOCATION_ID', 'f57b4a9cd86b44deb334fcd6b0727ee3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_HK.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_HK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IJ7OB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_HK.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aa149621-9d3f-4b19-b91c-3a790dc7b291'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_HK.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_HK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luis/workshop_ws/build/tide_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_HK.UTF-8'), ('LC_PAPER', 'zh_HK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble')]), 'shell': False}
+[2.004996] (-) TimerEvent: {}
+[2.012128] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.027260] (tide_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_tide_msgs\n'}
+[2.029905] (tide_msgs) StdoutLine: {'line': b'[  0%] Built target tide_msgs__cpp\n'}
+[2.048535] (tide_msgs) StdoutLine: {'line': b'[ 12%] Built target tide_msgs__rosidl_generator_c\n'}
+[2.050475] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.051516] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.051932] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.067136] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.070973] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.075695] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.088528] (tide_msgs) StdoutLine: {'line': b'[ 24%] Built target tide_msgs__rosidl_typesupport_c\n'}
+[2.089786] (tide_msgs) StdoutLine: {'line': b'[ 36%] Built target tide_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.090971] (tide_msgs) StdoutLine: {'line': b'[ 49%] Built target tide_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.097577] (tide_msgs) StdoutLine: {'line': b'[ 62%] Built target tide_msgs__rosidl_typesupport_introspection_c\n'}
+[2.099857] (tide_msgs) StdoutLine: {'line': b'[ 74%] Built target tide_msgs__rosidl_typesupport_cpp\n'}
+[2.105085] (-) TimerEvent: {}
+[2.114176] (tide_msgs) StdoutLine: {'line': b'[ 87%] Built target tide_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.142708] (tide_msgs) StdoutLine: {'line': b'[ 87%] Built target tide_msgs\n'}
+[2.175413] (tide_msgs) StdoutLine: {'line': b'[ 87%] Built target tide_msgs__py\n'}
+[2.196959] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_generator_py\x1b[0m\n'}
+[2.205219] (-) TimerEvent: {}
+[2.235655] (tide_msgs) StdoutLine: {'line': b'[ 99%] Built target tide_msgs__rosidl_generator_py\n'}
+[2.249889] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.252571] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.259155] (tide_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.260713] (tide_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.261449] (tide_msgs) StdoutLine: {'line': b'writing tide_msgs.egg-info/PKG-INFO\n'}
+[2.261726] (tide_msgs) StdoutLine: {'line': b'writing dependency_links to tide_msgs.egg-info/dependency_links.txt\n'}
+[2.261889] (tide_msgs) StdoutLine: {'line': b'writing top-level names to tide_msgs.egg-info/top_level.txt\n'}
+[2.264639] (tide_msgs) StdoutLine: {'line': b"reading manifest file 'tide_msgs.egg-info/SOURCES.txt'\n"}
+[2.265665] (tide_msgs) StdoutLine: {'line': b"writing manifest file 'tide_msgs.egg-info/SOURCES.txt'\n"}
+[2.267170] (tide_msgs) StdoutLine: {'line': b'[ 99%] Built target tide_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.270422] (tide_msgs) StdoutLine: {'line': b'[ 99%] Built target tide_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.277788] (tide_msgs) StdoutLine: {'line': b'[100%] Built target tide_msgs__rosidl_typesupport_c__pyext\n'}
+[2.299277] (tide_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tide_msgs_egg\n'}
+[2.305346] (-) TimerEvent: {}
+[2.316668] (tide_msgs) CommandEnded: {'returncode': 0}
+[2.317600] (tide_msgs) JobProgress: {'identifier': 'tide_msgs', 'progress': 'install'}
+[2.338857] (tide_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luis/workshop_ws/build/tide_msgs'], 'cwd': '/home/luis/workshop_ws/build/tide_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luis'), ('LC_TIME', 'zh_HK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/luis/STM32CubeMX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luis/workshop_ws/install/tide_shooter_controller/lib:/home/luis/workshop_ws/install/tide_gimbal_controller/lib:/home/luis/workshop_ws/install/tide_msgs/lib:/home/luis/workshop_ws/install/my_hardware_interface/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:/home/luis/workshop_ws/install/controlko_hardware_interface/lib:/home/luis/workshop_ws/install/controlko_controllers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luis'), ('OLDPWD', '/home/luis/workshop_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_HK.UTF-8'), ('MANAGERPID', '1743'), ('SYSTEMD_EXEC_PID', '1901'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15383'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luis/workshop_ws/install:/home/luis/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luis'), ('JOURNAL_STREAM', '8:8872'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luis'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luis-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1873,unix/luis-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1873'), ('INVOCATION_ID', 'f57b4a9cd86b44deb334fcd6b0727ee3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_HK.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_HK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IJ7OB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_HK.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aa149621-9d3f-4b19-b91c-3a790dc7b291'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_HK.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_HK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luis/workshop_ws/build/tide_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_HK.UTF-8'), ('LC_PAPER', 'zh_HK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble')]), 'shell': False}
+[2.358527] (tide_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.359328] (tide_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.359621] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/ament_index/resource_index/rosidl_interfaces/tide_msgs\n'}
+[2.361275] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armor.h\n'}
+[2.361605] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armors.h\n'}
+[2.361733] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_cmd.h\n'}
+[2.361846] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_state.h\n'}
+[2.361954] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/buff.h\n'}
+[2.362116] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bullet_remaining.h\n'}
+[2.362223] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armor.h\n'}
+[2.362330] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armors.h\n'}
+[2.362507] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_light.h\n'}
+[2.362655] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_lights.h\n'}
+[2.362941] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__functions.h\n'}
+[2.363096] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__struct.h\n'}
+[2.363240] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.h\n'}
+[2.363403] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__functions.h\n'}
+[2.363552] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__struct.h\n'}
+[2.363659] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.h\n'}
+[2.363788] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__functions.h\n'}
+[2.363897] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__struct.h\n'}
+[2.364002] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.h\n'}
+[2.364109] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__functions.h\n'}
+[2.364215] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__struct.h\n'}
+[2.364321] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.h\n'}
+[2.364463] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__functions.h\n'}
+[2.364573] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__struct.h\n'}
+[2.364679] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.h\n'}
+[2.364855] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__functions.h\n'}
+[2.364968] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__struct.h\n'}
+[2.365076] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.h\n'}
+[2.365183] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__functions.h\n'}
+[2.365289] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__struct.h\n'}
+[2.365471] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.h\n'}
+[2.365589] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__functions.h\n'}
+[2.365694] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__struct.h\n'}
+[2.365800] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.h\n'}
+[2.365906] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__functions.h\n'}
+[2.366015] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__struct.h\n'}
+[2.366122] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.h\n'}
+[2.366228] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__functions.h\n'}
+[2.366334] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__struct.h\n'}
+[2.366704] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.h\n'}
+[2.366869] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__functions.h\n'}
+[2.367028] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__struct.h\n'}
+[2.367171] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.h\n'}
+[2.367440] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__functions.h\n'}
+[2.367619] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__struct.h\n'}
+[2.367873] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.h\n'}
+[2.368031] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__functions.h\n'}
+[2.368198] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__struct.h\n'}
+[2.368344] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.h\n'}
+[2.368517] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__functions.h\n'}
+[2.368661] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__struct.h\n'}
+[2.368803] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.h\n'}
+[2.368945] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__functions.h\n'}
+[2.369086] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__struct.h\n'}
+[2.369227] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.h\n'}
+[2.369391] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__functions.h\n'}
+[2.369567] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__struct.h\n'}
+[2.369708] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.h\n'}
+[2.369848] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__functions.h\n'}
+[2.369990] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__struct.h\n'}
+[2.370131] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.h\n'}
+[2.370274] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__functions.h\n'}
+[2.370678] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__struct.h\n'}
+[2.370831] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.h\n'}
+[2.371019] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__functions.h\n'}
+[2.371162] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__struct.h\n'}
+[2.371306] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.h\n'}
+[2.371478] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__functions.h\n'}
+[2.371625] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__struct.h\n'}
+[2.371767] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.h\n'}
+[2.371907] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__functions.h\n'}
+[2.372131] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__struct.h\n'}
+[2.372274] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.h\n'}
+[2.372443] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__functions.h\n'}
+[2.372597] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__struct.h\n'}
+[2.372815] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.h\n'}
+[2.372962] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__functions.h\n'}
+[2.373186] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__struct.h\n'}
+[2.373332] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.h\n'}
+[2.373505] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__functions.h\n'}
+[2.373653] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__struct.h\n'}
+[2.373795] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.h\n'}
+[2.373938] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__functions.h\n'}
+[2.374079] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__struct.h\n'}
+[2.374222] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.h\n'}
+[2.374503] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__functions.h\n'}
+[2.374652] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__struct.h\n'}
+[2.374794] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.h\n'}
+[2.374936] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__functions.h\n'}
+[2.375078] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__struct.h\n'}
+[2.375219] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.h\n'}
+[2.375359] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__functions.h\n'}
+[2.375532] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__struct.h\n'}
+[2.375677] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.h\n'}
+[2.375935] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__functions.h\n'}
+[2.376067] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__struct.h\n'}
+[2.376195] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.h\n'}
+[2.376324] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__functions.h\n'}
+[2.376512] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__struct.h\n'}
+[2.376664] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.h\n'}
+[2.376824] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__functions.h\n'}
+[2.376970] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__struct.h\n'}
+[2.377111] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.h\n'}
+[2.377256] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__functions.h\n'}
+[2.377488] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__struct.h\n'}
+[2.377695] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.h\n'}
+[2.377840] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__functions.h\n'}
+[2.377983] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__struct.h\n'}
+[2.378178] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.h\n'}
+[2.378349] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/event_data.h\n'}
+[2.378537] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/fd_frame.h\n'}
+[2.378684] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_result.h\n'}
+[2.378827] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_hp.h\n'}
+[2.378969] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_pos.h\n'}
+[2.379109] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_status.h\n'}
+[2.379251] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_status.h\n'}
+[2.379504] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_cmd.h\n'}
+[2.379659] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_state.h\n'}
+[2.379802] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/ground_robot.h\n'}
+[2.379943] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/interact_id.h\n'}
+[2.380084] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/power_heat_data.h\n'}
+[2.380227] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_data.h\n'}
+[2.380393] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_warning.h\n'}
+[2.380552] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rfid_status.h\n'}
+[2.380696] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/robot_hurt.h\n'}
+[2.380839] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.380982] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/sentry_info.h\n'}
+[2.381124] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shoot_data.h\n'}
+[2.381405] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_cmd.h\n'}
+[2.381564] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_state.h\n'}
+[2.381694] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/target.h\n'}
+[2.381822] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/time_info.h\n'}
+[2.381952] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/tracker_info.h\n'}
+[2.382096] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/library_path.sh\n'}
+[2.382224] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/library_path.dsv\n'}
+[2.382353] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_fastrtps_c.h\n'}
+[2.382577] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_fastrtps_c.h\n'}
+[2.382724] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[2.382938] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383084] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383229] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383391] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383552] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383697] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383839] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h\n'}
+[2.383983] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384126] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384270] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384432] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384586] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384729] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.384873] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385017] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385161] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385350] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385651] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385795] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_fastrtps_c.h\n'}
+[2.385938] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_fastrtps_c.h\n'}
+[2.386157] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_fastrtps_c.h\n'}
+[2.386304] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_fastrtps_c.h\n'}
+[2.386535] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_fastrtps_c.h\n'}
+[2.386717] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_fastrtps_c.h\n'}
+[2.386874] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387033] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387274] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387440] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387596] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387805] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h\n'}
+[2.387950] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.388093] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armor.hpp\n'}
+[2.388237] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armors.hpp\n'}
+[2.388396] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_cmd.hpp\n'}
+[2.388557] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_state.hpp\n'}
+[2.388700] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/buff.hpp\n'}
+[2.388842] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bullet_remaining.hpp\n'}
+[2.388984] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armor.hpp\n'}
+[2.389248] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armors.hpp\n'}
+[2.389410] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_light.hpp\n'}
+[2.389570] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_lights.hpp\n'}
+[2.389713] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__builder.hpp\n'}
+[2.389922] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__struct.hpp\n'}
+[2.390064] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__traits.hpp\n'}
+[2.390207] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.hpp\n'}
+[2.390349] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__builder.hpp\n'}
+[2.390521] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__struct.hpp\n'}
+[2.390669] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__traits.hpp\n'}
+[2.390810] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.hpp\n'}
+[2.390952] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__builder.hpp\n'}
+[2.391095] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__struct.hpp\n'}
+[2.391388] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__traits.hpp\n'}
+[2.391550] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.hpp\n'}
+[2.391694] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__builder.hpp\n'}
+[2.391837] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__struct.hpp\n'}
+[2.392035] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__traits.hpp\n'}
+[2.392180] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.hpp\n'}
+[2.392399] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__builder.hpp\n'}
+[2.392565] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__struct.hpp\n'}
+[2.392710] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__traits.hpp\n'}
+[2.392852] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.hpp\n'}
+[2.393083] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__builder.hpp\n'}
+[2.393242] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__struct.hpp\n'}
+[2.393400] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__traits.hpp\n'}
+[2.393562] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.hpp\n'}
+[2.393705] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__builder.hpp\n'}
+[2.393849] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__struct.hpp\n'}
+[2.393992] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__traits.hpp\n'}
+[2.394135] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.hpp\n'}
+[2.394278] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__builder.hpp\n'}
+[2.394442] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__struct.hpp\n'}
+[2.394596] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__traits.hpp\n'}
+[2.394739] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.hpp\n'}
+[2.394883] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__builder.hpp\n'}
+[2.395023] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__struct.hpp\n'}
+[2.395164] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__traits.hpp\n'}
+[2.395307] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.hpp\n'}
+[2.395480] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__builder.hpp\n'}
+[2.395625] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__struct.hpp\n'}
+[2.395768] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__traits.hpp\n'}
+[2.395906] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.hpp\n'}
+[2.396079] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__builder.hpp\n'}
+[2.396223] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__struct.hpp\n'}
+[2.396598] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__traits.hpp\n'}
+[2.396824] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.hpp\n'}
+[2.396984] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__builder.hpp\n'}
+[2.397199] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__struct.hpp\n'}
+[2.397345] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__traits.hpp\n'}
+[2.397514] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.hpp\n'}
+[2.397677] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__builder.hpp\n'}
+[2.397817] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__struct.hpp\n'}
+[2.397960] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__traits.hpp\n'}
+[2.398102] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.hpp\n'}
+[2.398329] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__builder.hpp\n'}
+[2.398501] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__struct.hpp\n'}
+[2.398649] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__traits.hpp\n'}
+[2.398791] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.hpp\n'}
+[2.398933] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__builder.hpp\n'}
+[2.399075] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__struct.hpp\n'}
+[2.399217] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__traits.hpp\n'}
+[2.399358] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.hpp\n'}
+[2.399541] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__builder.hpp\n'}
+[2.399685] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__struct.hpp\n'}
+[2.399828] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__traits.hpp\n'}
+[2.399968] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.hpp\n'}
+[2.400111] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__builder.hpp\n'}
+[2.400253] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__struct.hpp\n'}
+[2.400558] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__traits.hpp\n'}
+[2.400695] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.hpp\n'}
+[2.400825] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__builder.hpp\n'}
+[2.400954] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__struct.hpp\n'}
+[2.401083] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__traits.hpp\n'}
+[2.401211] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.hpp\n'}
+[2.401341] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__builder.hpp\n'}
+[2.401510] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__struct.hpp\n'}
+[2.401708] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__traits.hpp\n'}
+[2.401924] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.hpp\n'}
+[2.402066] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__builder.hpp\n'}
+[2.402208] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__struct.hpp\n'}
+[2.402347] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__traits.hpp\n'}
+[2.402518] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.hpp\n'}
+[2.402665] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__builder.hpp\n'}
+[2.402803] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__struct.hpp\n'}
+[2.402943] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__traits.hpp\n'}
+[2.403085] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.hpp\n'}
+[2.403228] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__builder.hpp\n'}
+[2.403384] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__struct.hpp\n'}
+[2.403545] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__traits.hpp\n'}
+[2.403684] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.hpp\n'}
+[2.403827] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__builder.hpp\n'}
+[2.404019] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__struct.hpp\n'}
+[2.404159] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__traits.hpp\n'}
+[2.404300] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.hpp\n'}
+[2.404828] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__builder.hpp\n'}
+[2.404983] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__struct.hpp\n'}
+[2.405130] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__traits.hpp\n'}
+[2.405272] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.hpp\n'}
+[2.405431] (-) TimerEvent: {}
+[2.405672] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__builder.hpp\n'}
+[2.405841] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__struct.hpp\n'}
+[2.405988] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__traits.hpp\n'}
+[2.406173] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.hpp\n'}
+[2.406318] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__builder.hpp\n'}
+[2.406564] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__struct.hpp\n'}
+[2.406733] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__traits.hpp\n'}
+[2.406891] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.hpp\n'}
+[2.407152] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__builder.hpp\n'}
+[2.407356] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__struct.hpp\n'}
+[2.407536] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__traits.hpp\n'}
+[2.407694] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.hpp\n'}
+[2.407837] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__builder.hpp\n'}
+[2.407979] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__struct.hpp\n'}
+[2.408192] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__traits.hpp\n'}
+[2.408335] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.hpp\n'}
+[2.408574] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__builder.hpp\n'}
+[2.408750] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__struct.hpp\n'}
+[2.408894] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__traits.hpp\n'}
+[2.409037] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.hpp\n'}
+[2.409179] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__builder.hpp\n'}
+[2.409316] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__struct.hpp\n'}
+[2.409487] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__traits.hpp\n'}
+[2.409634] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.hpp\n'}
+[2.409854] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__builder.hpp\n'}
+[2.409984] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__struct.hpp\n'}
+[2.410112] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__traits.hpp\n'}
+[2.410255] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.hpp\n'}
+[2.410446] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__builder.hpp\n'}
+[2.410601] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__struct.hpp\n'}
+[2.410743] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__traits.hpp\n'}
+[2.410884] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.hpp\n'}
+[2.411027] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__builder.hpp\n'}
+[2.411169] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__struct.hpp\n'}
+[2.411309] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__traits.hpp\n'}
+[2.411480] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.hpp\n'}
+[2.411626] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/event_data.hpp\n'}
+[2.411769] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/fd_frame.hpp\n'}
+[2.411905] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_result.hpp\n'}
+[2.412254] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_hp.hpp\n'}
+[2.412455] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_pos.hpp\n'}
+[2.412615] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_status.hpp\n'}
+[2.412848] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_status.hpp\n'}
+[2.412994] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_cmd.hpp\n'}
+[2.413222] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_state.hpp\n'}
+[2.413383] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/ground_robot.hpp\n'}
+[2.413575] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/interact_id.hpp\n'}
+[2.413695] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/power_heat_data.hpp\n'}
+[2.413871] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_data.hpp\n'}
+[2.414009] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_warning.hpp\n'}
+[2.414116] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rfid_status.hpp\n'}
+[2.414294] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/robot_hurt.hpp\n'}
+[2.414449] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.414618] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/sentry_info.hpp\n'}
+[2.414727] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shoot_data.hpp\n'}
+[2.414833] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_cmd.hpp\n'}
+[2.414938] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_state.hpp\n'}
+[2.415044] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/target.hpp\n'}
+[2.415149] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/time_info.hpp\n'}
+[2.415255] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/tracker_info.hpp\n'}
+[2.415360] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415482] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415530] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415584] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415632] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415679] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415727] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415774] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415822] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415873] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415921] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.415969] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416016] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416066] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416152] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416203] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416253] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416302] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416352] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416448] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416567] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416628] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416684] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416737] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416799] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416852] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416904] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.416960] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417012] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417064] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417117] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417169] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417221] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.417277] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.417329] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_introspection_c.h\n'}
+[2.417404] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_introspection_c.h\n'}
+[2.417465] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_introspection_c.h\n'}
+[2.417521] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_introspection_c.h\n'}
+[2.417573] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_introspection_c.h\n'}
+[2.417625] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_introspection_c.h\n'}
+[2.417683] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h\n'}
+[2.417763] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h\n'}
+[2.417816] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_introspection_c.h\n'}
+[2.417868] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h\n'}
+[2.417926] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_introspection_c.h\n'}
+[2.417978] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_introspection_c.h\n'}
+[2.418030] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_introspection_c.h\n'}
+[2.418081] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_introspection_c.h\n'}
+[2.418134] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_introspection_c.h\n'}
+[2.418185] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_introspection_c.h\n'}
+[2.418237] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_introspection_c.h\n'}
+[2.418291] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_c.h\n'}
+[2.418346] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_introspection_c.h\n'}
+[2.418417] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_introspection_c.h\n'}
+[2.418474] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_introspection_c.h\n'}
+[2.418528] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_introspection_c.h\n'}
+[2.418704] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_introspection_c.h\n'}
+[2.418783] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_introspection_c.h\n'}
+[2.418834] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_introspection_c.h\n'}
+[2.418885] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_introspection_c.h\n'}
+[2.418942] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_introspection_c.h\n'}
+[2.418991] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_introspection_c.h\n'}
+[2.419043] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_introspection_c.h\n'}
+[2.419092] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_introspection_c.h\n'}
+[2.419150] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[2.419199] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_introspection_c.h\n'}
+[2.419248] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h\n'}
+[2.419379] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.419438] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419487] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419536] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419586] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419635] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419685] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419734] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419785] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419834] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419884] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419934] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.419983] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420032] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420082] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420132] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420186] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420243] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420313] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420372] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420429] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420479] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420528] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420578] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420628] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420677] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420816] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420887] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420941] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.420992] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.421042] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.421091] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.421141] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.421190] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.421240] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/pythonpath.sh\n'}
+[2.421290] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/pythonpath.dsv\n'}
+[2.421340] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.421475] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.421544] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.421592] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.421642] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/__init__.py\n'}
+[2.421692] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.421741] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.421791] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.421881] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/libtide_msgs__rosidl_generator_py.so\n'}
+[2.421949] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/__init__.py\n'}
+[2.421998] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armor.py\n'}
+[2.422050] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armor_s.c\n'}
+[2.422100] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armors.py\n'}
+[2.422150] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armors_s.c\n'}
+[2.422200] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_cmd.py\n'}
+[2.422250] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_cmd_s.c\n'}
+[2.422300] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_state.py\n'}
+[2.422350] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_state_s.c\n'}
+[2.422418] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_buff.py\n'}
+[2.422472] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_buff_s.c\n'}
+[2.422589] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bullet_remaining.py\n'}
+[2.422638] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bullet_remaining_s.c\n'}
+[2.422690] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armor.py\n'}
+[2.422746] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armor_s.c\n'}
+[2.422796] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armors.py\n'}
+[2.422846] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armors_s.c\n'}
+[2.422896] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_light.py\n'}
+[2.422945] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_light_s.c\n'}
+[2.422994] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_lights.py\n'}
+[2.423043] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_lights_s.c\n'}
+[2.423092] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_event_data.py\n'}
+[2.423142] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_event_data_s.c\n'}
+[2.423192] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_fd_frame.py\n'}
+[2.423241] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_fd_frame_s.c\n'}
+[2.423291] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_result.py\n'}
+[2.423341] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_result_s.c\n'}
+[2.423463] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_hp.py\n'}
+[2.423533] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_hp_s.c\n'}
+[2.423582] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_pos.py\n'}
+[2.423640] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_pos_s.c\n'}
+[2.423690] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_status.py\n'}
+[2.423742] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_status_s.c\n'}
+[2.423791] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_status.py\n'}
+[2.423843] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_status_s.c\n'}
+[2.423892] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_cmd.py\n'}
+[2.423942] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_cmd_s.c\n'}
+[2.424000] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_state.py\n'}
+[2.424050] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_state_s.c\n'}
+[2.424099] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_ground_robot.py\n'}
+[2.424149] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_ground_robot_s.c\n'}
+[2.424199] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_interact_id.py\n'}
+[2.424272] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_interact_id_s.c\n'}
+[2.424323] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_power_heat_data.py\n'}
+[2.424385] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_power_heat_data_s.c\n'}
+[2.424442] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_data.py\n'}
+[2.424496] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_data_s.c\n'}
+[2.424546] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_warning.py\n'}
+[2.424597] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_warning_s.c\n'}
+[2.424646] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_rfid_status.py\n'}
+[2.424695] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_rfid_status_s.c\n'}
+[2.424748] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_robot_hurt.py\n'}
+[2.424797] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_robot_hurt_s.c\n'}
+[2.424846] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_sentry_info.py\n'}
+[2.424896] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_sentry_info_s.c\n'}
+[2.424946] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shoot_data.py\n'}
+[2.424995] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shoot_data_s.c\n'}
+[2.425050] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_cmd.py\n'}
+[2.425102] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_cmd_s.c\n'}
+[2.425153] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_state.py\n'}
+[2.425209] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_state_s.c\n'}
+[2.425259] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_target.py\n'}
+[2.425308] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_target_s.c\n'}
+[2.425358] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_time_info.py\n'}
+[2.425423] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_time_info_s.c\n'}
+[2.425478] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_tracker_info.py\n'}
+[2.425531] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_tracker_info_s.c\n'}
+[2.425635] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.425691] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.425743] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.425794] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.425932] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.425993] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.426042] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GimbalState.idl\n'}
+[2.426092] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GimbalCmd.idl\n'}
+[2.426143] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/ShooterState.idl\n'}
+[2.426192] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/ShooterCmd.idl\n'}
+[2.426243] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/BigyawState.idl\n'}
+[2.426293] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/BigyawCmd.idl\n'}
+[2.426343] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/FdFrame.idl\n'}
+[2.426443] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/Armor.idl\n'}
+[2.426503] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/Armors.idl\n'}
+[2.426563] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/DebugArmor.idl\n'}
+[2.426640] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/DebugArmors.idl\n'}
+[2.426693] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/DebugLight.idl\n'}
+[2.426743] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/DebugLights.idl\n'}
+[2.426794] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/Target.idl\n'}
+[2.426849] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/TimeInfo.idl\n'}
+[2.426949] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/TrackerInfo.idl\n'}
+[2.427001] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/Buff.idl\n'}
+[2.427083] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/BulletRemaining.idl\n'}
+[2.427164] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/EventData.idl\n'}
+[2.427271] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GameResult.idl\n'}
+[2.427414] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GameRobotHP.idl\n'}
+[2.427555] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GameRobotPos.idl\n'}
+[2.427689] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GameRobotStatus.idl\n'}
+[2.427820] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GameStatus.idl\n'}
+[2.427973] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GroundRobot.idl\n'}
+[2.428085] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/InteractID.idl\n'}
+[2.428215] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/PowerHeatData.idl\n'}
+[2.428346] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/RefereeData.idl\n'}
+[2.428492] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/RefereeWarning.idl\n'}
+[2.428626] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/RFIDStatus.idl\n'}
+[2.428754] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/RobotHurt.idl\n'}
+[2.428890] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/SentryInfo.idl\n'}
+[2.429022] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/ShootData.idl\n'}
+[2.429149] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GimbalState.msg\n'}
+[2.429273] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/GimbalCmd.msg\n'}
+[2.429403] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/ShooterState.msg\n'}
+[2.429538] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/ShooterCmd.msg\n'}
+[2.429662] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/BigyawState.msg\n'}
+[2.429782] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/BigyawCmd.msg\n'}
+[2.429910] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/msg/FdFrame.msg\n'}
+[2.430036] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/Armor.msg\n'}
+[2.430163] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/Armors.msg\n'}
+[2.430286] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/DebugArmor.msg\n'}
+[2.430429] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/DebugArmors.msg\n'}
+[2.430572] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/DebugLight.msg\n'}
+[2.430700] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/DebugLights.msg\n'}
+[2.430820] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/Target.msg\n'}
+[2.430952] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/TimeInfo.msg\n'}
+[2.431080] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/vision/TrackerInfo.msg\n'}
+[2.431200] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/Buff.msg\n'}
+[2.431323] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/BulletRemaining.msg\n'}
+[2.431493] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/EventData.msg\n'}
+[2.431647] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GameResult.msg\n'}
+[2.431766] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GameRobotHP.msg\n'}
+[2.431897] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GameRobotPos.msg\n'}
+[2.432025] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GameRobotStatus.msg\n'}
+[2.432153] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GameStatus.msg\n'}
+[2.432282] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/GroundRobot.msg\n'}
+[2.432419] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/InteractID.msg\n'}
+[2.432573] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/PowerHeatData.msg\n'}
+[2.432701] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/RefereeData.msg\n'}
+[2.432887] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/RefereeWarning.msg\n'}
+[2.433023] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/RFIDStatus.msg\n'}
+[2.433158] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/RobotHurt.msg\n'}
+[2.433295] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/SentryInfo.msg\n'}
+[2.433433] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/referee/ShootData.msg\n'}
+[2.433743] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/ament_index/resource_index/package_run_dependencies/tide_msgs\n'}
+[2.433897] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/ament_index/resource_index/parent_prefix_path/tide_msgs\n'}
+[2.434039] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/ament_prefix_path.sh\n'}
+[2.434133] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/ament_prefix_path.dsv\n'}
+[2.434275] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/path.sh\n'}
+[2.434421] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/environment/path.dsv\n'}
+[2.434599] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/local_setup.bash\n'}
+[2.434725] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/local_setup.sh\n'}
+[2.434853] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/local_setup.zsh\n'}
+[2.434951] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/local_setup.dsv\n'}
+[2.435036] (tide_msgs) StdoutLine: {'line': b'-- Symlinking: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.dsv\n'}
+[2.446530] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/ament_index/resource_index/packages/tide_msgs\n'}
+[2.446763] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.446867] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.446977] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.447113] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.447247] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.447398] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.447539] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.447680] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgsConfig.cmake\n'}
+[2.447782] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgsConfig-version.cmake\n'}
+[2.447912] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.xml\n'}
+[2.448163] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_generator_c.so\n'}
+[2.448463] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.448754] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.449022] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.449270] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_c.so\n'}
+[2.449576] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.449842] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_cpp.so\n'}
+[2.481225] (tide_msgs) StdoutLine: {'line': b"Listing '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs'...\n"}
+[2.481432] (tide_msgs) StdoutLine: {'line': b"Compiling '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/__init__.py'...\n"}
+[2.481516] (tide_msgs) StdoutLine: {'line': b"Listing '/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg'...\n"}
+[2.486819] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/lib/libtide_msgs__rosidl_generator_py.so\n'}
+[2.487050] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cExport.cmake\n'}
+[2.487108] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.487222] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.487280] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.487333] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.487468] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.487560] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.487613] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.487678] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.487741] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.487794] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.487883] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.487992] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.488064] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.488120] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.488171] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.488221] (tide_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.490395] (tide_msgs) CommandEnded: {'returncode': 0}
+[2.505628] (-) TimerEvent: {}
+[2.507102] (tide_msgs) JobEnded: {'identifier': 'tide_msgs', 'rc': 0}
+[2.507833] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_msgs/rosidl_typesupport_introspection_cpp/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_introspection_cpp.hpp

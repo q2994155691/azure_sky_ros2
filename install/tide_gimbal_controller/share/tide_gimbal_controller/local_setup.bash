@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_gimbal_controller/ament_cmake_environment_hooks/local_setup.bash

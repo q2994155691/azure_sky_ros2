@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_msgs/rosidl_typesupport_introspection_c/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_introspection_c.h

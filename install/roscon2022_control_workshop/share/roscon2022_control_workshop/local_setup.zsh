@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/roscon2022_control_workshop/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,0 +1,9 @@
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/uninstall.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/controlko_bringup_uninstall.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/test.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/edit_cache.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/rebuild_cache.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/list_install_components.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/install.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/install/local.dir
+/home/luis/workshop_ws/build/controlko_bringup/CMakeFiles/install/strip.dir

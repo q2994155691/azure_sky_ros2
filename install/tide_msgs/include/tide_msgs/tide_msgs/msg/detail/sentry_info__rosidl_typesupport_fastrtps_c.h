@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_msgs/rosidl_typesupport_fastrtps_c/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_fastrtps_c.h

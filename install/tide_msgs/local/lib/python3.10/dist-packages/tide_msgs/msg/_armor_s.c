@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_py/tide_msgs/msg/_armor_s.c

@@ -1,0 +1,40 @@
+[0.028s] Invoking command in '/home/luis/workshop_ws/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12
+[0.103s] [ 18%] Built target gmock_main
+[0.105s] [ 45%] Built target gmock
+[0.111s] [ 81%] Built target my_hardware_interface
+[0.135s] [100%] Built target test_rrbot_hardware_interface
+[0.150s] Invoked command in '/home/luis/workshop_ws/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12
+[0.152s] Invoking command in '/home/luis/workshop_ws/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/my_hardware_interface
+[0.160s] -- Install configuration: ""
+[0.160s] -- Execute custom install script
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface//my_hardware_interface.xml
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface//my_hardware_interface.xml
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/lib/libmy_hardware_interface.so
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/include/my_hardware_interface/custom_mecanum_controller.hpp
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/include/my_hardware_interface/tide_motor.hpp
+[0.161s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/include/my_hardware_interface/visibility_control.h
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/my_hardware_interface.xml
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+[0.162s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+[0.163s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+[0.163s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+[0.163s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+[0.163s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+[0.163s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+[0.164s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+[0.164s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+[0.164s] -- Symlinking: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+[0.174s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+[0.174s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+[0.175s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_hardware_interface
+[0.175s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.175s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.175s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.176s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+[0.176s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+[0.176s] -- Up-to-date symlink: /home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.xml
+[0.180s] Invoked command in '/home/luis/workshop_ws/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/my_hardware_interface

@@ -331,13 +331,13 @@ void RRBotHardwareInterface::stopAllMotors()
       bool result = sendCanFrame(can_device, can_device->tx_buff[i].data(), 8, id);
       if (!result)
       {
-        RCLCPP_WARN(rclcpp::get_logger("RRBotHardwareInterface"), 
-                    "Failed to send stop command to CAN ID: 0x%X", id);
+        //RCLCPP_WARN(rclcpp::get_logger("RRBotHardwareInterface"), 
+        //            "Failed to send stop command to CAN ID: 0x%X", id);
       }
       else
       {
-        RCLCPP_INFO(rclcpp::get_logger("RRBotHardwareInterface"), 
-                    "Stop command sent to CAN ID: 0x%X", id);
+        //RCLCPP_INFO(rclcpp::get_logger("RRBotHardwareInterface"), 
+        //            "Stop command sent to CAN ID: 0x%X", id);
       }
     }
   }
@@ -359,7 +359,6 @@ hardware_interface::return_type RRBotHardwareInterface::read(
 
 
   auto current_time = time;
-  constexpr double RAD_PER_SEC_TO_RPM = (2 * M_PI) / 60;
 
   for (size_t i = 0; i < joint_count; i++)
   {
@@ -381,11 +380,15 @@ hardware_interface::return_type RRBotHardwareInterface::read(
     else
     {
       motor->check_connection(current_time);
-
       state_positions_[i] = motor->angle_current;
       state_velocities_[i] = motor->measure.speed_aps;
       state_currents_[i] = motor->measure.real_current;
       state_temperatures_[i] = motor->measure.temperature;
+
+     RCLCPP_INFO(rclcpp::get_logger("Motor"),
+                "Motor[%zu]: pos=%.3f, vel=%.3f, cur=%.3f, temp=%.1f",
+                i, state_positions_[i], state_velocities_[i], 
+                state_currents_[i], state_temperatures_[i]);
     }
   }
 
@@ -402,7 +405,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
       std::stringstream ss;
       ss << std::left << std::setw(15) << motor->config_.motor_name << "Encoder: " << std::setw(6)
          << motor->measure.ecd;
-      RCLCPP_INFO(rclcpp::get_logger("TideHardwareInterface"), "%s", ss.str().c_str());
+      //RCLCPP_INFO(rclcpp::get_logger("TideHardwareInterface"), "%s", ss.str().c_str());
     }
     return hardware_interface::return_type::OK;
   }
@@ -429,7 +432,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
              info_.joints[i].command_interfaces[0].name == "velocity")
     {
       command = cmd_velocities_[i];  
-      RCLCPP_INFO(rclcpp::get_logger("HW"), "cmd: %.3f", command);
+      //RCLCPP_INFO(rclcpp::get_logger("HW"), "cmd: %.3f", command);
     }
 
     auto motor = motors_[i];
@@ -439,9 +442,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
     auto current_time = time;
     if (motor->check_connection(current_time))
     {
-      
-    }
-    for (auto can_device : can_devices_)
+      for (auto can_device : can_devices_)
       {
         if ((motor->config_.can_bus == can_device->interface) &&
             motor->config_.motor_type != VIRTUAL_JOINT)
@@ -457,6 +458,8 @@ hardware_interface::return_type RRBotHardwareInterface::write(
           break;
         }
       }
+    }
+    
   }
 
   for (auto can_device : can_devices_)
@@ -464,7 +467,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
     for (size_t i = 0; i < 3; i++)
     {
       //改發到0x300(下位機地址)
-      auto id = (i == 0) ? 0x300 : (i == 1) ? 0x1ff : 0x2ff;
+      auto id = (i == 0) ? 0x200 : (i == 1) ? 0x1ff : 0x2ff;
       bool result = sendCanFrame(can_device, can_device->tx_buff[i].data(), 8, id);
       if (!result)
       {

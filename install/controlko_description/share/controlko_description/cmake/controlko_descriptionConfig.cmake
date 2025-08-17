@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/controlko_description/ament_cmake_core/controlko_descriptionConfig.cmake

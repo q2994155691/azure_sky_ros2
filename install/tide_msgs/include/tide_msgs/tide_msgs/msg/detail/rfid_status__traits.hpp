@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_cpp/tide_msgs/msg/detail/rfid_status__traits.hpp

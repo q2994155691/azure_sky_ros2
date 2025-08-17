@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/controlko_controllers/ament_cmake_core/controlko_controllersConfig-version.cmake

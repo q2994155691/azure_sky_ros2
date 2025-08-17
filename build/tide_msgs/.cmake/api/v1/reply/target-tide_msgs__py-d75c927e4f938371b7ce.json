@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/luis/workshop_ws/build/tide_msgs/tide_msgs__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "tide_msgs::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "tide_msgs__py::@ae87eb479ac6eeab6ce1",
+	"name" : "tide_msgs__py",
+	"paths" : 
+	{
+		"build" : "tide_msgs__py",
+		"source" : "/home/luis/workshop_ws/build/tide_msgs/tide_msgs__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/luis/workshop_ws/build/tide_msgs/tide_msgs__py/CMakeFiles/tide_msgs__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/luis/workshop_ws/build/tide_msgs/tide_msgs__py/CMakeFiles/tide_msgs__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_py/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

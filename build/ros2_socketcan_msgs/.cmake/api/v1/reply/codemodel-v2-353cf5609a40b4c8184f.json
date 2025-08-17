@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4b05ccb35b1efe30f240.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "ros2_socketcan_msgs__py",
+					"jsonFile" : "directory-ros2_socketcan_msgs__py-e7cc9477ea2a9b1d87df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/luis/workshop_ws/build/ros2_socketcan_msgs/ros2_socketcan_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ros2_socketcan_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ros2_socketcan_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ros2_socketcan_msgs_egg-36e0501214b4a034d06a.json",
+					"name" : "ament_cmake_python_build_ros2_socketcan_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_ros2_socketcan_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_ros2_socketcan_msgs-67c011852e0bbd08b1b1.json",
+					"name" : "ament_cmake_python_symlink_ros2_socketcan_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs-67598aaa3fe2b9458f28.json",
+					"name" : "ros2_socketcan_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__cpp-59a4d828bbd53d28a0dc.json",
+					"name" : "ros2_socketcan_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ros2_socketcan_msgs__py::@c02b847baaa1cd3e9db9",
+					"jsonFile" : "target-ros2_socketcan_msgs__py-d293fc2a1fb958e5c5ab.json",
+					"name" : "ros2_socketcan_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_generator_c-8d8ed874164d41ceaebe.json",
+					"name" : "ros2_socketcan_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_generator_py-3ff127fd574fc152fb82.json",
+					"name" : "ros2_socketcan_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_c-287a672d00a4de8ce716.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_c__pyext-c1d051d79d9611338b4e.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_cpp-681204449e91cfa0e18b.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c-116adba2a89cbd985fa2.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c__pyext-14568de9b2546de9c16c.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_fastrtps_cpp-2c7ca4e1b08134f9b1aa.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_introspection_c-eb977343bf955cbfd42c.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_introspection_c__pyext-cf1158d23f31124a0290.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs__rosidl_typesupport_introspection_cpp-0426971e35d06c921f2a.json",
+					"name" : "ros2_socketcan_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_socketcan_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_socketcan_msgs_uninstall-60c2ff640226d0622e5a.json",
+					"name" : "ros2_socketcan_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e5429070a003e193018d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/luis/workshop_ws/build/ros2_socketcan_msgs",
+		"source" : "/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

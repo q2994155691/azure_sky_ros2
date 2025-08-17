@@ -1,0 +1,70 @@
+[0.064s] Invoking command in '/home/luis/workshop_ws/build/my_hardware_interface': CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:/home/luis/workshop_ws/install/tide_shooter_controller/lib:/home/luis/workshop_ws/install/tide_gimbal_controller/lib:/home/luis/workshop_ws/install/tide_msgs/lib:/home/luis/workshop_ws/install/my_hardware_interface/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/controlko_hardware_interface/lib:/home/luis/workshop_ws/install/controlko_controllers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12
+[0.158s] [35m[1mConsolidate compiler generated dependencies of target my_hardware_interface[0m
+[0.178s] [ 18%] Built target gmock_main
+[0.180s] [ 45%] Built target gmock
+[0.198s] [ 54%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/rrbot_hardware_interface.cpp.o[0m
+[0.229s] [ 72%] Built target test_rrbot_hardware_interface
+[3.414s] In file included from [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:25[m[K:
+[3.414s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:[m[K In constructor ‘[01m[Kmy_hardware_interface::CanDevice::CanDevice(const string&, my_hardware_interface::CanDevice::ReceiveCallback)[m[K’:
+[3.414s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:47:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmy_hardware_interface::CanDevice::receive_callback_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.414s]    47 | ReceiveCallback [01;35m[Kreceive_callback_[m[K;
+[3.414s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[3.414s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:40:58:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<drivers::socketcan::SocketCanSender> my_hardware_interface::CanDevice::sender[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.415s]    40 |   std::shared_ptr<drivers::socketcan::SocketCanSender>   [01;35m[Ksender[m[K;
+[3.415s]       |                                                          [01;35m[K^~~~~~[m[K
+[3.415s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:33:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.415s]    33 | [01;35m[KCanDevice[m[K::CanDevice(const std::string& iface, ReceiveCallback cb)
+[3.415s]       | [01;35m[K^~~~~~~~~[m[K
+[3.447s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.448s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.448s]                  from [01m[K/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:16[m[K,
+[3.448s]                  from [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:25[m[K:
+[3.449s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardware_interface::RRBotHardwareInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.449s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass my_hardware_interface::RRBotHardwareInterface[m[K’ has no member named ‘[01m[Kget_node[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+[3.449s]   388 |      RCLCPP_INFO(this->[01;31m[Kget_node[m[K()->get_logger(),
+[3.449s]       |                        [01;31m[K^~~~~~~~[m[K
+[3.449s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass my_hardware_interface::RRBotHardwareInterface[m[K’ has no member named ‘[01m[Kget_node[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+[3.449s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:6:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.449s]   388 |      [01;31m[KRCLCPP_INFO[m[K(this->get_node()->get_logger(),
+[3.450s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[3.450s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:6:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.450s]   388 |      [01;31m[KRCLCPP_INFO[m[K(this->get_node()->get_logger(),
+[3.450s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[3.450s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:6:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.450s]   388 |      [01;31m[KRCLCPP_INFO[m[K(this->get_node()->get_logger(),
+[3.450s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[3.451s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.451s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.452s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.452s]                  from [01m[K/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:16[m[K,
+[3.452s]                  from [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:25[m[K:
+[3.453s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass my_hardware_interface::RRBotHardwareInterface[m[K’ has no member named ‘[01m[Kget_node[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+[3.453s]   388 |      RCLCPP_INFO(this->[01;31m[Kget_node[m[K()->get_logger(),
+[3.453s]       |                        [01;31m[K^~~~~~~~[m[K
+[3.453s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:388:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass my_hardware_interface::RRBotHardwareInterface[m[K’ has no member named ‘[01m[Kget_node[m[K’; did you mean ‘[01m[Kget_name[m[K’?
+[3.453s]   388 |      RCLCPP_INFO(this->[01;31m[Kget_node[m[K()->get_logger(),
+[3.453s]       |                        [01;31m[K^~~~~~~~[m[K
+[3.453s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardware_interface::RRBotHardwareInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.453s] [01m[K/home/luis/workshop_ws/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:421:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KRPM_TO_RAD_PER_SEC[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.454s]   421 |  constexpr double [01;35m[KRPM_TO_RAD_PER_SEC[m[K = 60.0 / (2 * M_PI);
+[3.454s]       |                   [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.317s] gmake[2]: *** [CMakeFiles/my_hardware_interface.dir/build.make:90: CMakeFiles/my_hardware_interface.dir/src/rrbot_hardware_interface.cpp.o] Error 1
+[4.318s] gmake[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/my_hardware_interface.dir/all] Error 2
+[4.319s] gmake: *** [Makefile:146: all] Error 2
+[4.323s] Invoked command in '/home/luis/workshop_ws/build/my_hardware_interface' returned '2': CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/home/luis/workshop_ws/install/tide_shooter_controller:/home/luis/workshop_ws/install/tide_gimbal_controller:/home/luis/workshop_ws/install/tide_msgs:/home/luis/workshop_ws/install/my_hardware_interface:/home/luis/workshop_ws/install/roscon2022_control_workshop:/home/luis/workshop_ws/install/controlko_hardware_interface:/home/luis/workshop_ws/install/controlko_bringup:/home/luis/workshop_ws/install/controlko_description:/home/luis/workshop_ws/install/controlko_controllers:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:/home/luis/workshop_ws/install/tide_shooter_controller/lib:/home/luis/workshop_ws/install/tide_gimbal_controller/lib:/home/luis/workshop_ws/install/tide_msgs/lib:/home/luis/workshop_ws/install/my_hardware_interface/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/controlko_hardware_interface/lib:/home/luis/workshop_ws/install/controlko_controllers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12

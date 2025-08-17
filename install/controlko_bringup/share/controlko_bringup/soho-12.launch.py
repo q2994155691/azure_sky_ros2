@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/src/controlko_bringup/launch/soho-12.launch.py

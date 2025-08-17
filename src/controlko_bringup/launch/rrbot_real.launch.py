@@ -140,15 +140,17 @@ def generate_launch_description():
     )
 
     robot_controllers = [robot_controller]
-    robot_controller_spawners = []
-    for controller in robot_controllers:
-        robot_controller_spawners += [
+    tide_controllers = ["tide_gimbal_controller"]
+    all_controllers = robot_controllers + tide_controllers
+    all_controller_spawners = []
+    for controller in all_controllers:
+        all_controller_spawners += [
             Node(
                 package="controller_manager",
                 executable="spawner",
                 arguments=[controller, "-c", "/controller_manager"],
             )
-        ]
+    ]
 
     # Delay loading and activation of `joint_state_broadcaster` after start of ros2_control_node
 
@@ -162,7 +164,7 @@ def generate_launch_description():
 
     # Delay loading and activation of robot_controller after `joint_state_broadcaster`
     delay_robot_controller_spawners_after_joint_state_broadcaster_spawner = []
-    for controller in robot_controller_spawners:
+    for controller in all_controller_spawners:
         delay_robot_controller_spawners_after_joint_state_broadcaster_spawner += [
             RegisterEventHandler(
                 event_handler=OnProcessExit(

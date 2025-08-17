@@ -1,0 +1,937 @@
+[0.109s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink']
+[0.109s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7df78fd56050>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7df78fe5af50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7df78fe5af50>>, mixin_verb=('build',))
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.260s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/luis/workshop_ws'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_bringup) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controlko_bringup' with type 'ros.ament_cmake' and name 'controlko_bringup'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_controllers) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controlko_controllers' with type 'ros.ament_cmake' and name 'controlko_controllers'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_description) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controlko_description' with type 'ros.ament_cmake' and name 'controlko_description'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/controlko_hardware_interface) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controlko_hardware_interface' with type 'ros.ament_cmake' and name 'controlko_hardware_interface'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_hardware_interface) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_hardware_interface' with type 'ros.ament_cmake' and name 'my_hardware_interface'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'ros'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['cmake', 'python']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'cmake'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'python'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extensions ['python_setup_py']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan) by extension 'python_setup_py'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_socketcan/ros2_socketcan' with type 'ros.ament_cmake' and name 'ros2_socketcan'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan/ros2_socketcan_msgs) by extension 'ros'
+[0.282s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_socketcan/ros2_socketcan_msgs' with type 'ros.ament_cmake' and name 'ros2_socketcan_msgs'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscon2022_control_workshop) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roscon2022_control_workshop' with type 'ros.ament_cmake' and name 'roscon2022_control_workshop'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'ros'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['cmake', 'python']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'cmake'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'python'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extensions ['python_setup_py']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers) by extension 'python_setup_py'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_gimbal_controller) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tide_controllers/tide_gimbal_controller' with type 'ros.ament_cmake' and name 'tide_gimbal_controller'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_controllers/tide_shooter_controller) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tide_controllers/tide_shooter_controller' with type 'ros.ament_cmake' and name 'tide_shooter_controller'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/tide_msgs) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tide_msgs' with type 'ros.ament_cmake' and name 'tide_msgs'
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.322s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/luis/install
+[0.323s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 353 installed packages in /opt/ros/humble
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'controlko_controllers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'controlko_controllers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/controlko_controllers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/controlko_controllers', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/controlko_controllers', 'symlink_install': True, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'controlko_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/controlko_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/controlko_description', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/controlko_description', 'symlink_install': True, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'controlko_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'controlko_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/controlko_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/controlko_hardware_interface', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/controlko_hardware_interface', 'symlink_install': True, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_socketcan_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/ros2_socketcan_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/ros2_socketcan_msgs', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'roscon2022_control_workshop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'roscon2022_control_workshop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/roscon2022_control_workshop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/roscon2022_control_workshop', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/roscon2022_control_workshop', 'symlink_install': True, 'test_result_base': None}
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/serial', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_target' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'tide_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'tide_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/tide_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/tide_msgs', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/tide_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_target' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'controlko_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.369s] DEBUG:colcon.colcon_core.verb:Building package 'controlko_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/controlko_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/controlko_bringup', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/controlko_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_target' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_clean_first' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'cmake_force_configure' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'ament_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'ros2_socketcan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.369s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_socketcan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/ros2_socketcan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/ros2_socketcan', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan', 'symlink_install': True, 'test_result_base': None}
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_target' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_gimbal_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.370s] DEBUG:colcon.colcon_core.verb:Building package 'tide_gimbal_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/tide_gimbal_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/tide_gimbal_controller', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/tide_controllers/tide_gimbal_controller', 'symlink_install': True, 'test_result_base': None}
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_target' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'tide_shooter_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.370s] DEBUG:colcon.colcon_core.verb:Building package 'tide_shooter_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/tide_shooter_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/tide_shooter_controller', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/tide_controllers/tide_shooter_controller', 'symlink_install': True, 'test_result_base': None}
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'my_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.371s] DEBUG:colcon.colcon_core.verb:Building package 'my_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luis/workshop_ws/build/my_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luis/workshop_ws/install/my_hardware_interface', 'merge_install': False, 'path': '/home/luis/workshop_ws/src/my_hardware_interface', 'symlink_install': True, 'test_result_base': None}
+[0.371s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.372s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.373s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan_msgs' with build type 'ament_cmake'
+[0.373s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan_msgs'
+[0.376s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.380s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/tide_msgs' with build type 'ament_cmake'
+[0.380s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/tide_msgs'
+[0.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.384s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/controlko_description' with build type 'ament_cmake'
+[0.384s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/controlko_description'
+[0.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.388s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/serial' with build type 'ament_cmake'
+[0.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/serial'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.392s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/controlko_controllers' with build type 'ament_cmake'
+[0.392s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/controlko_controllers'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/controlko_hardware_interface' with build type 'ament_cmake'
+[0.396s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/controlko_hardware_interface'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.400s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/roscon2022_control_workshop' with build type 'ament_cmake'
+[0.400s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/roscon2022_control_workshop'
+[0.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/ros2_socketcan_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/ros2_socketcan_msgs -- -j12 -l12
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/tide_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_msgs
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_description -- -j12 -l12
+[0.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/serial -- -j12 -l12
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_controllers -- -j12 -l12
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_hardware_interface -- -j12 -l12
+[0.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/roscon2022_control_workshop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/roscon2022_control_workshop -- -j12 -l12
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_description -- -j12 -l12
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_description
+[0.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/roscon2022_control_workshop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/roscon2022_control_workshop -- -j12 -l12
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/roscon2022_control_workshop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/roscon2022_control_workshop
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/serial -- -j12 -l12
+[0.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/serial
+[0.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_description)
+[0.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_description
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description' for CMake module files
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description' for CMake config files
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_description', 'cmake_prefix_path')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.sh'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/bin'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/lib/pkgconfig/controlko_description.pc'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/lib/python3.10/site-packages'
+[0.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/bin'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.ps1'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.dsv'
+[0.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.sh'
+[0.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.bash'
+[0.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.zsh'
+[0.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_description/share/colcon-core/packages/controlko_description)
+[0.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_description)
+[0.566s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description' for CMake module files
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description' for CMake config files
+[0.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_description', 'cmake_prefix_path')
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/hook/cmake_prefix_path.sh'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/bin'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/lib/pkgconfig/controlko_description.pc'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/lib/python3.10/site-packages'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_description/bin'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.sh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.bash'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_description/share/controlko_description/package.zsh'
+[0.577s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_description/share/colcon-core/packages/controlko_description)
+[0.578s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/controlko_bringup' with build type 'ament_cmake'
+[0.578s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/controlko_bringup'
+[0.578s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.578s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.583s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial' for CMake module files
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/serial
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial' for CMake config files
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/bin'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib/pkgconfig/serial.pc'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib/python3.10/site-packages'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/bin'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/serial/share/serial/package.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.sh'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.bash'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.zsh'
+[0.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/serial/share/colcon-core/packages/serial)
+[0.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial' for CMake module files
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial' for CMake config files
+[0.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/bin'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib/pkgconfig/serial.pc'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/lib/python3.10/site-packages'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/serial/bin'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/serial/share/serial/package.dsv'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.sh'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.bash'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/serial/share/serial/package.zsh'
+[0.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/serial/share/colcon-core/packages/serial)
+[0.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roscon2022_control_workshop)
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop' for CMake module files
+[0.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/roscon2022_control_workshop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/roscon2022_control_workshop
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop' for CMake config files
+[0.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscon2022_control_workshop', 'cmake_prefix_path')
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.sh'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/bin'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/lib/pkgconfig/roscon2022_control_workshop.pc'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/lib/python3.10/site-packages'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/bin'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.ps1'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.dsv'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.sh'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.bash'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.zsh'
+[0.611s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/roscon2022_control_workshop/share/colcon-core/packages/roscon2022_control_workshop)
+[0.612s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roscon2022_control_workshop)
+[0.612s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop' for CMake module files
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop' for CMake config files
+[0.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscon2022_control_workshop', 'cmake_prefix_path')
+[0.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.ps1'
+[0.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.dsv'
+[0.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/hook/cmake_prefix_path.sh'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/bin'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/lib/pkgconfig/roscon2022_control_workshop.pc'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/lib/python3.10/site-packages'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/roscon2022_control_workshop/bin'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.dsv'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.sh'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.bash'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/roscon2022_control_workshop/share/roscon2022_control_workshop/package.zsh'
+[0.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/roscon2022_control_workshop/share/colcon-core/packages/roscon2022_control_workshop)
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_hardware_interface -- -j12 -l12
+[0.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_hardware_interface
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_bringup': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_bringup -- -j12 -l12
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_controllers -- -j12 -l12
+[0.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_controllers
+[0.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_hardware_interface)
+[0.653s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface' for CMake module files
+[0.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_hardware_interface
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface' for CMake config files
+[0.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_hardware_interface', 'cmake_prefix_path')
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.ps1'
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.dsv'
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.sh'
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib'
+[0.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_hardware_interface', 'ld_library_path_lib')
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.ps1'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.dsv'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.sh'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/bin'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib/pkgconfig/controlko_hardware_interface.pc'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib/python3.10/site-packages'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/bin'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.dsv'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.sh'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.bash'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.zsh'
+[0.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_hardware_interface/share/colcon-core/packages/controlko_hardware_interface)
+[0.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_hardware_interface)
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface' for CMake module files
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface' for CMake config files
+[0.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_hardware_interface', 'cmake_prefix_path')
+[0.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.ps1'
+[0.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.dsv'
+[0.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/cmake_prefix_path.sh'
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib'
+[0.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_hardware_interface', 'ld_library_path_lib')
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.ps1'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.dsv'
+[0.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/hook/ld_library_path_lib.sh'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/bin'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib/pkgconfig/controlko_hardware_interface.pc'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/lib/python3.10/site-packages'
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_hardware_interface/bin'
+[0.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.dsv'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.sh'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.bash'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_hardware_interface/share/controlko_hardware_interface/package.zsh'
+[0.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_hardware_interface/share/colcon-core/packages/controlko_hardware_interface)
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_bringup' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/controlko_bringup -- -j12 -l12
+[0.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/controlko_bringup': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_bringup
+[0.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_controllers)
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers' for CMake module files
+[0.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_controllers
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers' for CMake config files
+[0.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_controllers', 'cmake_prefix_path')
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.ps1'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.dsv'
+[0.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.sh'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib'
+[0.698s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_controllers', 'ld_library_path_lib')
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.ps1'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.dsv'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.sh'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/bin'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib/pkgconfig/controlko_controllers.pc'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib/python3.10/site-packages'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/bin'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.ps1'
+[0.701s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.dsv'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.sh'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.bash'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.zsh'
+[0.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_controllers/share/colcon-core/packages/controlko_controllers)
+[0.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_controllers)
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers' for CMake module files
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers' for CMake config files
+[0.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_controllers', 'cmake_prefix_path')
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.ps1'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/cmake_prefix_path.sh'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib'
+[0.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_controllers', 'ld_library_path_lib')
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.ps1'
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.dsv'
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/hook/ld_library_path_lib.sh'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/bin'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib/pkgconfig/controlko_controllers.pc'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/lib/python3.10/site-packages'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_controllers/bin'
+[0.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.sh'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_controllers/share/controlko_controllers/package.zsh'
+[0.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_controllers/share/colcon-core/packages/controlko_controllers)
+[0.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_bringup)
+[0.718s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup' for CMake module files
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup' for CMake config files
+[0.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/controlko_bringup' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/controlko_description:/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/controlko_bringup
+[0.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_bringup', 'cmake_prefix_path')
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.ps1'
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.dsv'
+[0.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.sh'
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/bin'
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/lib/pkgconfig/controlko_bringup.pc'
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/lib/python3.10/site-packages'
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/bin'
+[0.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.ps1'
+[0.723s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.dsv'
+[0.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.sh'
+[0.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.bash'
+[0.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.zsh'
+[0.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_bringup/share/colcon-core/packages/controlko_bringup)
+[0.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controlko_bringup)
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup' for CMake module files
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup' for CMake config files
+[0.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('controlko_bringup', 'cmake_prefix_path')
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.ps1'
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.dsv'
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/hook/cmake_prefix_path.sh'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/bin'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/lib/pkgconfig/controlko_bringup.pc'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/lib/python3.10/site-packages'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/controlko_bringup/bin'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.sh'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.bash'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/controlko_bringup/share/controlko_bringup/package.zsh'
+[0.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/controlko_bringup/share/colcon-core/packages/controlko_bringup)
+[0.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/ros2_socketcan_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/ros2_socketcan_msgs -- -j12 -l12
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/ros2_socketcan_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/ros2_socketcan_msgs
+[0.951s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_socketcan_msgs)
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs' for CMake module files
+[0.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/ros2_socketcan_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/ros2_socketcan_msgs
+[0.952s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs' for CMake config files
+[0.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan_msgs', 'cmake_prefix_path')
+[0.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.dsv'
+[0.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.sh'
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib'
+[0.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan_msgs', 'ld_library_path_lib')
+[0.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.ps1'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.dsv'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.sh'
+[0.955s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/bin'
+[0.955s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib/pkgconfig/ros2_socketcan_msgs.pc'
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib/python3.10/site-packages'
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/bin'
+[0.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.ps1'
+[0.956s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.dsv'
+[0.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.sh'
+[0.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.bash'
+[0.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.zsh'
+[0.958s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/colcon-core/packages/ros2_socketcan_msgs)
+[0.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_socketcan_msgs)
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs' for CMake module files
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs' for CMake config files
+[0.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan_msgs', 'cmake_prefix_path')
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.ps1'
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.dsv'
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/cmake_prefix_path.sh'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib'
+[0.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan_msgs', 'ld_library_path_lib')
+[0.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.ps1'
+[0.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.dsv'
+[0.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/hook/ld_library_path_lib.sh'
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/bin'
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib/pkgconfig/ros2_socketcan_msgs.pc'
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib/python3.10/site-packages'
+[0.962s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan_msgs/bin'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.dsv'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.sh'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.bash'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/ros2_socketcan_msgs/package.zsh'
+[0.964s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/ros2_socketcan_msgs/share/colcon-core/packages/ros2_socketcan_msgs)
+[0.965s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan' with build type 'ament_cmake'
+[0.965s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/ros2_socketcan/ros2_socketcan'
+[0.965s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.965s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/ros2_socketcan': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/ros2_socketcan -- -j12 -l12
+[1.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/ros2_socketcan' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/ros2_socketcan -- -j12 -l12
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/ros2_socketcan': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/ros2_socketcan
+[1.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_socketcan)
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan' for CMake module files
+[1.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/ros2_socketcan' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/ros2_socketcan
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan' for CMake config files
+[1.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan', 'cmake_prefix_path')
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.ps1'
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.sh'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib'
+[1.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan', 'ld_library_path_lib')
+[1.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.ps1'
+[1.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.dsv'
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.sh'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/bin'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib/pkgconfig/ros2_socketcan.pc'
+[1.182s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib/python3.10/site-packages'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/bin'
+[1.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.ps1'
+[1.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.dsv'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.sh'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.bash'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.zsh'
+[1.188s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/ros2_socketcan/share/colcon-core/packages/ros2_socketcan)
+[1.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_socketcan)
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan' for CMake module files
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan' for CMake config files
+[1.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan', 'cmake_prefix_path')
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.ps1'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.dsv'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/cmake_prefix_path.sh'
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib'
+[1.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_socketcan', 'ld_library_path_lib')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.ps1'
+[1.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.dsv'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/hook/ld_library_path_lib.sh'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/bin'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib/pkgconfig/ros2_socketcan.pc'
+[1.200s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/lib/python3.10/site-packages'
+[1.200s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/ros2_socketcan/bin'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.ps1'
+[1.202s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.dsv'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.sh'
+[1.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.bash'
+[1.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/ros2_socketcan/share/ros2_socketcan/package.zsh'
+[1.206s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/ros2_socketcan/share/colcon-core/packages/ros2_socketcan)
+[1.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/my_hardware_interface' with build type 'ament_cmake'
+[1.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/my_hardware_interface'
+[1.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12
+[1.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/my_hardware_interface -- -j12 -l12
+[1.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/my_hardware_interface
+[1.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_hardware_interface)
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface' for CMake module files
+[1.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/ros2_socketcan:/home/luis/workshop_ws/install/serial:/home/luis/workshop_ws/install/ros2_socketcan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/ros2_socketcan/lib:/home/luis/workshop_ws/install/serial/lib:/home/luis/workshop_ws/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/my_hardware_interface
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface' for CMake config files
+[1.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_hardware_interface', 'cmake_prefix_path')
+[1.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.ps1'
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.dsv'
+[1.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.sh'
+[1.396s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib'
+[1.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_hardware_interface', 'ld_library_path_lib')
+[1.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.ps1'
+[1.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.dsv'
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.sh'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/bin'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib/pkgconfig/my_hardware_interface.pc'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib/python3.10/site-packages'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/bin'
+[1.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.ps1'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.dsv'
+[1.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.sh'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.bash'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.zsh'
+[1.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/my_hardware_interface/share/colcon-core/packages/my_hardware_interface)
+[1.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_hardware_interface)
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface' for CMake module files
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface' for CMake config files
+[1.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_hardware_interface', 'cmake_prefix_path')
+[1.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.ps1'
+[1.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.dsv'
+[1.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/cmake_prefix_path.sh'
+[1.412s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib'
+[1.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_hardware_interface', 'ld_library_path_lib')
+[1.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.ps1'
+[1.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.dsv'
+[1.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/hook/ld_library_path_lib.sh'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/bin'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib/pkgconfig/my_hardware_interface.pc'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/lib/python3.10/site-packages'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/my_hardware_interface/bin'
+[1.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.ps1'
+[1.418s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.dsv'
+[1.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.sh'
+[1.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.bash'
+[1.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/my_hardware_interface/share/my_hardware_interface/package.zsh'
+[1.422s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/my_hardware_interface/share/colcon-core/packages/my_hardware_interface)
+[2.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/tide_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_msgs
+[2.847s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_msgs -- -j12 -l12
+[17.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_msgs -- -j12 -l12
+[17.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_msgs
+[24.572s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_msgs)
+[24.574s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs' for CMake module files
+[24.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_msgs
+[24.576s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs' for CMake config files
+[24.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_msgs', 'cmake_prefix_path')
+[24.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.ps1'
+[24.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.dsv'
+[24.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.sh'
+[24.580s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib'
+[24.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_msgs', 'ld_library_path_lib')
+[24.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.ps1'
+[24.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.dsv'
+[24.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.sh'
+[24.582s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/bin'
+[24.582s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib/pkgconfig/tide_msgs.pc'
+[24.583s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib/python3.10/site-packages'
+[24.583s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/bin'
+[24.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.ps1'
+[24.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.dsv'
+[24.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.sh'
+[24.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.bash'
+[24.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.zsh'
+[24.588s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_msgs/share/colcon-core/packages/tide_msgs)
+[24.589s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_msgs)
+[24.590s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs' for CMake module files
+[24.591s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs' for CMake config files
+[24.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_msgs', 'cmake_prefix_path')
+[24.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.ps1'
+[24.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.dsv'
+[24.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/cmake_prefix_path.sh'
+[24.596s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib'
+[24.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_msgs', 'ld_library_path_lib')
+[24.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.ps1'
+[24.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.dsv'
+[24.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/hook/ld_library_path_lib.sh'
+[24.598s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/bin'
+[24.599s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib/pkgconfig/tide_msgs.pc'
+[24.599s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/lib/python3.10/site-packages'
+[24.599s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_msgs/bin'
+[24.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.ps1'
+[24.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.dsv'
+[24.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.sh'
+[24.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.bash'
+[24.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_msgs/share/tide_msgs/package.zsh'
+[24.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_msgs/share/colcon-core/packages/tide_msgs)
+[24.605s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/tide_controllers/tide_gimbal_controller' with build type 'ament_cmake'
+[24.605s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/tide_controllers/tide_gimbal_controller'
+[24.606s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.606s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luis/workshop_ws/src/tide_controllers/tide_shooter_controller' with build type 'ament_cmake'
+[24.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luis/workshop_ws/src/tide_controllers/tide_shooter_controller'
+[24.616s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.616s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_gimbal_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/luis/workshop_ws/src/tide_controllers/tide_gimbal_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_gimbal_controller
+[24.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_shooter_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/luis/workshop_ws/src/tide_controllers/tide_shooter_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_shooter_controller
+[25.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_shooter_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/luis/workshop_ws/src/tide_controllers/tide_shooter_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_shooter_controller
+[25.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_shooter_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_shooter_controller -- -j12 -l12
+[25.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_gimbal_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/luis/workshop_ws/src/tide_controllers/tide_gimbal_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_gimbal_controller
+[25.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_gimbal_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_gimbal_controller -- -j12 -l12
+[37.995s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_shooter_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_shooter_controller -- -j12 -l12
+[37.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_shooter_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_shooter_controller
+[38.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_shooter_controller)
+[38.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_shooter_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_shooter_controller
+[38.309s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller' for CMake module files
+[38.310s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller' for CMake config files
+[38.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_shooter_controller', 'cmake_prefix_path')
+[38.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.ps1'
+[38.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.dsv'
+[38.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.sh'
+[38.313s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib'
+[38.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_shooter_controller', 'ld_library_path_lib')
+[38.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.ps1'
+[38.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.dsv'
+[38.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.sh'
+[38.315s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/bin'
+[38.315s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib/pkgconfig/tide_shooter_controller.pc'
+[38.316s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib/python3.10/site-packages'
+[38.316s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/bin'
+[38.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.ps1'
+[38.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.dsv'
+[38.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.sh'
+[38.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.bash'
+[38.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.zsh'
+[38.320s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_shooter_controller/share/colcon-core/packages/tide_shooter_controller)
+[38.321s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_shooter_controller)
+[38.322s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller' for CMake module files
+[38.322s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller' for CMake config files
+[38.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_shooter_controller', 'cmake_prefix_path')
+[38.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.ps1'
+[38.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.dsv'
+[38.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/cmake_prefix_path.sh'
+[38.326s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib'
+[38.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_shooter_controller', 'ld_library_path_lib')
+[38.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.ps1'
+[38.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.dsv'
+[38.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/hook/ld_library_path_lib.sh'
+[38.329s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/bin'
+[38.329s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib/pkgconfig/tide_shooter_controller.pc'
+[38.329s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/lib/python3.10/site-packages'
+[38.329s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_shooter_controller/bin'
+[38.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.ps1'
+[38.331s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.dsv'
+[38.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.sh'
+[38.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.bash'
+[38.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/package.zsh'
+[38.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_shooter_controller/share/colcon-core/packages/tide_shooter_controller)
+[42.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_gimbal_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_gimbal_controller -- -j12 -l12
+[42.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luis/workshop_ws/build/tide_gimbal_controller': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_gimbal_controller
+[42.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_gimbal_controller)
+[42.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luis/workshop_ws/build/tide_gimbal_controller' returned '0': AMENT_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/workshop_ws/install/tide_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/workshop_ws/install/tide_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/luis/workshop_ws/install/tide_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_gimbal_controller
+[42.547s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller' for CMake module files
+[42.548s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller' for CMake config files
+[42.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_gimbal_controller', 'cmake_prefix_path')
+[42.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.ps1'
+[42.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.dsv'
+[42.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.sh'
+[42.549s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib'
+[42.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_gimbal_controller', 'ld_library_path_lib')
+[42.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.ps1'
+[42.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.dsv'
+[42.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.sh'
+[42.550s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/bin'
+[42.550s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib/pkgconfig/tide_gimbal_controller.pc'
+[42.551s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib/python3.10/site-packages'
+[42.551s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/bin'
+[42.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.ps1'
+[42.551s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.dsv'
+[42.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.sh'
+[42.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.bash'
+[42.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.zsh'
+[42.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_gimbal_controller/share/colcon-core/packages/tide_gimbal_controller)
+[42.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tide_gimbal_controller)
+[42.553s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller' for CMake module files
+[42.553s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller' for CMake config files
+[42.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_gimbal_controller', 'cmake_prefix_path')
+[42.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.ps1'
+[42.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.dsv'
+[42.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/cmake_prefix_path.sh'
+[42.555s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib'
+[42.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('tide_gimbal_controller', 'ld_library_path_lib')
+[42.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.ps1'
+[42.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.dsv'
+[42.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/hook/ld_library_path_lib.sh'
+[42.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/bin'
+[42.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib/pkgconfig/tide_gimbal_controller.pc'
+[42.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/lib/python3.10/site-packages'
+[42.556s] Level 1:colcon.colcon_core.environment:checking '/home/luis/workshop_ws/install/tide_gimbal_controller/bin'
+[42.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.ps1'
+[42.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.dsv'
+[42.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.sh'
+[42.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.bash'
+[42.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.zsh'
+[42.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luis/workshop_ws/install/tide_gimbal_controller/share/colcon-core/packages/tide_gimbal_controller)
+[42.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.559s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[42.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[42.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[42.566s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[42.592s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[42.592s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luis/workshop_ws/install/local_setup.ps1'
+[42.594s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luis/workshop_ws/install/_local_setup_util_ps1.py'
+[42.598s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luis/workshop_ws/install/setup.ps1'
+[42.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luis/workshop_ws/install/local_setup.sh'
+[42.601s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luis/workshop_ws/install/_local_setup_util_sh.py'
+[42.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luis/workshop_ws/install/setup.sh'
+[42.605s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luis/workshop_ws/install/local_setup.bash'
+[42.606s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luis/workshop_ws/install/setup.bash'
+[42.608s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luis/workshop_ws/install/local_setup.zsh'
+[42.609s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luis/workshop_ws/install/setup.zsh'

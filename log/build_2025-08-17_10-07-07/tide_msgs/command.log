@@ -1,0 +1,6 @@
+Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/tide_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_msgs
+Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/tide_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/tide_msgs
+Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_msgs -- -j12 -l12
+Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/tide_msgs -- -j12 -l12
+Invoking command in '/home/luis/workshop_ws/build/tide_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_msgs
+Invoked command in '/home/luis/workshop_ws/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/tide_msgs

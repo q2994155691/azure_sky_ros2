@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/ros2_socketcan_msgs/rosidl_typesupport_fastrtps_cpp/ros2_socketcan_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

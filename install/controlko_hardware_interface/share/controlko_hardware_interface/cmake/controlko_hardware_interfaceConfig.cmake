@@ -1,0 +1,1 @@
+/home/luis/workshop_ws/build/controlko_hardware_interface/ament_cmake_core/controlko_hardware_interfaceConfig.cmake

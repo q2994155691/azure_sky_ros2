@@ -11,10 +11,15 @@ controller_manager:
     joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
+    tide_gimbal_controller:
+      type: tide_gimbal_controller/TideGimbalController
+
+    tide_shooter_controller:
+      type: tide_shooter_controller/TideShooterController
+
     displacement_controller:
       type: displacement_controller/DisplacementController
-
-# 你的簡化麥輪控制器配置
+    
 custom_mecanum_controller:
   ros__parameters:
     wheel_names:
@@ -23,6 +28,55 @@ custom_mecanum_controller:
       - "friction_wheel3_joint"
       - "friction_wheel4_joint"
     velocity_conversion_factor: 4.0
+
+tide_gimbal_controller:
+  ros__parameters:
+    # 必須指定的關節名稱（根據參數定義，這些不能為空）
+    pitch:
+      joint: "pitch_joint"    # 必須匹配你的 URDF 中的關節名稱
+      max: 0.5                       # 最大俯仰角度 (弧度)
+      min: -0.5                      # 最小俯仰角度 (弧度)
+      reverse: false                 # 是否反向
+      pid:
+        p: 30000.0
+        i: 10.0
+        d: 0.0
+        i_clamp_max: 50000.0
+        i_clamp_min: -50000.0
+        antiwindup: true
+      scan_add: 0.001
+      scan_range: [-0.2, 0.2]
+    
+    yaw:
+      joint: "yaw_joint" 
+      max: 3.14                      # 最大偏航角度 (弧度)
+      min: -3.14                     # 最小偏航角度 (弧度)
+      reverse: false                 # 是否反向
+      pid:
+        p: 30000.0
+        i: 10.0
+        d: 20.0
+        i_clamp_max: 75.0
+        i_clamp_min: -75.0
+        antiwindup: true
+      scan_add: 0.005
+      scan_range: [-1.0, 1.0]
+    
+    # 其他參數
+    open_loop: false
+    use_external_state_interface: false
+    
+    # 彈道解算器參數
+    bullet_solver:
+      g: 9.81
+      resistance_coff: 0.01
+      cam_offset: [0.0, 0.0, 0.1]
+      time_delay: 0.0
+    
+    # 話題配置
+    tracker_topic: ["/detector/armor"]
+    shooter_cmd_topic: "/commands/shooter"
+
 
 # 保留其他控制器的原有配置
 joint_trajectory_controller:

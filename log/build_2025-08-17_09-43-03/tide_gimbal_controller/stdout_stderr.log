@@ -1,0 +1,32 @@
+[ 40%] Built target gimbal_controller_parameters
+[35m[1mConsolidate compiler generated dependencies of target tide_gimbal_controller[0m
+[100%] Built target tide_gimbal_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/include/tide_gimbal_controller/gimbal_controller_parameters.hpp
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller//tide_gimbal_controller.xml
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/include//bullet_solver.hpp
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/include//tide_gimbal_controller.hpp
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/library_path.sh
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/library_path.dsv
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/ament_index/resource_index/package_run_dependencies/tide_gimbal_controller
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/ament_index/resource_index/parent_prefix_path/tide_gimbal_controller
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/path.sh
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/environment/path.dsv
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/local_setup.bash
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/local_setup.sh
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/local_setup.zsh
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/local_setup.dsv
+-- Symlinking: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.dsv
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/ament_index/resource_index/packages/tide_gimbal_controller
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/tide_gimbal_controller
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/tide_gimbal_controllerConfig.cmake
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/tide_gimbal_controllerConfig-version.cmake
+-- Up-to-date symlink: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/package.xml
+-- Up-to-date: /home/luis/workshop_ws/install/tide_gimbal_controller/lib/libtide_gimbal_controller.so
+-- Up-to-date: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/export_tide_gimbal_controllerExport.cmake
+-- Up-to-date: /home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/export_tide_gimbal_controllerExport-noconfig.cmake
