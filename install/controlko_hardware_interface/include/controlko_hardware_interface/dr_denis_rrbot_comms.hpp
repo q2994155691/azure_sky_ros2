@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_hardware_interface/include/controlko_hardware_interface/dr_denis_rrbot_comms.hpp

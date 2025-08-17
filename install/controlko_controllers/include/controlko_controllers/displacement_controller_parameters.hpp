@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/controlko_controllers/include/controlko_controllers/displacement_controller_parameters.hpp

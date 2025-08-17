@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_cpp/tide_msgs/msg/detail/game_robot_hp__traits.hpp

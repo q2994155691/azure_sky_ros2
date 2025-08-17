@@ -1,2 +1,0 @@
-uint32 sentry_info
-uint16 sentry_info_2

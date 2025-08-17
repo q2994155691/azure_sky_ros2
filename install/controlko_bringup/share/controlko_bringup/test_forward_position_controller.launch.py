@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_bringup/launch/test_forward_position_controller.launch.py

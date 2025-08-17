@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_hardware_interface/include/controlko_hardware_interface/rrbot_hardware_interface.hpp

@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_description/launch/view_rrbot.launch.py

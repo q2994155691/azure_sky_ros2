@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/ros2_socketcan_msgs/rosidl_generator_py/ros2_socketcan_msgs/msg/__init__.py

@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/tide_motor.hpp

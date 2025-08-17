@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/controlko_controllers/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

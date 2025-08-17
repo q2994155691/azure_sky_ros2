@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_bringup/launch/rrbot_real.launch.py

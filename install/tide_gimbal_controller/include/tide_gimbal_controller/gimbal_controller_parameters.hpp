@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_gimbal_controller/include/tide_gimbal_controller/gimbal_controller_parameters.hpp

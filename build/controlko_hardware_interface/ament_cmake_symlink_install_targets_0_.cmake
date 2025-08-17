@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/luis/workshop_ws/build/controlko_hardware_interface/libcontrolko_hardware_interface.so" "TARGETS" "controlko_hardware_interface" "RUNTIME_DESTINATION" "bin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib")

@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/controlko_bringup/ament_cmake_core/controlko_bringupConfig.cmake

@@ -1,3 +1,0 @@
-/home/luis/workshop_ws/install/serial/lib/libserial.a
-/home/luis/workshop_ws/install/serial/share/serial/cmake/export_serialExport.cmake
-/home/luis/workshop_ws/install/serial/share/serial/cmake/export_serialExport-noconfig.cmake

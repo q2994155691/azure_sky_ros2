@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_msgs/rosidl_typesupport_introspection_c/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_introspection_c.h

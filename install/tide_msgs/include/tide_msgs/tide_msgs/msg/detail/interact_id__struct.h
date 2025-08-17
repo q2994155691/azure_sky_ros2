@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_c/tide_msgs/msg/detail/interact_id__struct.h

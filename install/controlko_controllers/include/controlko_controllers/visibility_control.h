@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/controlko_controllers/include/controlko_controllers/visibility_control.h

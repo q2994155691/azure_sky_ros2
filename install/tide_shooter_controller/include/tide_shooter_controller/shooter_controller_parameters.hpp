@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_shooter_controller/include/tide_shooter_controller/shooter_controller_parameters.hpp

@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_msgs/rosidl_typesupport_fastrtps_c/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_fastrtps_c.h

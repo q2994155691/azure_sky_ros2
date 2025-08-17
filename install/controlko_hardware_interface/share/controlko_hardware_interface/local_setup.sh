@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/controlko_hardware_interface/ament_cmake_environment_hooks/local_setup.sh

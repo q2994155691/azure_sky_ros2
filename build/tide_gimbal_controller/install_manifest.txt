@@ -1,3 +1,0 @@
-/home/luis/workshop_ws/install/tide_gimbal_controller/lib/libtide_gimbal_controller.so
-/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/export_tide_gimbal_controllerExport.cmake
-/home/luis/workshop_ws/install/tide_gimbal_controller/share/tide_gimbal_controller/cmake/export_tide_gimbal_controllerExport-noconfig.cmake

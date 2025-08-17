@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp

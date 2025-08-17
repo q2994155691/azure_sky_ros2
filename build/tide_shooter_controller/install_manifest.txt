@@ -1,3 +1,0 @@
-/home/luis/workshop_ws/install/tide_shooter_controller/lib/libtide_shooter_controller.so
-/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/cmake/export_tide_shooter_controllerExport.cmake
-/home/luis/workshop_ws/install/tide_shooter_controller/share/tide_shooter_controller/cmake/export_tide_shooter_controllerExport-noconfig.cmake

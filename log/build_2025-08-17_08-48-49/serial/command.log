@@ -1,6 +1,0 @@
-Invoking command in '/home/luis/workshop_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/serial
-Invoked command in '/home/luis/workshop_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/luis/workshop_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luis/workshop_ws/install/serial
-Invoking command in '/home/luis/workshop_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/serial -- -j12 -l12
-Invoked command in '/home/luis/workshop_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/workshop_ws/build/serial -- -j12 -l12
-Invoking command in '/home/luis/workshop_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/serial
-Invoked command in '/home/luis/workshop_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/workshop_ws/build/serial

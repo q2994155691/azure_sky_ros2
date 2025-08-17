@@ -1,9 +1,0 @@
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/uninstall.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/roscon2022_control_workshop_uninstall.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/test.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/edit_cache.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/rebuild_cache.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/list_install_components.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/install.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/install/local.dir
-/home/luis/workshop_ws/build/roscon2022_control_workshop/CMakeFiles/install/strip.dir

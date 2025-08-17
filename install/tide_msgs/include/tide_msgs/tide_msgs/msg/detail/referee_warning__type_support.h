@@ -1,1 +1,0 @@
-/home/luis/workshop_ws/build/tide_msgs/rosidl_generator_c/tide_msgs/msg/detail/referee_warning__type_support.h
