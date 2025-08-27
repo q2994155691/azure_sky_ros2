@@ -26,7 +26,7 @@ controller_interface::CallbackReturn TideGimbalController::on_init()
     auto cmd = std::make_shared<CMD>();
     cmd->pitch_ref = 0.0;
     cmd->yaw_ref = 0.0;
-    cmd->mode = 0;
+    cmd->mode = 2;
 
     recv_cmd_ptr_.initRT(cmd);
 

@@ -3,7 +3,8 @@
 #include "geometry_msgs/msg/twist_stamped.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "pluginlib/class_list_macros.hpp"
-#include "my_hardware_interface/custom_mecanum_controller.hpp"
+#include "my_hardware_interface/remote_controller.hpp"
+#include "my_hardware_interface/rrbot_hardware_interface.hpp" 
 #include "pluginlib/class_list_macros.hpp"
 #include <cmath>
 
@@ -44,8 +45,6 @@ controller_interface::CallbackReturn CustomMecanumController::on_configure(
       received_velocity_msg_ptr_.writeFromNonRT(msg);
     });
 
-  RCLCPP_INFO(get_node()->get_logger(), "Simple mecanum controller configured with factor: %.2f", 
-              velocity_conversion_factor_);
   return controller_interface::CallbackReturn::SUCCESS;
 }
 
@@ -70,6 +69,15 @@ controller_interface::InterfaceConfiguration CustomMecanumController::state_inte
     state_interfaces_config.names.push_back(wheel_name + "/position");
     state_interfaces_config.names.push_back(wheel_name + "/velocity");
   }
+  // 遙控器狀態接口
+  state_interfaces_config.names.push_back("rc/ch1");
+  state_interfaces_config.names.push_back("rc/ch2");
+  state_interfaces_config.names.push_back("rc/ch3");
+  state_interfaces_config.names.push_back("rc/ch4");
+  state_interfaces_config.names.push_back("rc/sw1");
+  state_interfaces_config.names.push_back("rc/sw2");
+  state_interfaces_config.names.push_back("rc/wheel");
+  state_interfaces_config.names.push_back("rc/connected");
 
   return state_interfaces_config;
 }
@@ -77,6 +85,34 @@ controller_interface::InterfaceConfiguration CustomMecanumController::state_inte
 controller_interface::return_type CustomMecanumController::update(
   const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
+   std::map<std::string, double> rc_states = {
+  {"ch1", 0.0}, {"ch2", 0.0}, {"ch3", 0.0}, {"ch4", 0.0},
+  {"sw1", 0.0}, {"sw2", 0.0}, {"wheel", 0.0}, {"connected", 0.0}
+};
+
+for (const auto & state_interface : state_interfaces_) {
+  const std::string& full_name = state_interface.get_name();
+  
+  // 檢查是否以 "rc/" 開頭
+  if (full_name.find("rc/") == 0) {
+    // 提取接口名稱 (去掉 "rc/" 前綴)
+    std::string interface_name = full_name.substr(3);  // 跳過 "rc/"
+    
+    if (rc_states.count(interface_name)) 
+    {
+      rc_states[interface_name] = state_interface.get_value();
+    }
+  }
+}
+
+  
+
+  // 處理遙控器控制
+  if (handleRemoteControl(rc_states)) {
+    return controller_interface::return_type::OK;  // 遙控器控制已處理，直接返回
+  }
+
+
   auto current_cmd = received_velocity_msg_ptr_.readFromRT();
   if (!current_cmd || !(*current_cmd)) {
     // 沒有命令時停輪
@@ -87,7 +123,6 @@ controller_interface::return_type CustomMecanumController::update(
   }
 
   const auto & twist_msg = (*current_cmd)->twist;
-  
   std::vector<double> wheel_commands(4);
   computeWheelCommands(twist_msg, wheel_commands);
 
@@ -98,6 +133,38 @@ controller_interface::return_type CustomMecanumController::update(
 
   return controller_interface::return_type::OK;
 }
+
+bool CustomMecanumController::handleRemoteControl(const std::map<std::string, double>& rc_states)
+{
+  if (rc_states.at("connected") != 0.0) {
+    std::vector<double> wheel_commands(4);
+    //把660到-660的值映射到-1.0到1.0
+    double scaled_speed_x = rc_states.at("ch3")/660;   
+    double scaled_speed_y = rc_states.at("ch4")/660;   
+    double scaled_speed_turn = rc_states.at("ch1")/660; 
+
+    //把映射後的值乘上理論的最大轉速和齒輪比
+    double speed_x=scaled_speed_x*482*(3591/187);
+    double speed_y=scaled_speed_y*482*(3591/187);
+    double speed_turn=scaled_speed_turn*482*(3591/187);
+    // 正確：分別給每個輪子賦值
+    wheel_commands[0] = -speed_x + speed_y + speed_turn;  // 輪子1
+    wheel_commands[1] =  speed_x + speed_y + speed_turn;  // 輪子2
+    wheel_commands[2] =  speed_x - speed_y + speed_turn;  // 輪子3
+    wheel_commands[3] = -speed_x - speed_y + speed_turn;  // 輪子4
+
+    // 發送到硬件
+    for (size_t i = 0; i < wheel_commands.size() && i < command_interfaces_.size(); ++i) {
+      command_interfaces_[i].set_value(wheel_commands[i]);
+    }
+    
+    return true;
+  }
+  
+  return false;
+}
+
+
 
 void CustomMecanumController::computeWheelCommands(
   const geometry_msgs::msg::Twist & twist_msg,
@@ -118,14 +185,12 @@ void CustomMecanumController::computeWheelCommands(
 controller_interface::CallbackReturn CustomMecanumController::on_activate(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  RCLCPP_INFO(get_node()->get_logger(), "Simple mecanum controller activated");
   return controller_interface::CallbackReturn::SUCCESS;
 }
 
 controller_interface::CallbackReturn CustomMecanumController::on_deactivate(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  RCLCPP_INFO(get_node()->get_logger(), "Simple mecanum controller deactivated");
   return controller_interface::CallbackReturn::SUCCESS;
 }
 

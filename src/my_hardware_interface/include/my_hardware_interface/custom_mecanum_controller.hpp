@@ -5,6 +5,8 @@
 #include "geometry_msgs/msg/twist_stamped.hpp"
 #include "realtime_tools/realtime_buffer.h"
 #include "rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp"
+#include "my_hardware_interface/remote_controller.hpp"
+
 #include <vector>
 #include <string>
 
@@ -23,16 +25,25 @@ public:
   controller_interface::CallbackReturn on_activate(const rclcpp_lifecycle::State & previous_state) override;
   controller_interface::CallbackReturn on_deactivate(const rclcpp_lifecycle::State & previous_state) override;
 
+  void set_measure_ptr(const RemoteController::Measure* measure_ptr) {
+    measure_ptr_ = measure_ptr;
+  }
+
 private:
   // 簡化參數：只保留必要的
   double velocity_conversion_factor_ = 4.0;  // 類似你代碼中的*4係數
   
   // 關節名稱
   std::vector<std::string> wheel_names_;
+  //遙控器的運動學計算
+  bool handleRemoteControl(const std::map<std::string, double>& rc_states);
+  
   
   // ROS訂閱者
   rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr velocity_subscriber_;
   realtime_tools::RealtimeBuffer<std::shared_ptr<geometry_msgs::msg::TwistStamped>> received_velocity_msg_ptr_;
+
+  const RemoteController::Measure* measure_ptr_ = nullptr;
   
   // 簡化的運動學計算
   void computeWheelCommands(

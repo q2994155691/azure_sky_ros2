@@ -23,6 +23,7 @@ add_library(
   src/custom_mecanum_controller.cpp
   src/rrbot_hardware_interface.cpp
   src/tide_motor.cpp
+  src/remote_controller.cpp
 )
 target_include_directories(
   my_hardware_interface
@@ -68,6 +69,22 @@ install(FILES
   my_hardware_interface.xml
   DESTINATION share/${PROJECT_NAME}
 )
+
+install(
+  DIRECTORY urdf/
+  DESTINATION share/${PROJECT_NAME}/urdf
+)
+
+install(
+  DIRECTORY meshes/
+  DESTINATION share/${PROJECT_NAME}/meshes
+)
+
+install(
+  DIRECTORY rviz/
+  DESTINATION share/${PROJECT_NAME}/rviz
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

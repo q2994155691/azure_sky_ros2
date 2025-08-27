@@ -35,7 +35,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_package",
-            default_value="controlko_description",
+            default_value="my_hardware_interface",
             description="Description package with robot URDF/xacro files. Usually the argument \
         is not set, it enables use of a custom description.",
         )
@@ -79,9 +79,6 @@ def generate_launch_description():
     robot_controllers = PathJoinSubstitution(
         [FindPackageShare(runtime_config_package), "config", controllers_file]
     )
-    rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare(description_package), "rviz", "rrbot.rviz"]
-    )
 
     # Get URDF via xacro
     robot_description_content = Command(
@@ -123,15 +120,6 @@ def generate_launch_description():
         output="both",
         parameters=[robot_description],
     )
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        name="rviz2",
-        output="log",
-        arguments=["-d", rviz_config_file],
-    )
-
-
 
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
@@ -151,16 +139,6 @@ def generate_launch_description():
                 arguments=[controller, "-c", "/controller_manager"],
             )
     ]
-
-    # Delay loading and activation of `joint_state_broadcaster` after start of ros2_control_node
-
-    # Delay rviz start after Joint State Broadcaster to avoid unnecessary warning output.
-    delay_rviz_after_joint_state_broadcaster_spawner = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=joint_state_broadcaster_spawner,
-            on_exit=[rviz_node],
-        )
-    )
 
     # Delay loading and activation of robot_controller after `joint_state_broadcaster`
     delay_robot_controller_spawners_after_joint_state_broadcaster_spawner = []
@@ -185,7 +163,6 @@ def generate_launch_description():
             control_node,
             robot_state_pub_node,
             joint_state_broadcaster_spawner,
-            delay_rviz_after_joint_state_broadcaster_spawner,
         ]
         + delay_robot_controller_spawners_after_joint_state_broadcaster_spawner
     )

@@ -27,7 +27,7 @@ custom_mecanum_controller:
       - "friction_wheel2_joint" 
       - "friction_wheel3_joint"
       - "friction_wheel4_joint"
-    velocity_conversion_factor: 4.0
+    velocity_conversion_factor: 1.0
 
 tide_gimbal_controller:
   ros__parameters:
@@ -73,10 +73,9 @@ tide_gimbal_controller:
       cam_offset: [0.0, 0.0, 0.1]
       time_delay: 0.0
     
-    # 話題配置
-    tracker_topic: ["/detector/armor"]
+    # 話題配置 - 重要修改！
+    tracker_topic: ["/gimbal/tracker_target"]      # 改为桥接节点发布的话题
     shooter_cmd_topic: "/commands/shooter"
-
 
 # 保留其他控制器的原有配置
 joint_trajectory_controller:
