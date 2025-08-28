@@ -9,4 +9,8 @@ colcon build --packages-select auto_aim auto_aim_debug
 # 第三階段：建構其餘套件
 colcon build
 
+
+
+依賴關係如下
+
 <img width="1580" height="251" alt="dependencies" src="https://github.com/user-attachments/assets/e5b09f1e-0484-4851-a0f0-a28c029509ee" />
