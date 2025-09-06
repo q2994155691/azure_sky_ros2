@@ -50,7 +50,7 @@ tide_gimbal_controller:
     yaw:
       joint: "yaw_joint" 
       max: 3.14                      # 最大偏航角度 (弧度)
-      min: -3.14                     # 最小偏航角度 (弧度)
+      min: -3.14                    # 最小偏航角度 (弧度)
       reverse: false                 # 是否反向
       pid:
         p: 30000.0

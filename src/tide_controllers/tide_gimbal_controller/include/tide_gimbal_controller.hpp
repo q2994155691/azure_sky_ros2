@@ -85,6 +85,13 @@ private:
 
   std::unique_ptr<const hardware_interface::LoanedStateInterface> pitch_state_interface_{ nullptr };
   std::unique_ptr<const hardware_interface::LoanedStateInterface> yaw_state_interface_{ nullptr };
+
+  std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_ch2_state_interface_{ nullptr };
+  std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_wheel_state_interface_{ nullptr };
+  std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_sw1_state_interface_{ nullptr };
+  std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_sw2_state_interface_{ nullptr };
+  std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_connect_state_interface_{ nullptr };
+  
   std::unique_ptr<hardware_interface::LoanedCommandInterface> pitch_command_interface_{ nullptr };
   std::unique_ptr<hardware_interface::LoanedCommandInterface> yaw_command_interface_{ nullptr };
 

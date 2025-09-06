@@ -419,6 +419,9 @@ void RRBotHardwareInterface::stopAllMotors()
 hardware_interface::return_type RRBotHardwareInterface::read(
   const rclcpp::Time & time, const rclcpp::Duration & period)
 {
+
+  static rclcpp::Clock steady_clock(RCL_STEADY_TIME);
+  
   hw_states_ = joint_states_;
   auto current_time = time;
 
@@ -449,6 +452,16 @@ hardware_interface::return_type RRBotHardwareInterface::read(
       state_velocities_[i] = motor->measure.speed_aps;
       state_currents_[i] = motor->measure.real_current;
       state_temperatures_[i] = motor->measure.temperature; 
+      if (motor->config_.motor_type == GM6020) {
+        RCLCPP_INFO_THROTTLE(rclcpp::get_logger("RRBotHardwareInterface"), 
+                            steady_clock, 1000,
+                            "GM6020 Debug - Joint: %s, Raw Encoder: %d, Angle: %.3f, Speed: %.3f", 
+                            info_.joints[i].name.c_str(),
+                            motor->measure.ecd, 
+                            motor->angle_current, 
+                            motor->measure.speed_aps);
+      }
+
     }
   }
 

@@ -98,7 +98,7 @@
       </joint>
        <joint name="pitch_joint">
             <param name="can_bus">can0</param>
-            <param name="tx_id">1</param>
+            <param name="tx_id">2</param>
             <param name="offset">4649</param>
             <param name="motor_type">GM6020</param>
 
@@ -111,7 +111,7 @@
 
         <joint name="yaw_joint">
             <param name="can_bus">can0</param>
-            <param name="tx_id">2</param>
+            <param name="tx_id">1</param>
             <param name="offset">6668</param>
             <param name="motor_type">GM6020</param>
 

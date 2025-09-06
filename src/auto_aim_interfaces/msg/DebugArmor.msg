@@ -1,1 +1,0 @@
-Point2f[4] middle_four_points

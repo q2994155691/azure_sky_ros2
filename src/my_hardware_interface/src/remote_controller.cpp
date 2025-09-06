@@ -32,7 +32,7 @@ void RemoteController::decode_switches_feedback()
 
 void RemoteController::decode_wheel_feedback()
 {
-  measure.wheel = static_cast<int16_t>((wheel_rx_buff[1] << 8) | wheel_rx_buff[0]);
+  measure.wheel = static_cast<int16_t>( wheel_rx_buff[1]| (wheel_rx_buff[0] << 8) );
 }
 
 
