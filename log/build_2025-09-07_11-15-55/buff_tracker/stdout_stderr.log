@@ -1,0 +1,9 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/buff_tracker_node.dir/rclcpp_components/node_main_buff_tracker_node.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/gauss_newton_solver.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/extended_kalman_filter.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/tracker_node.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/tracker.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable buff_tracker_node[0m
+[ 85%] Built target buff_tracker_node
+[100%] [32m[1mLinking CXX shared library libbuff_tracker.so[0m
+[100%] Built target buff_tracker

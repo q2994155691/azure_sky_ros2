@@ -1,0 +1,10 @@
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armor.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Armors.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/Target.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLight.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugLights.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmor.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/DebugArmors.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/TrackerInfo.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/RobotStatus.idl
+/home/luis/azure_sky_ros2/build/auto_aim_interfaces/rosidl_adapter/auto_aim_interfaces:msg/TimeInfo.idl

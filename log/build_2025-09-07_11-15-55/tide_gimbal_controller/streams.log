@@ -1,0 +1,131 @@
+[0.066s] Invoking command in '/home/luis/azure_sky_ros2/build/tide_gimbal_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/tide_gimbal_controller
+[0.336s] -- The CXX compiler identification is GNU 11.4.0
+[0.373s] -- Detecting CXX compiler ABI info
+[0.870s] -- Detecting CXX compiler ABI info - done
+[0.916s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.917s] -- Detecting CXX compile features
+[0.918s] -- Detecting CXX compile features - done
+[0.949s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.738s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.168s] -- Found controller_interface: 2.51.0 (/opt/ros/humble/share/controller_interface/cmake)
+[2.441s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.485s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.531s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.618s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.741s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.135s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.157s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.358s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.719s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.738s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.827s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.852s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.889s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[4.949s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.017s] -- Looking for C++ include pthread.h
+[5.925s] -- Looking for C++ include pthread.h - found
+[5.928s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.672s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.681s] -- Found Threads: TRUE  
+[7.002s] -- Found generate_parameter_library: 0.5.0 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[7.020s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[7.203s] -- Found realtime_tools: 2.14.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[7.343s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[7.390s] -- Found tf2_msgs: 0.25.13 (/opt/ros/humble/share/tf2_msgs/cmake)
+[7.510s] -- Found tide_msgs: 0.0.0 (/home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake)
+[7.618s] -- Found control_toolbox: 3.6.1 (/opt/ros/humble/share/control_toolbox/cmake)
+[7.742s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[7.759s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[7.816s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[7.821s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.821s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.001s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[8.729s] -- Configuring done
+[8.897s] -- Generating done
+[8.918s] -- Build files have been written to: /home/luis/azure_sky_ros2/build/tide_gimbal_controller
+[9.010s] Invoked command in '/home/luis/azure_sky_ros2/build/tide_gimbal_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/tide_gimbal_controller
+[9.011s] Invoking command in '/home/luis/azure_sky_ros2/build/tide_gimbal_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/tide_gimbal_controller -- -j12 -l12
+[9.277s] [ 20%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/luis/azure_sky_ros2/build/tide_gimbal_controller/include/tide_gimbal_controller/gimbal_controller_parameters.hpp /home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller_parameter.yaml `[0m
+[11.861s] [ 40%] [34m[1mCreating deprecated header file /home/luis/azure_sky_ros2/build/tide_gimbal_controller/include/gimbal_controller_parameters.hpp[0m
+[11.933s] [ 40%] Built target gimbal_controller_parameters
+[12.029s] [ 60%] [32mBuilding CXX object CMakeFiles/tide_gimbal_controller.dir/src/tide_gimbal_controller.cpp.o[0m
+[12.029s] [ 80%] [32mBuilding CXX object CMakeFiles/tide_gimbal_controller.dir/src/bullet_solver.cpp.o[0m
+[17.869s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/bullet_solver.cpp:[m[K In member function ‘[01m[Kvoid tide_gimbal_controller::BulletSolver::selectMinYawArmor(geometry_msgs::msg::Point&)[m[K’:
+[17.869s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/bullet_solver.cpp:92:31:[m[K [01;35m[Kwarning: [m[Kconversion from ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kdouble[m[K’ may change value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-Wconversion]8;;[m[K]
+[17.869s]    92 |       double tmp_yaw = yaw_ + [01;35m[Ki[m[K * M_PI / 2.0;
+[17.869s]       |                               [01;35m[K^[m[K
+[17.869s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/bullet_solver.cpp:[m[K In member function ‘[01m[Kvoid tide_gimbal_controller::BulletSolver::selectMinDisArmor(geometry_msgs::msg::Point&)[m[K’:
+[17.869s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/bullet_solver.cpp:118:29:[m[K [01;35m[Kwarning: [m[Kconversion from ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kdouble[m[K’ may change value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-Wconversion]8;;[m[K]
+[17.870s]   118 |     double tmp_yaw = yaw_ + [01;35m[Ki[m[K * M_PI / 2.0;
+[17.870s]       |                             [01;35m[K^[m[K
+[17.975s] In file included from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/include/tide_gimbal_controller.hpp:44[m[K,
+[17.975s]                  from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:9[m[K:
+[17.975s] [01m[K/home/luis/azure_sky_ros2/build/tide_gimbal_controller/include/gimbal_controller_parameters.hpp:1:159:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "gimbal_controller_parameters.hpp" is deprecated. Use #include <tide_gimbal_controller/gimbal_controller_parameters.hpp> instead.[m[K’
+[17.975s]     1 | rameters.hpp\" is deprecated. Use #include <tide_gimbal_controller/gimbal_controller_parameters.hpp> instead."[01;36m[K)[m[K
+[17.975s]       |                                                                                                               [01;36m[K^[m[K
+[17.975s] 
+[18.686s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn tide_gimbal_controller::TideGimbalController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[18.687s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:122:41:[m[K [01;35m[Kwarning: [m[Kconversion from ‘[01m[Kstd::vector<std::shared_ptr<realtime_tools::RealtimeBuffer<std::shared_ptr<tide_msgs::msg::Target_<std::allocator<void> > > > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kint[m[K’ may change value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-Wconversion]8;;[m[K]
+[18.687s]   122 |       int idx = [01;35m[Ktracker_targets_.size() - 1[m[K;
+[18.687s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[18.724s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type tide_gimbal_controller::TideGimbalController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[18.724s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:232:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krc_sw1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.724s]   232 |       double [01;35m[Krc_sw1[m[K = rc_sw1_state_interface_->get_value();
+[18.724s]       |              [01;35m[K^~~~~~[m[K
+[18.724s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:233:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krc_sw2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.724s]   233 |       double [01;35m[Krc_sw2[m[K = rc_sw2_state_interface_->get_value();
+[18.724s]       |              [01;35m[K^~~~~~[m[K
+[18.724s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:235:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krc_connected[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.724s]   235 |       double [01;35m[Krc_connected[m[K = rc_connect_state_interface_->get_value();
+[18.724s]       |              [01;35m[K^~~~~~~~~~~~[m[K
+[18.729s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:314:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kactual_pitch[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.729s]   314 |     double [01;35m[Kactual_pitch[m[K = pitch_command_interface_->get_value();
+[18.729s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[18.729s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:315:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kactual_yaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.729s]   315 |     double [01;35m[Kactual_yaw[m[K = yaw_command_interface_->get_value();
+[18.729s]       |            [01;35m[K^~~~~~~~~~[m[K
+[18.730s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:334:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kactual_pitch[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.730s]   334 |   double [01;35m[Kactual_pitch[m[K = pitch_command_interface_->get_value();
+[18.730s]       |          [01;35m[K^~~~~~~~~~~~[m[K
+[18.730s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:335:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kactual_yaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[18.730s]   335 |   double [01;35m[Kactual_yaw[m[K = yaw_command_interface_->get_value();
+[18.730s]       |          [01;35m[K^~~~~~~~~~[m[K
+[18.743s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn tide_gimbal_controller::TideGimbalController::on_cleanup(const rclcpp_lifecycle::State&)[m[K’:
+[18.744s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:400:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.744s]   400 | TideGimbalController::on_cleanup([01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[18.744s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[18.744s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn tide_gimbal_controller::TideGimbalController::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[18.744s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:406:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.744s]   406 | TideGimbalController::on_error([01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[18.744s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[18.774s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[18.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[18.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[18.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[18.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[18.775s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[18.776s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[18.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[18.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[18.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[18.780s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[18.780s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[18.780s]                  from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/include/tide_gimbal_controller.hpp:21[m[K,
+[18.780s]                  from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:9[m[K:
+[18.782s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:[m[K In member function ‘[01m[Kstd::pair<double, double> tide_gimbal_controller::TideGimbalController::auto_aim_mode()[m[K’:
+[18.783s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:454:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger[m[K’ was not declared in this scope
+[18.783s]   454 |   RCLCPP_INFO_THROTTLE([01;31m[Klogger[m[K, rc_debug_clock, 10,
+[18.783s]       |                        [01;31m[K^~~~~~[m[K
+[18.783s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:454:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[18.783s]   454 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(logger, rc_debug_clock, 10,
+[18.783s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[18.783s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:454:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[18.783s]   454 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(logger, rc_debug_clock, 10,
+[18.783s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[18.783s] [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_gimbal_controller/src/tide_gimbal_controller.cpp:454:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[18.785s]   454 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(logger, rc_debug_clock, 10,
+[18.785s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[25.755s] gmake[2]: *** [CMakeFiles/tide_gimbal_controller.dir/build.make:76: CMakeFiles/tide_gimbal_controller.dir/src/tide_gimbal_controller.cpp.o] Error 1
+[25.764s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tide_gimbal_controller.dir/all] Error 2
+[25.773s] gmake: *** [Makefile:146: all] Error 2
+[25.917s] Invoked command in '/home/luis/azure_sky_ros2/build/tide_gimbal_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/tide_gimbal_controller -- -j12 -l12

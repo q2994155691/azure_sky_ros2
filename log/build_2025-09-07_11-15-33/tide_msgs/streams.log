@@ -1,0 +1,878 @@
+[0.073s] Invoking command in '/home/luis/azure_sky_ros2/build/tide_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/tide_msgs -- -j12 -l12
+[0.303s] [  0%] Built target tide_msgs__cpp
+[0.308s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_generator_c[0m
+[0.380s] [  0%] Built target ament_cmake_python_copy_tide_msgs
+[0.448s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.461s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.461s] [ 12%] Built target tide_msgs__rosidl_generator_c
+[0.480s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_cpp[0m
+[0.540s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_c[0m
+[0.544s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_introspection_c[0m
+[0.557s] [ 24%] Built target tide_msgs__rosidl_typesupport_cpp
+[0.564s] [35m[1mConsolidate compiler generated dependencies of target tide_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.574s] [ 41%] Built target tide_msgs__rosidl_typesupport_introspection_cpp
+[0.575s] [ 49%] Built target tide_msgs__rosidl_typesupport_fastrtps_cpp
+[0.596s] [ 61%] Built target tide_msgs__rosidl_typesupport_c
+[0.607s] [ 74%] Built target tide_msgs__rosidl_typesupport_introspection_c
+[0.649s] [ 87%] Built target tide_msgs__rosidl_typesupport_fastrtps_c
+[0.709s] [ 87%] Built target tide_msgs
+[0.791s] [ 87%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.904s] running egg_info
+[0.905s] writing tide_msgs.egg-info/PKG-INFO
+[0.905s] writing dependency_links to tide_msgs.egg-info/dependency_links.txt
+[0.905s] writing top-level names to tide_msgs.egg-info/top_level.txt
+[0.909s] reading manifest file 'tide_msgs.egg-info/SOURCES.txt'
+[0.910s] writing manifest file 'tide_msgs.egg-info/SOURCES.txt'
+[0.968s] [ 87%] Built target ament_cmake_python_build_tide_msgs_egg
+[5.688s] [ 87%] Built target tide_msgs__py
+[5.750s] [ 89%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_shooter_state_s.c.o[0m
+[5.751s] [ 89%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_shooter_cmd_s.c.o[0m
+[5.751s] [ 89%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_gimbal_state_s.c.o[0m
+[5.751s] [ 89%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_gimbal_cmd_s.c.o[0m
+[5.751s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_armors_s.c.o[0m
+[5.752s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_bigyaw_cmd_s.c.o[0m
+[5.752s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_armor_s.c.o[0m
+[5.752s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_debug_armor_s.c.o[0m
+[5.752s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_debug_armors_s.c.o[0m
+[5.752s] [ 90%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_bigyaw_state_s.c.o[0m
+[5.755s] [ 91%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_fd_frame_s.c.o[0m
+[5.755s] [ 92%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_debug_light_s.c.o[0m
+[6.158s] [ 92%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_target_s.c.o[0m
+[6.158s] [ 92%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_tracker_info_s.c.o[0m
+[6.158s] [ 93%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_time_info_s.c.o[0m
+[6.158s] [ 93%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_buff_s.c.o[0m
+[6.159s] [ 94%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_bullet_remaining_s.c.o[0m
+[6.160s] [ 94%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_event_data_s.c.o[0m
+[6.160s] [ 94%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_game_result_s.c.o[0m
+[6.160s] [ 95%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_game_robot_hp_s.c.o[0m
+[6.161s] [ 95%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_debug_lights_s.c.o[0m
+[6.162s] [ 95%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_game_robot_pos_s.c.o[0m
+[6.162s] [ 95%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_game_robot_status_s.c.o[0m
+[6.173s] [ 96%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_game_status_s.c.o[0m
+[6.397s] [ 96%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_ground_robot_s.c.o[0m
+[6.423s] [ 96%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_interact_id_s.c.o[0m
+[6.424s] [ 97%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_power_heat_data_s.c.o[0m
+[6.431s] [ 97%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_referee_data_s.c.o[0m
+[6.431s] [ 97%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_referee_warning_s.c.o[0m
+[6.437s] [ 98%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_rfid_status_s.c.o[0m
+[6.447s] [ 98%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_robot_hurt_s.c.o[0m
+[6.453s] [ 99%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_sentry_info_s.c.o[0m
+[6.456s] [ 99%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_generator_py.dir/rosidl_generator_py/tide_msgs/msg/_shoot_data_s.c.o[0m
+[6.714s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/tide_msgs/libtide_msgs__rosidl_generator_py.so[0m
+[6.844s] [ 99%] Built target tide_msgs__rosidl_generator_py
+[6.885s] [ 99%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.890s] [100%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[6.900s] [100%] [32mBuilding C object CMakeFiles/tide_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.224s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.224s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.265s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.318s] [100%] Built target tide_msgs__rosidl_typesupport_c__pyext
+[7.324s] [100%] Built target tide_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.344s] [100%] Built target tide_msgs__rosidl_typesupport_introspection_c__pyext
+[7.368s] Invoked command in '/home/luis/azure_sky_ros2/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/tide_msgs -- -j12 -l12
+[7.372s] Invoking command in '/home/luis/azure_sky_ros2/build/tide_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/tide_msgs
+[7.386s] -- Install configuration: ""
+[7.386s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/ament_index/resource_index/rosidl_interfaces/tide_msgs
+[7.386s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.387s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.387s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/ground_robot.h
+[7.387s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_cmd.h
+[7.388s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armors.h
+[7.389s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/robot_hurt.h
+[7.389s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_status.h
+[7.389s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.390s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.h
+[7.390s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__functions.c
+[7.390s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__functions.c
+[7.390s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.h
+[7.391s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__functions.h
+[7.391s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__functions.c
+[7.391s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__struct.h
+[7.391s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__functions.h
+[7.392s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.h
+[7.392s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__struct.h
+[7.392s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__functions.c
+[7.392s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__struct.h
+[7.393s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.h
+[7.393s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.h
+[7.393s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.h
+[7.393s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__functions.c
+[7.394s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__functions.h
+[7.394s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__functions.h
+[7.394s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__functions.c
+[7.394s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.h
+[7.395s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__struct.h
+[7.395s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__functions.h
+[7.395s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__functions.c
+[7.395s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.h
+[7.396s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__functions.h
+[7.396s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.h
+[7.396s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__struct.h
+[7.396s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__functions.h
+[7.397s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__functions.h
+[7.397s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__functions.c
+[7.397s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.h
+[7.397s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__functions.c
+[7.398s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__functions.h
+[7.398s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__struct.h
+[7.398s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__functions.c
+[7.398s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__struct.h
+[7.399s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__struct.h
+[7.399s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__functions.h
+[7.399s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__struct.h
+[7.399s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.h
+[7.400s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.h
+[7.400s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__functions.c
+[7.400s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__functions.c
+[7.400s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__struct.h
+[7.401s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__functions.c
+[7.401s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__functions.h
+[7.401s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__functions.c
+[7.402s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__functions.h
+[7.402s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.h
+[7.402s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__functions.c
+[7.403s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__functions.h
+[7.403s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__struct.h
+[7.403s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__functions.h
+[7.403s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.h
+[7.403s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__functions.c
+[7.404s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.h
+[7.404s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.h
+[7.404s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__functions.h
+[7.405s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__functions.h
+[7.405s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__functions.c
+[7.405s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.h
+[7.405s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.h
+[7.406s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__struct.h
+[7.406s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__functions.c
+[7.406s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.h
+[7.406s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__functions.h
+[7.407s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.h
+[7.407s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__functions.h
+[7.407s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.h
+[7.407s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.h
+[7.408s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__struct.h
+[7.408s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__functions.h
+[7.408s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__functions.h
+[7.408s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__struct.h
+[7.409s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__functions.c
+[7.409s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__functions.c
+[7.409s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__functions.h
+[7.410s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.h
+[7.410s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__struct.h
+[7.410s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.h
+[7.410s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__functions.c
+[7.411s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__struct.h
+[7.411s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.h
+[7.411s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.h
+[7.411s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__struct.h
+[7.412s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__functions.c
+[7.412s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__struct.h
+[7.412s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__struct.h
+[7.412s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__functions.c
+[7.413s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__functions.c
+[7.413s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__functions.c
+[7.414s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.h
+[7.414s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__functions.h
+[7.414s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__struct.h
+[7.414s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__functions.h
+[7.415s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__functions.h
+[7.415s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__functions.h
+[7.415s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.h
+[7.415s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__struct.h
+[7.416s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__functions.c
+[7.416s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__functions.h
+[7.416s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__functions.c
+[7.416s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.h
+[7.417s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.h
+[7.417s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__functions.c
+[7.417s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.h
+[7.418s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__struct.h
+[7.418s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__struct.h
+[7.418s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__struct.h
+[7.418s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__functions.c
+[7.419s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__functions.c
+[7.419s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__struct.h
+[7.419s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__struct.h
+[7.420s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__functions.c
+[7.420s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__functions.h
+[7.420s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__functions.c
+[7.421s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__functions.c
+[7.421s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__struct.h
+[7.421s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__functions.h
+[7.421s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__struct.h
+[7.422s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__struct.h
+[7.422s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__struct.h
+[7.422s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__functions.h
+[7.422s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__functions.h
+[7.423s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__functions.h
+[7.423s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__functions.h
+[7.423s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.h
+[7.423s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__struct.h
+[7.424s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__struct.h
+[7.424s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__functions.h
+[7.424s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__struct.h
+[7.424s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.h
+[7.425s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_state.h
+[7.425s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rfid_status.h
+[7.425s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bullet_remaining.h
+[7.426s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_pos.h
+[7.426s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.426s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/sentry_info.h
+[7.426s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_lights.h
+[7.427s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armor.h
+[7.427s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/target.h
+[7.427s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_state.h
+[7.428s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/time_info.h
+[7.428s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/tracker_info.h
+[7.428s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_result.h
+[7.429s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shoot_data.h
+[7.429s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_state.h
+[7.429s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/interact_id.h
+[7.429s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_warning.h
+[7.430s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_hp.h
+[7.430s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_data.h
+[7.430s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armor.h
+[7.431s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armors.h
+[7.431s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/buff.h
+[7.431s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_cmd.h
+[7.432s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_cmd.h
+[7.432s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/fd_frame.h
+[7.432s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/power_heat_data.h
+[7.433s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_light.h
+[7.433s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/event_data.h
+[7.433s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_status.h
+[7.434s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/library_path.sh
+[7.434s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/library_path.dsv
+[7.435s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_generator_c.so
+[7.436s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_generator_c.so" to ""
+[7.436s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.436s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.436s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.437s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.437s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_fastrtps_c.h
+[7.437s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_fastrtps_c.h
+[7.437s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_fastrtps_c.h
+[7.438s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_fastrtps_c.h
+[7.438s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_fastrtps_c.h
+[7.438s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_fastrtps_c.h
+[7.439s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_fastrtps_c.h
+[7.439s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_fastrtps_c.h
+[7.440s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_fastrtps_c.h
+[7.440s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_c.h
+[7.440s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_fastrtps_c.h
+[7.441s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_fastrtps_c.h
+[7.441s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_c.h
+[7.441s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_fastrtps_c.h
+[7.442s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_fastrtps_c.h
+[7.442s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_fastrtps_c.h
+[7.442s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_fastrtps_c.h
+[7.443s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_fastrtps_c.h
+[7.443s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_fastrtps_c.h
+[7.443s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_fastrtps_c.h
+[7.444s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_fastrtps_c.h
+[7.444s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_fastrtps_c.h
+[7.445s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_fastrtps_c.h
+[7.445s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_fastrtps_c.h
+[7.445s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_fastrtps_c.h
+[7.446s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_fastrtps_c.h
+[7.446s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_fastrtps_c.h
+[7.446s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_fastrtps_c.h
+[7.447s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_fastrtps_c.h
+[7.447s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_fastrtps_c.h
+[7.447s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_fastrtps_c.h
+[7.448s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_fastrtps_c.h
+[7.448s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_fastrtps_c.h
+[7.448s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_c.so
+[7.449s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[7.450s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.450s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.450s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_pos.hpp
+[7.450s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_cmd.hpp
+[7.450s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/time_info.hpp
+[7.451s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_cmd.hpp
+[7.451s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/interact_id.hpp
+[7.451s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/ground_robot.hpp
+[7.452s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armors.hpp
+[7.452s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_warning.hpp
+[7.452s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/buff.hpp
+[7.453s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.453s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.hpp
+[7.453s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__traits.hpp
+[7.453s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__traits.hpp
+[7.454s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.hpp
+[7.454s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__traits.hpp
+[7.454s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__struct.hpp
+[7.455s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__struct.hpp
+[7.455s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__builder.hpp
+[7.456s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__builder.hpp
+[7.456s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__struct.hpp
+[7.456s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__struct.hpp
+[7.457s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__traits.hpp
+[7.457s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__builder.hpp
+[7.457s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__builder.hpp
+[7.458s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__builder.hpp
+[7.458s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__traits.hpp
+[7.458s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__struct.hpp
+[7.459s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__traits.hpp
+[7.459s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__builder.hpp
+[7.459s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.hpp
+[7.460s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.hpp
+[7.460s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__traits.hpp
+[7.461s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__builder.hpp
+[7.461s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__builder.hpp
+[7.461s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__builder.hpp
+[7.461s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.hpp
+[7.462s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__struct.hpp
+[7.462s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__traits.hpp
+[7.463s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__struct.hpp
+[7.463s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__struct.hpp
+[7.463s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__builder.hpp
+[7.464s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__traits.hpp
+[7.464s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__builder.hpp
+[7.464s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__traits.hpp
+[7.465s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.hpp
+[7.465s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__traits.hpp
+[7.465s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.hpp
+[7.466s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.hpp
+[7.466s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__struct.hpp
+[7.467s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__builder.hpp
+[7.467s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__builder.hpp
+[7.467s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__traits.hpp
+[7.468s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__struct.hpp
+[7.468s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.hpp
+[7.468s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__builder.hpp
+[7.469s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.hpp
+[7.469s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.hpp
+[7.469s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__struct.hpp
+[7.470s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__struct.hpp
+[7.470s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__builder.hpp
+[7.470s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__traits.hpp
+[7.471s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.hpp
+[7.471s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__builder.hpp
+[7.471s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.hpp
+[7.472s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.hpp
+[7.472s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.hpp
+[7.473s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__traits.hpp
+[7.473s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__builder.hpp
+[7.473s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__traits.hpp
+[7.474s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.hpp
+[7.474s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__struct.hpp
+[7.474s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__struct.hpp
+[7.475s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__traits.hpp
+[7.475s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.hpp
+[7.475s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.hpp
+[7.476s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.hpp
+[7.476s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__struct.hpp
+[7.476s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__struct.hpp
+[7.477s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__builder.hpp
+[7.477s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__struct.hpp
+[7.478s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__builder.hpp
+[7.478s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__struct.hpp
+[7.478s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__traits.hpp
+[7.479s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__traits.hpp
+[7.479s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__builder.hpp
+[7.479s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__traits.hpp
+[7.480s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__builder.hpp
+[7.480s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.hpp
+[7.480s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__traits.hpp
+[7.481s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__struct.hpp
+[7.481s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__builder.hpp
+[7.481s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.hpp
+[7.482s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__traits.hpp
+[7.482s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__struct.hpp
+[7.482s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.hpp
+[7.483s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__struct.hpp
+[7.483s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__struct.hpp
+[7.483s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__traits.hpp
+[7.484s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__builder.hpp
+[7.484s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__builder.hpp
+[7.484s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__struct.hpp
+[7.485s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.hpp
+[7.485s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__traits.hpp
+[7.485s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__traits.hpp
+[7.486s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__builder.hpp
+[7.486s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__struct.hpp
+[7.487s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.hpp
+[7.487s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__struct.hpp
+[7.487s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.hpp
+[7.487s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.hpp
+[7.488s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__struct.hpp
+[7.488s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.hpp
+[7.489s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__builder.hpp
+[7.489s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__traits.hpp
+[7.489s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__traits.hpp
+[7.490s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__builder.hpp
+[7.490s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__struct.hpp
+[7.490s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__builder.hpp
+[7.491s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__traits.hpp
+[7.491s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__struct.hpp
+[7.491s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__struct.hpp
+[7.492s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__struct.hpp
+[7.492s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__traits.hpp
+[7.492s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__builder.hpp
+[7.493s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__builder.hpp
+[7.493s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.hpp
+[7.493s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__struct.hpp
+[7.494s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__struct.hpp
+[7.494s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__struct.hpp
+[7.495s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__traits.hpp
+[7.495s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__traits.hpp
+[7.495s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__traits.hpp
+[7.495s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__builder.hpp
+[7.496s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__builder.hpp
+[7.496s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__traits.hpp
+[7.496s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__builder.hpp
+[7.497s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__traits.hpp
+[7.497s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.hpp
+[7.498s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.hpp
+[7.498s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.hpp
+[7.498s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.hpp
+[7.499s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.hpp
+[7.499s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_hp.hpp
+[7.499s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_light.hpp
+[7.499s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/robot_hurt.hpp
+[7.500s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armors.hpp
+[7.500s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shooter_state.hpp
+[7.500s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_robot_status.hpp
+[7.501s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_status.hpp
+[7.501s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/power_heat_data.hpp
+[7.501s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/shoot_data.hpp
+[7.502s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/event_data.hpp
+[7.502s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/referee_data.hpp
+[7.502s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rfid_status.hpp
+[7.503s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/fd_frame.hpp
+[7.503s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bullet_remaining.hpp
+[7.503s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_armor.hpp
+[7.504s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/armor.hpp
+[7.504s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_state.hpp
+[7.504s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/debug_lights.hpp
+[7.504s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/tracker_info.hpp
+[7.505s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/bigyaw_state.hpp
+[7.505s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.505s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/gimbal_cmd.hpp
+[7.506s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/game_result.hpp
+[7.506s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/target.hpp
+[7.506s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/sentry_info.hpp
+[7.507s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.507s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.507s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.507s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.508s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_fastrtps_cpp.hpp
+[7.508s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_fastrtps_cpp.hpp
+[7.508s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_fastrtps_cpp.hpp
+[7.508s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.509s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_fastrtps_cpp.hpp
+[7.509s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_fastrtps_cpp.hpp
+[7.509s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp
+[7.510s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_fastrtps_cpp.hpp
+[7.510s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.510s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_fastrtps_cpp.hpp
+[7.511s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_fastrtps_cpp.hpp
+[7.511s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_fastrtps_cpp.hpp
+[7.511s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_fastrtps_cpp.hpp
+[7.512s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_fastrtps_cpp.hpp
+[7.512s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_fastrtps_cpp.hpp
+[7.512s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.513s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_fastrtps_cpp.hpp
+[7.513s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_fastrtps_cpp.hpp
+[7.513s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.514s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.514s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_fastrtps_cpp.hpp
+[7.515s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_cpp.hpp
+[7.515s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_fastrtps_cpp.hpp
+[7.515s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_fastrtps_cpp.hpp
+[7.516s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[7.516s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_fastrtps_cpp.hpp
+[7.516s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_fastrtps_cpp.hpp
+[7.517s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_fastrtps_cpp.hpp
+[7.517s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_fastrtps_cpp.hpp
+[7.517s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_fastrtps_cpp.hpp
+[7.518s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_fastrtps_cpp.hpp
+[7.518s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[7.518s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/dds_fastrtps
+[7.519s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.519s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.521s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.521s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.521s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.522s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.522s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_introspection_c.h
+[7.522s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.c
+[7.523s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.c
+[7.523s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.c
+[7.523s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_introspection_c.h
+[7.524s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.c
+[7.524s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.c
+[7.525s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_introspection_c.h
+[7.525s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_introspection_c.h
+[7.525s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.c
+[7.526s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.c
+[7.526s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_c.h
+[7.526s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_introspection_c.h
+[7.527s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_introspection_c.h
+[7.527s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.c
+[7.527s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.c
+[7.528s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_introspection_c.h
+[7.528s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.c
+[7.528s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_introspection_c.h
+[7.529s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.c
+[7.529s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.c
+[7.529s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.c
+[7.530s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_introspection_c.h
+[7.530s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.c
+[7.531s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_introspection_c.h
+[7.531s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.c
+[7.531s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.c
+[7.532s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_introspection_c.h
+[7.532s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.c
+[7.532s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_introspection_c.h
+[7.533s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.c
+[7.533s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_introspection_c.h
+[7.533s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_introspection_c.h
+[7.534s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_introspection_c.h
+[7.534s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.c
+[7.534s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.c
+[7.535s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_introspection_c.h
+[7.535s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.c
+[7.536s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.c
+[7.536s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.c
+[7.536s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.c
+[7.537s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_introspection_c.h
+[7.537s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.c
+[7.538s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_introspection_c.h
+[7.538s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_introspection_c.h
+[7.538s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_introspection_c.h
+[7.538s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_introspection_c.h
+[7.539s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_introspection_c.h
+[7.539s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_introspection_c.h
+[7.540s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.c
+[7.540s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.c
+[7.540s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.c
+[7.541s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_introspection_c.h
+[7.541s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_introspection_c.h
+[7.541s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.c
+[7.542s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.c
+[7.542s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_introspection_c.h
+[7.542s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.c
+[7.543s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.c
+[7.543s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_introspection_c.h
+[7.544s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.c
+[7.544s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_introspection_c.h
+[7.544s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_introspection_c.h
+[7.545s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_introspection_c.h
+[7.545s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_introspection_c.h
+[7.545s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_introspection_c.h
+[7.546s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.546s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_c.so
+[7.547s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_c.so" to ""
+[7.547s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_c.so
+[7.548s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_c.so" to ""
+[7.548s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs
+[7.548s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg
+[7.548s] -- Up-to-date: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail
+[7.549s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__rosidl_typesupport_introspection_cpp.hpp
+[7.549s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__type_support.cpp
+[7.549s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__type_support.cpp
+[7.549s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__rosidl_typesupport_introspection_cpp.hpp
+[7.550s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__type_support.cpp
+[7.550s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__type_support.cpp
+[7.550s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__rosidl_typesupport_introspection_cpp.hpp
+[7.551s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__rosidl_typesupport_introspection_cpp.hpp
+[7.551s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__rosidl_typesupport_introspection_cpp.hpp
+[7.551s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_light__type_support.cpp
+[7.552s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__type_support.cpp
+[7.552s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__rosidl_typesupport_introspection_cpp.hpp
+[7.553s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/ground_robot__type_support.cpp
+[7.553s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__type_support.cpp
+[7.553s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__type_support.cpp
+[7.554s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__rosidl_typesupport_introspection_cpp.hpp
+[7.554s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__rosidl_typesupport_introspection_cpp.hpp
+[7.554s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__type_support.cpp
+[7.555s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__type_support.cpp
+[7.555s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_pos__rosidl_typesupport_introspection_cpp.hpp
+[7.556s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__type_support.cpp
+[7.556s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/tracker_info__rosidl_typesupport_introspection_cpp.hpp
+[7.556s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armor__type_support.cpp
+[7.557s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__rosidl_typesupport_introspection_cpp.hpp
+[7.557s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__rosidl_typesupport_introspection_cpp.hpp
+[7.557s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bullet_remaining__rosidl_typesupport_introspection_cpp.hpp
+[7.558s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__rosidl_typesupport_introspection_cpp.hpp
+[7.558s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armor__type_support.cpp
+[7.559s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__type_support.cpp
+[7.559s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/event_data__type_support.cpp
+[7.559s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__rosidl_typesupport_introspection_cpp.hpp
+[7.559s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.560s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__rosidl_typesupport_introspection_cpp.hpp
+[7.560s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__rosidl_typesupport_introspection_cpp.hpp
+[7.561s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_hp__rosidl_typesupport_introspection_cpp.hpp
+[7.561s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_state__type_support.cpp
+[7.561s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__type_support.cpp
+[7.562s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/buff__rosidl_typesupport_introspection_cpp.hpp
+[7.562s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shoot_data__type_support.cpp
+[7.562s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_data__rosidl_typesupport_introspection_cpp.hpp
+[7.563s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/gimbal_cmd__type_support.cpp
+[7.563s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__type_support.cpp
+[7.563s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__rosidl_typesupport_introspection_cpp.hpp
+[7.564s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/sentry_info__rosidl_typesupport_introspection_cpp.hpp
+[7.564s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_result__rosidl_typesupport_introspection_cpp.hpp
+[7.564s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__rosidl_typesupport_introspection_cpp.hpp
+[7.565s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_armors__type_support.cpp
+[7.565s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__type_support.cpp
+[7.565s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.566s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_status__type_support.cpp
+[7.566s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/shooter_state__rosidl_typesupport_introspection_cpp.hpp
+[7.567s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/referee_warning__type_support.cpp
+[7.567s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/interact_id__type_support.cpp
+[7.567s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.568s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_cmd__type_support.cpp
+[7.568s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/time_info__rosidl_typesupport_introspection_cpp.hpp
+[7.569s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/armors__rosidl_typesupport_introspection_cpp.hpp
+[7.569s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/rfid_status__type_support.cpp
+[7.569s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/game_robot_status__type_support.cpp
+[7.570s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__type_support.cpp
+[7.570s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/bigyaw_state__rosidl_typesupport_introspection_cpp.hpp
+[7.571s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/fd_frame__rosidl_typesupport_introspection_cpp.hpp
+[7.571s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp
+[7.571s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/power_heat_data__type_support.cpp
+[7.572s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/robot_hurt__type_support.cpp
+[7.572s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/include/tide_msgs/tide_msgs/msg/detail/debug_lights__type_support.cpp
+[7.573s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_cpp.so
+[7.574s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[7.575s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_cpp.so
+[7.575s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_typesupport_cpp.so" to ""
+[7.576s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/pythonpath.sh
+[7.576s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/pythonpath.dsv
+[7.576s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info
+[7.577s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.577s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[7.577s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[7.577s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.578s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs
+[7.578s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_c.c
+[7.578s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.579s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[7.579s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.580s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.580s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/_tide_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.580s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/libtide_msgs__rosidl_generator_py.so
+[7.581s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/__init__.py
+[7.581s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg
+[7.582s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_status_s.c
+[7.582s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_ground_robot.py
+[7.582s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_event_data.py
+[7.582s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_power_heat_data_s.c
+[7.582s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_status_s.c
+[7.583s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_cmd_s.c
+[7.583s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_buff.py
+[7.583s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_lights.py
+[7.583s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_warning.py
+[7.584s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_cmd_s.c
+[7.584s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shoot_data_s.c
+[7.584s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armor.py
+[7.584s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_cmd_s.c
+[7.585s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_result_s.c
+[7.585s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_status.py
+[7.585s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_robot_hurt_s.c
+[7.585s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_fd_frame.py
+[7.586s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armor.py
+[7.586s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armors_s.c
+[7.586s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_result.py
+[7.586s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_state_s.c
+[7.587s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_rfid_status_s.c
+[7.587s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bullet_remaining_s.c
+[7.587s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armors.py
+[7.587s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_event_data_s.c
+[7.587s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_target_s.c
+[7.588s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_tracker_info.py
+[7.588s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_data.py
+[7.588s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armors.py
+[7.588s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bullet_remaining.py
+[7.589s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_light_s.c
+[7.589s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_status.py
+[7.589s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_interact_id.py
+[7.589s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_sentry_info.py
+[7.590s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_hp_s.c
+[7.590s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armor_s.c
+[7.590s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_cmd.py
+[7.590s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_warning_s.c
+[7.591s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_state_s.c
+[7.591s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_tracker_info_s.c
+[7.591s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shoot_data.py
+[7.591s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_sentry_info_s.c
+[7.592s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_hp.py
+[7.592s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armors_s.c
+[7.592s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_buff_s.c
+[7.592s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_state.py
+[7.593s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_cmd.py
+[7.593s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_state.py
+[7.593s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_lights_s.c
+[7.593s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_state.py
+[7.594s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_interact_id_s.c
+[7.594s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_ground_robot_s.c
+[7.594s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_power_heat_data.py
+[7.594s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_light.py
+[7.595s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_state_s.c
+[7.595s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_target.py
+[7.595s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_robot_hurt.py
+[7.595s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armor_s.c
+[7.596s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_rfid_status.py
+[7.596s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_pos_s.c
+[7.596s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_pos.py
+[7.596s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/__init__.py
+[7.597s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_fd_frame_s.c
+[7.597s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_time_info_s.c
+[7.597s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_cmd.py
+[7.597s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_data_s.c
+[7.598s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_time_info.py
+[7.696s] Listing '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs'...
+[7.697s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/__init__.py'...
+[7.697s] Listing '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg'...
+[7.697s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/__init__.py'...
+[7.697s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armor.py'...
+[7.697s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_armors.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_cmd.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bigyaw_state.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_buff.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_bullet_remaining.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armor.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_armors.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_light.py'...
+[7.698s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_debug_lights.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_event_data.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_fd_frame.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_result.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_hp.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_pos.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_robot_status.py'...
+[7.699s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_game_status.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_cmd.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_gimbal_state.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_ground_robot.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_interact_id.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_power_heat_data.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_data.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_referee_warning.py'...
+[7.700s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_rfid_status.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_robot_hurt.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_sentry_info.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shoot_data.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_cmd.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_shooter_state.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_target.py'...
+[7.701s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_time_info.py'...
+[7.702s] Compiling '/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/msg/_tracker_info.py'...
+[7.703s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.705s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.705s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.706s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.706s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.707s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/local/lib/python3.10/dist-packages/tide_msgs/tide_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.707s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_generator_py.so
+[7.708s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/tide_msgs/lib/libtide_msgs__rosidl_generator_py.so" to ""
+[7.709s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GimbalState.idl
+[7.709s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GimbalCmd.idl
+[7.709s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/ShooterState.idl
+[7.710s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/ShooterCmd.idl
+[7.710s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/BigyawState.idl
+[7.710s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/BigyawCmd.idl
+[7.710s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/FdFrame.idl
+[7.711s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/Armor.idl
+[7.711s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/Armors.idl
+[7.711s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/DebugArmor.idl
+[7.712s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/DebugArmors.idl
+[7.712s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/DebugLight.idl
+[7.712s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/DebugLights.idl
+[7.713s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/Target.idl
+[7.713s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/TimeInfo.idl
+[7.714s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/TrackerInfo.idl
+[7.714s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/Buff.idl
+[7.714s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/BulletRemaining.idl
+[7.714s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/EventData.idl
+[7.715s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GameResult.idl
+[7.715s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GameRobotHP.idl
+[7.715s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GameRobotPos.idl
+[7.716s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GameRobotStatus.idl
+[7.716s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GameStatus.idl
+[7.716s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GroundRobot.idl
+[7.717s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/InteractID.idl
+[7.717s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/PowerHeatData.idl
+[7.717s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/RefereeData.idl
+[7.718s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/RefereeWarning.idl
+[7.718s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/RFIDStatus.idl
+[7.718s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/RobotHurt.idl
+[7.719s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/SentryInfo.idl
+[7.719s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/ShootData.idl
+[7.719s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GimbalState.msg
+[7.723s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/GimbalCmd.msg
+[7.723s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/ShooterState.msg
+[7.724s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/ShooterCmd.msg
+[7.725s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/BigyawState.msg
+[7.725s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/BigyawCmd.msg
+[7.726s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/msg/FdFrame.msg
+[7.726s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/Armor.msg
+[7.726s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/Armors.msg
+[7.727s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/DebugArmor.msg
+[7.727s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/DebugArmors.msg
+[7.728s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/DebugLight.msg
+[7.728s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/DebugLights.msg
+[7.729s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/Target.msg
+[7.729s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/TimeInfo.msg
+[7.729s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/vision/TrackerInfo.msg
+[7.730s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/Buff.msg
+[7.730s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/BulletRemaining.msg
+[7.731s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/EventData.msg
+[7.731s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GameResult.msg
+[7.731s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GameRobotHP.msg
+[7.732s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GameRobotPos.msg
+[7.732s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GameRobotStatus.msg
+[7.733s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GameStatus.msg
+[7.733s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/GroundRobot.msg
+[7.733s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/InteractID.msg
+[7.734s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/PowerHeatData.msg
+[7.734s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/RefereeData.msg
+[7.735s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/RefereeWarning.msg
+[7.735s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/RFIDStatus.msg
+[7.736s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/RobotHurt.msg
+[7.736s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/SentryInfo.msg
+[7.736s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/referee/ShootData.msg
+[7.737s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/ament_index/resource_index/package_run_dependencies/tide_msgs
+[7.738s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/ament_index/resource_index/parent_prefix_path/tide_msgs
+[7.738s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/ament_prefix_path.sh
+[7.738s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/ament_prefix_path.dsv
+[7.739s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/path.sh
+[7.739s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/environment/path.dsv
+[7.740s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/local_setup.bash
+[7.740s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/local_setup.sh
+[7.741s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/local_setup.zsh
+[7.741s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/local_setup.dsv
+[7.742s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/package.dsv
+[7.742s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/ament_index/resource_index/packages/tide_msgs
+[7.743s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cExport.cmake
+[7.743s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cExport-noconfig.cmake
+[7.744s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[7.744s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.745s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_cppExport.cmake
+[7.745s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.746s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.746s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cExport.cmake
+[7.747s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.747s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cExport.cmake
+[7.748s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[7.748s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[7.749s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.749s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cppExport.cmake
+[7.750s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[7.750s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_pyExport.cmake
+[7.751s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/export_tide_msgs__rosidl_generator_pyExport-noconfig.cmake
+[7.751s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake-extras.cmake
+[7.752s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.752s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.752s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.753s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.753s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.754s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.754s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgsConfig.cmake
+[7.754s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/cmake/tide_msgsConfig-version.cmake
+[7.755s] -- Installing: /home/luis/azure_sky_ros2/install/tide_msgs/share/tide_msgs/package.xml
+[7.760s] Invoked command in '/home/luis/azure_sky_ros2/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/tide_msgs

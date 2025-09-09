@@ -1,0 +1,136 @@
+[0.046s] Invoking command in '/home/luis/azure_sky_ros2/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/luis/azure_sky_ros2/src/my_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/my_hardware_interface
+[0.195s] -- The C compiler identification is GNU 12.3.0
+[0.302s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.476s] -- Detecting C compiler ABI info - done
+[0.487s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.488s] -- Detecting C compile features
+[0.489s] -- Detecting C compile features - done
+[0.494s] -- Detecting CXX compiler ABI info
+[0.642s] -- Detecting CXX compiler ABI info - done
+[0.658s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.659s] -- Detecting CXX compile features
+[0.660s] -- Detecting CXX compile features - done
+[0.666s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.134s] -- Found hardware_interface: 2.51.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.251s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.266s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.286s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.316s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.359s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.799s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.806s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.853s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.008s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.012s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.041s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.045s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.061s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.080s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.098s] -- Looking for pthread.h
+[2.271s] -- Looking for pthread.h - found
+[2.271s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.433s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.435s] -- Found Threads: TRUE  
+[2.529s] -- Found ros2_socketcan: 1.3.0 (/home/luis/azure_sky_ros2/install/ros2_socketcan/share/ros2_socketcan/cmake)
+[2.612s] -- Found controller_interface: 2.51.0 (/opt/ros/humble/share/controller_interface/cmake)
+[2.624s] -- Found realtime_tools: 2.14.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.680s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.829s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.841s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.843s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.864s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.865s] -- Configured cppcheck include dirs: /home/luis/azure_sky_ros2/src/my_hardware_interface/include
+[2.865s] -- Configured cppcheck exclude dirs and/or files: 
+[2.867s] -- Added test 'lint_cmake' to check CMake code style
+[2.871s] -- Added test 'uncrustify' to check C / C++ code style
+[2.871s] -- Configured uncrustify additional arguments: 
+[2.872s] -- Added test 'xmllint' to check XML markup files
+[2.879s] -- Configuring done
+[2.976s] -- Generating done
+[2.991s] -- Build files have been written to: /home/luis/azure_sky_ros2/build/my_hardware_interface
+[3.009s] Invoked command in '/home/luis/azure_sky_ros2/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/luis/azure_sky_ros2/src/my_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/my_hardware_interface
+[3.012s] Invoking command in '/home/luis/azure_sky_ros2/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/my_hardware_interface -- -j12 -l12
+[3.123s] [ 16%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[3.124s] [ 16%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/custom_mecanum_controller.cpp.o[0m
+[3.127s] [ 41%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/tide_motor.cpp.o[0m
+[3.127s] [ 41%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[3.127s] [ 41%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.127s] [ 50%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/rrbot_hardware_interface.cpp.o[0m
+[3.130s] [ 58%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/remote_controller.cpp.o[0m
+[5.796s] [ 66%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[5.893s] [ 66%] Built target gmock_main
+[7.420s] In file included from [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:25[m[K:
+[7.420s] [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:[m[K In constructor ‘[01m[Kmy_hardware_interface::CanDevice::CanDevice(const string&, my_hardware_interface::CanDevice::ReceiveCallback)[m[K’:
+[7.420s] [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:48:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmy_hardware_interface::CanDevice::receive_callback_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.420s]    48 | ReceiveCallback [01;35m[Kreceive_callback_[m[K;
+[7.420s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[7.420s] [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp:41:58:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<drivers::socketcan::SocketCanSender> my_hardware_interface::CanDevice::sender[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.420s]    41 |   std::shared_ptr<drivers::socketcan::SocketCanSender>   [01;35m[Ksender[m[K;
+[7.421s]       |                                                          [01;35m[K^~~~~~[m[K
+[7.421s] [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/src/rrbot_hardware_interface.cpp:33:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.421s]    33 | [01;35m[KCanDevice[m[K::CanDevice(const std::string& iface, ReceiveCallback cb)
+[7.421s]       | [01;35m[K^~~~~~~~~[m[K
+[7.635s] In file included from [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/include/my_hardware_interface/custom_mecanum_controller.hpp:6[m[K,
+[7.635s]                  from [01m[K/home/luis/azure_sky_ros2/src/my_hardware_interface/src/custom_mecanum_controller.cpp:1[m[K:
+[7.635s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[7.635s]    22 |   "This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[7.635s]       |                                                                                                    [01;36m[K^[m[K
+[8.470s] [ 75%] [32m[1mLinking CXX static library libgmock.a[0m
+[8.562s] [ 75%] Built target gmock
+[8.591s] [ 83%] [32mBuilding CXX object CMakeFiles/test_rrbot_hardware_interface.dir/test/test_rrbot_hardware_interface.cpp.o[0m
+[9.989s] [ 91%] [32m[1mLinking CXX executable test_rrbot_hardware_interface[0m
+[10.260s] [ 91%] Built target test_rrbot_hardware_interface
+[13.331s] [100%] [32m[1mLinking CXX shared library libmy_hardware_interface.so[0m
+[14.199s] [100%] Built target my_hardware_interface
+[14.229s] Invoked command in '/home/luis/azure_sky_ros2/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/my_hardware_interface -- -j12 -l12
+[14.231s] Invoking command in '/home/luis/azure_sky_ros2/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/my_hardware_interface
+[14.241s] -- Install configuration: ""
+[14.241s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/my_hardware_interface.xml
+[14.241s] -- Up-to-date: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/my_hardware_interface.xml
+[14.241s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/lib/libmy_hardware_interface.so
+[14.249s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/my_hardware_interface/lib/libmy_hardware_interface.so" to ""
+[14.250s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include
+[14.250s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface
+[14.250s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface/tide_motor.hpp
+[14.250s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface/visibility_control.h
+[14.251s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface/custom_mecanum_controller.hpp
+[14.251s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface/remote_controller.hpp
+[14.251s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/include/my_hardware_interface/rrbot_hardware_interface.hpp
+[14.251s] -- Up-to-date: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/my_hardware_interface.xml
+[14.251s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf
+[14.251s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf/rrbot.urdf.xacro
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf/common.xacro
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf/rrbot
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf/rrbot/rrbot_macro.xacro
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/urdf/rrbot/rrbot_macro.ros2_control.xacro
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/meshes
+[14.252s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/meshes/rrbot
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/meshes/rrbot/visual
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/meshes/rrbot/visual/.gitkeep
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/rviz
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/rviz/rrbot.rviz
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+[14.253s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+[14.254s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+[14.255s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_hardware_interface
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+[14.256s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+[14.257s] -- Installing: /home/luis/azure_sky_ros2/install/my_hardware_interface/share/my_hardware_interface/package.xml
+[14.260s] Invoked command in '/home/luis/azure_sky_ros2/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/ros2_socketcan/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/my_hardware_interface

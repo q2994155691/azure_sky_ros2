@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from auto_aim_interfaces/msg/RobotStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module auto_aim_interfaces {
+  module msg {
+    struct RobotStatus {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Gimbal angles in radians")
+      double yaw;
+
+      double pitch;
+
+      @verbatim (language="comment", text=
+        "Gimbal velocities in rad/s")
+      double yaw_velocity;
+
+      double pitch_velocity;
+
+      @verbatim (language="comment", text=
+        "Motor currents in A")
+      double yaw_current;
+
+      double pitch_current;
+
+      @verbatim (language="comment", text=
+        "Motor temperatures in °C")
+      uint8 yaw_temperature;
+
+      uint8 pitch_temperature;
+    };
+  };
+};

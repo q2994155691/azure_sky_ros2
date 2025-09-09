@@ -1,0 +1,3 @@
+[ 40%] Built target gimbal_controller_parameters
+[35m[1mConsolidate compiler generated dependencies of target tide_gimbal_controller[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/tide_gimbal_controller.dir/src/tide_gimbal_controller.cpp.o[0m

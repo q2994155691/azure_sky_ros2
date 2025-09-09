@@ -1,0 +1,11 @@
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/uninstall.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/tide_shooter_controller_uninstall.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/shooter_controller_parameters.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/tide_shooter_controller.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/test.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/edit_cache.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/rebuild_cache.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/list_install_components.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/install.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/install/local.dir
+/home/luis/azure_sky_ros2/build/tide_shooter_controller/CMakeFiles/install/strip.dir

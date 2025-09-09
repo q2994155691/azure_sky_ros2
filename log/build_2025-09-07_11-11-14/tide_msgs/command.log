@@ -1,0 +1,3 @@
+Invoking command in '/home/luis/azure_sky_ros2/build/tide_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/azure_sky_ros2/src/tide_msgs -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/tide_msgs
+Invoked command in '/home/luis/azure_sky_ros2/build/tide_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/azure_sky_ros2/src/tide_msgs -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/tide_msgs
+Invoking command in '/home/luis/azure_sky_ros2/build/tide_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/tide_msgs -- -j12 -l12

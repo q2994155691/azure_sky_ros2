@@ -1,0 +1,60 @@
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/luis/azure_sky_ros2/src/rm_buff/buff_tracker/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/luis/azure_sky_ros2/build/buff_tracker
+[35m[1mConsolidate compiler generated dependencies of target buff_tracker_node[0m
+[35m[1mConsolidate compiler generated dependencies of target buff_tracker[0m
+[ 28%] Built target buff_tracker_node
+[ 42%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/gauss_newton_solver.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/extended_kalman_filter.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/tracker.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/buff_tracker.dir/src/tracker_node.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libbuff_tracker.so[0m
+[100%] Built target buff_tracker
+-- Install configuration: ""
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/lib/buff_tracker/buff_tracker_node
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/include
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/gauss_newton_solver.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/extended_kalman_filter.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/tracker_node.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/tracker.hpp
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/library_path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/library_path.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/lib/libbuff_tracker.so
+-- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_tracker/lib/libbuff_tracker.so" to ""
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/package_run_dependencies/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/parent_prefix_path/buff_tracker
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/ament_prefix_path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/path.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.bash
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.sh
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.zsh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/package.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/packages/buff_tracker
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/rclcpp_components/buff_tracker
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/buff_trackerConfig.cmake
+-- Up-to-date: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/buff_trackerConfig-version.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/package.xml

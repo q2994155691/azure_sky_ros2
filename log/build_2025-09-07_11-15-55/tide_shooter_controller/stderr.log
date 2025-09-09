@@ -1,0 +1,18 @@
+In file included from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/include/tide_shooter_controller.hpp:35[m[K,
+                 from [01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:9[m[K:
+[01m[K/home/luis/azure_sky_ros2/build/tide_shooter_controller/include/shooter_controller_parameters.hpp:1:162:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "shooter_controller_parameters.hpp" is deprecated. Use #include <tide_shooter_controller/shooter_controller_parameters.hpp> instead.[m[K’
+    1 | meters.hpp\" is deprecated. Use #include <tide_shooter_controller/shooter_controller_parameters.hpp> instead."[01;36m[K)[m[K
+      |                                                                                                               [01;36m[K^[m[K
+
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type tide_shooter_controller::TideShooterController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:254:41:[m[K [01;35m[Kwarning: [m[Kconversion from ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kdouble[m[K’ may change value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-Wconversion]8;;[m[K]
+  254 |   bullet_vel_real_ = (temp_bullet_vel / [01;35m[Kfriction_wheel_size_[m[K) * vel2bullet_vel;
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn tide_shooter_controller::TideShooterController::on_cleanup(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:307:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  307 | TideShooterController::on_cleanup([01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn tide_shooter_controller::TideShooterController::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/luis/azure_sky_ros2/src/tide_controllers/tide_shooter_controller/src/tide_shooter_controller.cpp:313:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  313 | TideShooterController::on_error([01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K

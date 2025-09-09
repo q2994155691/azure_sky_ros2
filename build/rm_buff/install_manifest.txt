@@ -1,0 +1,15 @@
+/home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/package_run_dependencies/rm_buff
+/home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/parent_prefix_path/rm_buff
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/ament_prefix_path.sh
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/ament_prefix_path.dsv
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/path.sh
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/path.dsv
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.bash
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.sh
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.zsh
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.dsv
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/package.dsv
+/home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/packages/rm_buff
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/cmake/rm_buffConfig.cmake
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/cmake/rm_buffConfig-version.cmake
+/home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/package.xml

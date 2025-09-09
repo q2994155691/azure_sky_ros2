@@ -1,0 +1,23 @@
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/luis/azure_sky_ros2/build/rm_buff
+-- Install configuration: ""
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/package_run_dependencies/rm_buff
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/parent_prefix_path/rm_buff
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/ament_prefix_path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/environment/path.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.bash
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.sh
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.zsh
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/local_setup.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/package.dsv
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/ament_index/resource_index/packages/rm_buff
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/cmake/rm_buffConfig.cmake
+-- Up-to-date: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/cmake/rm_buffConfig-version.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/rm_buff/share/rm_buff/package.xml

@@ -61,11 +61,6 @@ InterfaceConfiguration TideGimbalController::state_interface_configuration() con
   std::vector<std::string> joint_names;
   joint_names.push_back(params_.pitch.joint + "/position");
   joint_names.push_back(params_.yaw.joint + "/position");
-  joint_names.push_back("rc/ch2"); //yaw
-  joint_names.push_back("rc/sw1");
-  joint_names.push_back("rc/sw2");
-  joint_names.push_back("rc/wheel"); //pitch
-  joint_names.push_back("rc/connected");
 
   return { interface_configuration_type::INDIVIDUAL, joint_names };
 }
@@ -170,19 +165,13 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
 {
   update_parameters();
   auto logger = get_node()->get_logger();
+
   auto cmd = *recv_cmd_ptr_.readFromRT();
-
-  static double last_yaw_ref = -999.0;
-  if (cmd->yaw_ref != last_yaw_ref) {
-    RCLCPP_INFO(logger, "NEW COMMAND RECEIVED: mode=%d, pitch=%.3f, yaw=%.3f", 
-                cmd->mode, cmd->pitch_ref, cmd->yaw_ref);
-    last_yaw_ref = cmd->yaw_ref;
-  } else {
-    RCLCPP_DEBUG(logger, "Same command: yaw=%.3f", cmd->yaw_ref);
+  last_mode_ = mode_;
+  if (cmd != nullptr) 
+  {
+    mode_ = cmd->mode;
   }
-
-  
-  
   double pitch_fb = 0.0, yaw_fb = 0.0;
   double pitch_cmd = 0.0, yaw_cmd = 0.0;
 
@@ -220,54 +209,10 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   {
     case 0:
     {
-      // 增量控制实现
-      static double accumulated_pitch = 0.0;
-      static double accumulated_yaw = 0.0;
-      static bool first_run = true;
-      static double YAW_MAX_SPEED =5.0;
-      
-      static double PITCH_MAX_SPEED =5.0;
-
-      double rc_ch2 = rc_ch2_state_interface_->get_value()/660*YAW_MAX_SPEED;
-      double rc_sw1 = rc_sw1_state_interface_->get_value();
-      double rc_sw2 = rc_sw2_state_interface_->get_value();
-      double rc_wheel = rc_wheel_state_interface_->get_value()/660*PITCH_MAX_SPEED;
-      double rc_connected = rc_connect_state_interface_->get_value();
-  
-      // 使用静态Clock避免宏错误
-      static rclcpp::Clock rc_debug_clock(RCL_STEADY_TIME);
-  
-      RCLCPP_INFO_THROTTLE(logger, rc_debug_clock, 10,
-                      "RC Status - WHEEL: %.0f", 
-                      rc_wheel);
-  
-      
-      // 首次运行时初始化为当前位置
-      if (first_run) {
-        accumulated_pitch = pitch_pos_fb_;
-        accumulated_yaw = yaw_pos_fb_;
-        first_run = false;
-        RCLCPP_INFO(logger, "Increment control initialized - pitch: %.3f, yaw: %.3f", 
-                  accumulated_pitch, accumulated_yaw);
-      }
-      
-      // 将cmd->yaw_ref和cmd->pitch_ref当作角速度 (rad/s)
-      double dt = period.seconds();
-      double pitch_increment = rc_wheel* dt;
-      double yaw_increment = rc_ch2 * dt;
-      
-      accumulated_pitch += pitch_increment;
-      accumulated_yaw += yaw_increment;
-      
-      accumulated_pitch = std::clamp(accumulated_pitch, params_.pitch.min, params_.pitch.max);
-      accumulated_yaw = std::clamp(accumulated_yaw, params_.yaw.min, params_.yaw.max);
-      
-      pitch_cmd = accumulated_pitch;
-      yaw_cmd = accumulated_yaw;
-      
+      pitch_cmd = cmd->pitch_ref;
+      yaw_cmd = cmd->yaw_ref;
       break;
     }
-
     case 1:
     {
       auto result = sentry_mode();
@@ -277,6 +222,10 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     }
     case 2:
     {
+      static rclcpp::Clock steady_clock(RCL_STEADY_TIME);
+      RCLCPP_INFO_THROTTLE(logger, steady_clock, 1000,
+                        "Mode: 2 (Auto Aim) - tracking=%s", 
+                        bullet_solver_->tracking_ ? "YES" : "NO");
       auto result = auto_aim_mode();
       pitch_cmd = result.first;
       yaw_cmd = result.second;
@@ -285,11 +234,6 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     default:
       break;
   }
-static rclcpp::Clock steady_clock(RCL_STEADY_TIME);
-RCLCPP_INFO_THROTTLE(get_node()->get_logger(), steady_clock, 1000,
-                    "Mode: %d, pitch_cmd: %.3f, yaw_cmd: %.3f", 
-                    mode_, pitch_cmd, yaw_cmd);
-
 
   pitch_pos_cmd_ = std::clamp(pitch_cmd, params_.pitch.min, params_.pitch.max);
   yaw_pos_cmd_ = std::clamp(yaw_cmd, params_.yaw.min, params_.yaw.max);
@@ -298,43 +242,32 @@ RCLCPP_INFO_THROTTLE(get_node()->get_logger(), steady_clock, 1000,
   yaw_pos_cmd_ = params_.yaw.reverse ? -yaw_pos_cmd_ : yaw_pos_cmd_;
 
   if (open_loop_)
-{ 
-  if (params_.use_external_state_interface)
   {
-    RCLCPP_INFO_THROTTLE(logger, steady_clock, 1000, "Using external state - Setting feedback values");
-    pitch_command_interface_->set_value(pitch_pos_fb_);
-    yaw_command_interface_->set_value(yaw_pos_fb_);
+    if (params_.use_external_state_interface)
+    {
+      pitch_command_interface_->set_value(pitch_pos_fb_);
+      yaw_command_interface_->set_value(yaw_pos_fb_);
+    }
+    else
+    {
+      pitch_command_interface_->set_value(pitch_pos_cmd_);
+      yaw_command_interface_->set_value(yaw_pos_cmd_);
+    }
   }
   else
   {
-    pitch_command_interface_->set_value(pitch_pos_cmd_);
-    yaw_command_interface_->set_value(yaw_pos_cmd_);
-    
-    // 验证硬件接口是否接受了命令
-    double actual_pitch = pitch_command_interface_->get_value();
-    double actual_yaw = yaw_command_interface_->get_value();
+    double pitch_error = pitch_pos_cmd_ - pitch_pos_fb_;
+    double yaw_error = yaw_pos_cmd_ - yaw_pos_fb_;
 
+    pitch_error = angles::shortest_angular_distance(pitch_pos_fb_, pitch_pos_cmd_);
+    yaw_error = angles::shortest_angular_distance(yaw_pos_fb_, yaw_pos_cmd_);
+
+    double pitch_cmd_tmp = pid_pitch_pos_->computeCommand(pitch_error, period);
+    double yaw_cmd_tmp = pid_yaw_pos_->computeCommand(yaw_error, period);
+
+    pitch_command_interface_->set_value(pitch_cmd_tmp);
+    yaw_command_interface_->set_value(yaw_cmd_tmp);
   }
-}
-else
-{ 
-  double pitch_error = pitch_pos_cmd_ - pitch_pos_fb_;
-  double yaw_error = yaw_pos_cmd_ - yaw_pos_fb_;
-
-  pitch_error = angles::shortest_angular_distance(pitch_pos_fb_, pitch_pos_cmd_);
-  yaw_error = angles::shortest_angular_distance(yaw_pos_fb_, yaw_pos_cmd_);
-
-  double pitch_cmd_tmp = pid_pitch_pos_->computeCommand(pitch_error, period);
-  double yaw_cmd_tmp = pid_yaw_pos_->computeCommand(yaw_error, period);
-
-  pitch_command_interface_->set_value(pitch_cmd_tmp);
-  yaw_command_interface_->set_value(yaw_cmd_tmp);
-  
-  // 验证硬件接口实际接受的值
-  double actual_pitch = pitch_command_interface_->get_value();
-  double actual_yaw = yaw_command_interface_->get_value();
-}
-
 
   if (rt_gimbal_state_pub_->trylock())
   {
@@ -359,16 +292,6 @@ TideGimbalController::on_activate(const rclcpp_lifecycle::State& /*previous_stat
       std::move(state_interfaces_[0]));
   yaw_state_interface_ = std::make_unique<const hardware_interface::LoanedStateInterface>(
       std::move(state_interfaces_[1]));
-  rc_ch2_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
-      std::move(state_interfaces_[2]));
-  rc_sw1_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
-      std::move(state_interfaces_[3]));
-  rc_sw2_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
-      std::move(state_interfaces_[4]));
-  rc_wheel_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
-      std::move(state_interfaces_[5]));
-  rc_connect_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
-      std::move(state_interfaces_[6]));
 
   pitch_command_interface_ = std::make_unique<hardware_interface::LoanedCommandInterface>(
       std::move(command_interfaces_[0]));
@@ -383,12 +306,6 @@ TideGimbalController::on_deactivate(const rclcpp_lifecycle::State& /*previous_st
 {
   pitch_state_interface_.reset();
   yaw_state_interface_.reset();
-  rc_connect_state_interface_.reset();
-  rc_sw2_state_interface_.reset();
-  rc_sw1_state_interface_.reset();
-  rc_wheel_state_interface_.reset();
-  rc_ch2_state_interface_.reset();
-
   pitch_command_interface_.reset();
   yaw_command_interface_.reset();
   bullet_solver_.reset();

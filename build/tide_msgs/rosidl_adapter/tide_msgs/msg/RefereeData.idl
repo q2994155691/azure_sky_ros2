@@ -1,0 +1,58 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tide_msgs/msg/referee/RefereeData.msg
+// generated code does not contain a copyright notice
+
+#include "tide_msgs/msg/Buff.idl"
+#include "tide_msgs/msg/BulletRemaining.idl"
+#include "tide_msgs/msg/EventData.idl"
+#include "tide_msgs/msg/GameResult.idl"
+#include "tide_msgs/msg/GameRobotHP.idl"
+#include "tide_msgs/msg/GameRobotPos.idl"
+#include "tide_msgs/msg/GameRobotStatus.idl"
+#include "tide_msgs/msg/GameStatus.idl"
+#include "tide_msgs/msg/GroundRobot.idl"
+#include "tide_msgs/msg/InteractID.idl"
+#include "tide_msgs/msg/PowerHeatData.idl"
+#include "tide_msgs/msg/RFIDStatus.idl"
+#include "tide_msgs/msg/RefereeWarning.idl"
+#include "tide_msgs/msg/RobotHurt.idl"
+#include "tide_msgs/msg/SentryInfo.idl"
+#include "tide_msgs/msg/ShootData.idl"
+
+module tide_msgs {
+  module msg {
+    struct RefereeData {
+      tide_msgs::msg::GameStatus gamestatus;
+
+      tide_msgs::msg::GameResult gameresult;
+
+      tide_msgs::msg::GameRobotHP gamerobothp;
+
+      tide_msgs::msg::EventData eventdata;
+
+      tide_msgs::msg::RefereeWarning refereewarning;
+
+      tide_msgs::msg::GameRobotStatus gamerobotstatus;
+
+      tide_msgs::msg::PowerHeatData powerheatdata;
+
+      tide_msgs::msg::GameRobotPos gamerobotpos;
+
+      tide_msgs::msg::Buff buff;
+
+      tide_msgs::msg::RobotHurt robothurt;
+
+      tide_msgs::msg::ShootData shootdata;
+
+      tide_msgs::msg::BulletRemaining bulletremaining;
+
+      tide_msgs::msg::RFIDStatus rfidstatus;
+
+      tide_msgs::msg::GroundRobot groundrobotpos;
+
+      tide_msgs::msg::SentryInfo sentryinfo;
+
+      tide_msgs::msg::InteractID interactid;
+    };
+  };
+};

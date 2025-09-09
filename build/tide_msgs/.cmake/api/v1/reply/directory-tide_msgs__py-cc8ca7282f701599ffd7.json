@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tide_msgs__py",
+		"source" : "/home/luis/azure_sky_ros2/build/tide_msgs/tide_msgs__py"
+	}
+}

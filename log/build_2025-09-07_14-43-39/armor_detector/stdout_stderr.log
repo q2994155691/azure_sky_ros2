@@ -1,0 +1,12 @@
+[ 13%] Built target gtest_main
+[ 26%] Built target armor_detector_node
+[ 40%] Built target gtest
+[ 46%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[ 60%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[ 73%] Built target armor_detector
+[ 80%] [32m[1mLinking CXX executable test_number_cls[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o[0m
+[ 93%] Built target test_number_cls
+[100%] [32m[1mLinking CXX executable test_node_startup[0m
+[100%] Built target test_node_startup

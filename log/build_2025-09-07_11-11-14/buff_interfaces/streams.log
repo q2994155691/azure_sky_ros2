@@ -1,0 +1,399 @@
+[0.057s] Invoking command in '/home/luis/azure_sky_ros2/build/buff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/azure_sky_ros2/src/rm_buff/buff_interfaces -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/buff_interfaces
+[0.196s] -- The C compiler identification is GNU 12.3.0
+[0.348s] -- The CXX compiler identification is GNU 11.4.0
+[0.363s] -- Detecting C compiler ABI info
+[0.553s] -- Detecting C compiler ABI info - done
+[0.567s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.567s] -- Detecting C compile features
+[0.568s] -- Detecting C compile features - done
+[0.574s] -- Detecting CXX compiler ABI info
+[0.777s] -- Detecting CXX compiler ABI info - done
+[0.791s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.791s] -- Detecting CXX compile features
+[0.792s] -- Detecting CXX compile features - done
+[0.798s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.133s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.337s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.364s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.436s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.491s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.235s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.750s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.348s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.383s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.385s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.440s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.440s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.440s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.440s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.485s] -- Found PythonExtra: .so  
+[3.666s] -- Configuring done
+[3.781s] -- Generating done
+[3.817s] -- Build files have been written to: /home/luis/azure_sky_ros2/build/buff_interfaces
+[3.846s] Invoked command in '/home/luis/azure_sky_ros2/build/buff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/luis/azure_sky_ros2/src/rm_buff/buff_interfaces -DCMAKE_INSTALL_PREFIX=/home/luis/azure_sky_ros2/install/buff_interfaces
+[3.847s] Invoking command in '/home/luis/azure_sky_ros2/build/buff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/buff_interfaces -- -j12 -l12
+[3.979s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.007s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.048s] [  2%] Built target ament_cmake_python_copy_buff_interfaces
+[4.741s] running egg_info
+[4.743s] creating buff_interfaces.egg-info
+[4.745s] writing buff_interfaces.egg-info/PKG-INFO
+[4.746s] writing dependency_links to buff_interfaces.egg-info/dependency_links.txt
+[4.747s] writing top-level names to buff_interfaces.egg-info/top_level.txt
+[4.747s] writing manifest file 'buff_interfaces.egg-info/SOURCES.txt'
+[4.758s] reading manifest file 'buff_interfaces.egg-info/SOURCES.txt'
+[4.758s] writing manifest file 'buff_interfaces.egg-info/SOURCES.txt'
+[4.865s] [  2%] Built target ament_cmake_python_build_buff_interfaces_egg
+[6.006s] [  2%] Built target buff_interfaces__cpp
+[6.070s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.070s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.073s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.566s] [  7%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/blade_array__functions.c.o[0m
+[6.568s] [  8%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/blade__functions.c.o[0m
+[6.582s] [ 10%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/debug_blade__functions.c.o[0m
+[6.583s] [ 11%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/debug_blade_array__functions.c.o[0m
+[6.588s] [ 12%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/time_info__functions.c.o[0m
+[6.605s] [ 13%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/rune_info__functions.c.o[0m
+[6.605s] [ 15%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/buff_interfaces/msg/detail/rune__functions.c.o[0m
+[7.031s] [ 16%] [32m[1mLinking C shared library libbuff_interfaces__rosidl_generator_c.so[0m
+[7.262s] [ 16%] Built target buff_interfaces__rosidl_generator_c
+[7.330s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.331s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.334s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.737s] [ 21%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/blade_array__type_support.cpp.o[0m
+[7.742s] [ 22%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/debug_blade_array__type_support.cpp.o[0m
+[7.750s] [ 24%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/rune_info__type_support.cpp.o[0m
+[7.753s] [ 26%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/time_info__type_support.cpp.o[0m
+[7.753s] [ 26%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/blade__type_support.cpp.o[0m
+[7.753s] [ 27%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/debug_blade__type_support.cpp.o[0m
+[7.765s] [ 29%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buff_interfaces/msg/rune__type_support.cpp.o[0m
+[8.777s] [ 30%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/blade_array__type_support.cpp.o[0m
+[8.784s] [ 31%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/blade__type_support.cpp.o[0m
+[8.784s] [ 32%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/blade__type_support.cpp.o[0m
+[8.997s] [ 34%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/blade_array__type_support.cpp.o[0m
+[9.009s] [ 35%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/debug_blade__type_support.cpp.o[0m
+[9.088s] [ 36%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/debug_blade_array__type_support.cpp.o[0m
+[9.110s] [ 37%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/debug_blade__type_support.cpp.o[0m
+[9.177s] [ 39%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/debug_blade_array__type_support.cpp.o[0m
+[9.198s] [ 40%] [32m[1mLinking CXX shared library libbuff_interfaces__rosidl_typesupport_cpp.so[0m
+[9.315s] [ 41%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/blade__type_support.cpp.o[0m
+[9.482s] [ 43%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/blade_array__type_support.cpp.o[0m
+[9.498s] [ 43%] Built target buff_interfaces__rosidl_typesupport_cpp
+[9.551s] [ 44%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/debug_blade__type_support.cpp.o[0m
+[9.662s] [ 45%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/debug_blade_array__type_support.cpp.o[0m
+[9.723s] [ 46%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/rune__type_support.cpp.o[0m
+[9.843s] [ 48%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/rune__type_support.cpp.o[0m
+[10.025s] [ 49%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/rune_info__type_support.cpp.o[0m
+[10.217s] [ 50%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/buff_interfaces/msg/time_info__type_support.cpp.o[0m
+[10.240s] [ 51%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/rune_info__type_support.cpp.o[0m
+[10.388s] [ 53%] [32m[1mLinking CXX shared library libbuff_interfaces__rosidl_typesupport_c.so[0m
+[10.537s] [ 54%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/rune__type_support.cpp.o[0m
+[10.637s] [ 54%] Built target buff_interfaces__rosidl_typesupport_c
+[10.685s] [ 55%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buff_interfaces/msg/detail/time_info__type_support.cpp.o[0m
+[10.738s] [ 56%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/rune_info__type_support.cpp.o[0m
+[10.804s] [ 58%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buff_interfaces/msg/detail/dds_fastrtps/time_info__type_support.cpp.o[0m
+[10.807s] [ 59%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/blade__type_support.c.o[0m
+[10.891s] [ 60%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/blade__type_support_c.cpp.o[0m
+[10.923s] [ 62%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/blade_array__type_support_c.cpp.o[0m
+[10.943s] [ 63%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/blade_array__type_support.c.o[0m
+[10.973s] [ 64%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/debug_blade__type_support_c.cpp.o[0m
+[10.995s] [ 65%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/debug_blade_array__type_support_c.cpp.o[0m
+[11.086s] [ 67%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/debug_blade__type_support.c.o[0m
+[11.244s] [ 68%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/debug_blade_array__type_support.c.o[0m
+[11.363s] [ 69%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/rune__type_support_c.cpp.o[0m
+[11.454s] [ 70%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/rune__type_support.c.o[0m
+[11.454s] [ 72%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/rune_info__type_support_c.cpp.o[0m
+[11.641s] [ 73%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/rune_info__type_support.c.o[0m
+[11.831s] [ 74%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buff_interfaces/msg/detail/time_info__type_support.c.o[0m
+[12.003s] [ 75%] [32m[1mLinking C shared library libbuff_interfaces__rosidl_typesupport_introspection_c.so[0m
+[12.195s] [ 77%] [32mBuilding CXX object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buff_interfaces/msg/detail/time_info__type_support_c.cpp.o[0m
+[12.233s] [ 77%] Built target buff_interfaces__rosidl_typesupport_introspection_c
+[12.387s] [ 78%] [32m[1mLinking CXX shared library libbuff_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[12.550s] [ 79%] [32m[1mLinking CXX shared library libbuff_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.875s] [ 79%] Built target buff_interfaces__rosidl_typesupport_introspection_cpp
+[13.026s] [ 79%] Built target buff_interfaces__rosidl_typesupport_fastrtps_cpp
+[13.303s] [ 81%] [32m[1mLinking CXX shared library libbuff_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[14.067s] [ 81%] Built target buff_interfaces__rosidl_typesupport_fastrtps_c
+[14.202s] [ 81%] Built target buff_interfaces
+[14.314s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[15.995s] [ 82%] Built target buff_interfaces__py
+[16.044s] [ 83%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_blade_s.c.o[0m
+[16.058s] [ 86%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_debug_blade_array_s.c.o[0m
+[16.058s] [ 84%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_blade_array_s.c.o[0m
+[16.062s] [ 87%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_debug_blade_s.c.o[0m
+[16.064s] [ 88%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_time_info_s.c.o[0m
+[16.068s] [ 89%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_rune_s.c.o[0m
+[16.072s] [ 91%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/buff_interfaces/msg/_rune_info_s.c.o[0m
+[16.398s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/buff_interfaces/libbuff_interfaces__rosidl_generator_py.so[0m
+[16.518s] [ 92%] Built target buff_interfaces__rosidl_generator_py
+[16.578s] [ 93%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[16.581s] [ 94%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.586s] [ 96%] [32mBuilding C object CMakeFiles/buff_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[16.809s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/buff_interfaces/buff_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[16.964s] [ 97%] Built target buff_interfaces__rosidl_typesupport_introspection_c__pyext
+[16.997s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/buff_interfaces/buff_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.046s] [100%] [32m[1mLinking C shared library rosidl_generator_py/buff_interfaces/buff_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[17.159s] [100%] Built target buff_interfaces__rosidl_typesupport_c__pyext
+[17.199s] [100%] Built target buff_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[17.254s] Invoked command in '/home/luis/azure_sky_ros2/build/buff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/buff_interfaces -- -j12 -l12
+[17.255s] Invoking command in '/home/luis/azure_sky_ros2/build/buff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/buff_interfaces
+[17.275s] -- Install configuration: ""
+[17.276s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/ament_index/resource_index/rosidl_interfaces/buff_interfaces
+[17.276s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.276s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.277s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/blade.h
+[17.277s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rune_info.h
+[17.277s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.277s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__functions.c
+[17.277s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__functions.h
+[17.278s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__functions.h
+[17.278s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__functions.c
+[17.278s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__struct.h
+[17.279s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__struct.h
+[17.279s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__struct.h
+[17.279s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__struct.h
+[17.279s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__functions.h
+[17.280s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__type_support.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__functions.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__type_support.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__type_support.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__struct.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__functions.c
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__type_support.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__struct.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__type_support.h
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__functions.c
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__functions.c
+[17.284s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__struct.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__functions.c
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__functions.c
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__type_support.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__functions.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__type_support.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__functions.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__functions.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rosidl_generator_c__visibility_control.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rune.h
+[17.285s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/blade_array.h
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/time_info.h
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/debug_blade_array.h
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/debug_blade.h
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/library_path.sh
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/library_path.dsv
+[17.286s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_generator_c.so
+[17.287s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_generator_c.so" to ""
+[17.287s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.288s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.288s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.288s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.288s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__rosidl_typesupport_fastrtps_c.h
+[17.288s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__rosidl_typesupport_fastrtps_c.h
+[17.291s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__rosidl_typesupport_fastrtps_c.h
+[17.291s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__rosidl_typesupport_fastrtps_c.h
+[17.291s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__rosidl_typesupport_fastrtps_c.h
+[17.292s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__rosidl_typesupport_fastrtps_c.h
+[17.295s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__rosidl_typesupport_fastrtps_c.h
+[17.296s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_fastrtps_c.so
+[17.296s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[17.296s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.296s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.296s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.299s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__type_support.c
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__rosidl_typesupport_introspection_c.h
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__rosidl_typesupport_introspection_c.h
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__type_support.c
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__type_support.c
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__rosidl_typesupport_introspection_c.h
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__rosidl_typesupport_introspection_c.h
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__type_support.c
+[17.300s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__rosidl_typesupport_introspection_c.h
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__type_support.c
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__type_support.c
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__rosidl_typesupport_introspection_c.h
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__type_support.c
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__rosidl_typesupport_introspection_c.h
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_introspection_c.so
+[17.301s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[17.301s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_c.so
+[17.301s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_c.so" to ""
+[17.302s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.302s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.302s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rune_info.hpp
+[17.302s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/debug_blade.hpp
+[17.302s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/time_info.hpp
+[17.302s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.302s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__builder.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__traits.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__struct.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__builder.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__traits.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__builder.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__builder.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__traits.hpp
+[17.304s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__type_support.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__builder.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__type_support.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__traits.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__struct.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__struct.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__type_support.hpp
+[17.305s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__struct.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__struct.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__type_support.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__traits.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__type_support.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__type_support.hpp
+[17.309s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__struct.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__traits.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__traits.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__struct.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__builder.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__type_support.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__builder.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/debug_blade_array.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/blade.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rune.hpp
+[17.310s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/blade_array.hpp
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.311s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.311s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.311s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__rosidl_typesupport_fastrtps_cpp.hpp
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__rosidl_typesupport_fastrtps_cpp.hpp
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__rosidl_typesupport_fastrtps_cpp.hpp
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__rosidl_typesupport_fastrtps_cpp.hpp
+[17.311s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__rosidl_typesupport_fastrtps_cpp.hpp
+[17.312s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__rosidl_typesupport_fastrtps_cpp.hpp
+[17.312s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__rosidl_typesupport_fastrtps_cpp.hpp
+[17.312s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/dds_fastrtps
+[17.312s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.312s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[17.312s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.315s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces
+[17.316s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg
+[17.316s] -- Up-to-date: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__type_support.cpp
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__type_support.cpp
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__rosidl_typesupport_introspection_cpp.hpp
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune_info__rosidl_typesupport_introspection_cpp.hpp
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__type_support.cpp
+[17.316s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__rosidl_typesupport_introspection_cpp.hpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__rosidl_typesupport_introspection_cpp.hpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/time_info__rosidl_typesupport_introspection_cpp.hpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade_array__type_support.cpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade__type_support.cpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__rosidl_typesupport_introspection_cpp.hpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/debug_blade_array__type_support.cpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/rune__type_support.cpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/include/buff_interfaces/buff_interfaces/msg/detail/blade__rosidl_typesupport_introspection_cpp.hpp
+[17.317s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_introspection_cpp.so
+[17.317s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[17.318s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_cpp.so
+[17.318s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_typesupport_cpp.so" to ""
+[17.318s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/pythonpath.sh
+[17.318s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/pythonpath.dsv
+[17.318s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces-1.0.0-py3.10.egg-info
+[17.318s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt
+[17.320s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces-1.0.0-py3.10.egg-info/PKG-INFO
+[17.320s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces-1.0.0-py3.10.egg-info/top_level.txt
+[17.320s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt
+[17.323s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces
+[17.323s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/libbuff_interfaces__rosidl_generator_py.so
+[17.324s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_c.c
+[17.328s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.328s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.328s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.328s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/_buff_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[17.328s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/__init__.py
+[17.329s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.329s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg
+[17.329s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune_s.c
+[17.329s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune_info.py
+[17.330s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade_s.c
+[17.330s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade_array_s.c
+[17.330s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade_array.py
+[17.330s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade_array.py
+[17.331s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade_s.c
+[17.331s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade.py
+[17.331s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade_array_s.c
+[17.331s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune.py
+[17.331s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade.py
+[17.332s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune_info_s.c
+[17.332s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/__init__.py
+[17.332s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_time_info_s.c
+[17.332s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_time_info.py
+[17.425s] Listing '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/__init__.py'...
+[17.425s] Listing '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/__init__.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_blade_array.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_debug_blade_array.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_rune_info.py'...
+[17.425s] Compiling '/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/msg/_time_info.py'...
+[17.450s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.450s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.453s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.455s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.455s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.455s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/local/lib/python3.10/dist-packages/buff_interfaces/buff_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.462s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_generator_py.so
+[17.462s] -- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_interfaces/lib/libbuff_interfaces__rosidl_generator_py.so" to ""
+[17.462s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/Blade.idl
+[17.462s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/BladeArray.idl
+[17.465s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/DebugBlade.idl
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/DebugBladeArray.idl
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/Rune.idl
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/RuneInfo.idl
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/TimeInfo.idl
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/Blade.msg
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/BladeArray.msg
+[17.466s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/DebugBlade.msg
+[17.467s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/DebugBladeArray.msg
+[17.468s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/Rune.msg
+[17.468s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/RuneInfo.msg
+[17.469s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/msg/TimeInfo.msg
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/ament_index/resource_index/package_run_dependencies/buff_interfaces
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/ament_index/resource_index/parent_prefix_path/buff_interfaces
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/ament_prefix_path.sh
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/ament_prefix_path.dsv
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/path.sh
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/environment/path.dsv
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/local_setup.bash
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/local_setup.sh
+[17.472s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/local_setup.zsh
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/local_setup.dsv
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/package.dsv
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/ament_index/resource_index/packages/buff_interfaces
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_generator_cExport.cmake
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_generator_cExport-noconfig.cmake
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.473s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[17.474s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.474s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_cExport.cmake
+[17.474s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_generator_cppExport.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.481s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_cppExport.cmake
+[17.483s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[17.483s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_generator_pyExport.cmake
+[17.483s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/export_buff_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[17.483s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/rosidl_cmake-extras.cmake
+[17.483s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.485s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.485s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[17.485s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[17.490s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.490s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.490s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfacesConfig.cmake
+[17.490s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/cmake/buff_interfacesConfig-version.cmake
+[17.490s] -- Installing: /home/luis/azure_sky_ros2/install/buff_interfaces/share/buff_interfaces/package.xml
+[17.502s] Invoked command in '/home/luis/azure_sky_ros2/build/buff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/buff_interfaces

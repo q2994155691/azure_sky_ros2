@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target buff_tracker[0m
+[35m[1mConsolidate compiler generated dependencies of target buff_tracker_node[0m
+[ 28%] Built target buff_tracker_node
+[100%] Built target buff_tracker
+-- Install configuration: ""
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/lib/buff_tracker/buff_tracker_node
+-- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_tracker/lib/buff_tracker/buff_tracker_node" to ""
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/gauss_newton_solver.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/extended_kalman_filter.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/tracker_node.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/include/buff_tracker/tracker.hpp
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/library_path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/library_path.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/lib/libbuff_tracker.so
+-- Set runtime path of "/home/luis/azure_sky_ros2/install/buff_tracker/lib/libbuff_tracker.so" to ""
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/package_run_dependencies/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/parent_prefix_path/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/ament_prefix_path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/ament_prefix_path.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/path.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/environment/path.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.bash
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.sh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.zsh
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/local_setup.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/package.dsv
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/packages/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/ament_index/resource_index/rclcpp_components/buff_tracker
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/buff_trackerConfig.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/cmake/buff_trackerConfig-version.cmake
+-- Installing: /home/luis/azure_sky_ros2/install/buff_tracker/share/buff_tracker/package.xml

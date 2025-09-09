@@ -1,0 +1,10 @@
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/uninstall.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/autoaim_bridge_uninstall.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/autoaim_bridge_node.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/test.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/edit_cache.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/rebuild_cache.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/list_install_components.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/install.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/install/local.dir
+/home/luis/azure_sky_ros2/build/autoaim_bridge/CMakeFiles/install/strip.dir

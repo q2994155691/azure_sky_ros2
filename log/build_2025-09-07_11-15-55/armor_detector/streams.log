@@ -1,0 +1,21 @@
+[0.074s] Invoking command in '/home/luis/azure_sky_ros2/build/armor_detector': CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/buff_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/armor_detector -- -j12 -l12
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target armor_detector[0m
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.244s] [  6%] [32mBuilding CXX object CMakeFiles/armor_detector_node.dir/rclcpp_components/node_main_armor_detector_node.cpp.o[0m
+[0.263s] [ 13%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector.cpp.o[0m
+[0.279s] [ 20%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/detector_node.cpp.o[0m
+[0.279s] [ 33%] Built target gtest_main
+[0.286s] [ 40%] [32mBuilding CXX object CMakeFiles/armor_detector.dir/src/number_classifier.cpp.o[0m
+[0.299s] [ 46%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[10.823s] [ 53%] [32m[1mLinking CXX static library libgtest.a[0m
+[10.966s] [ 53%] Built target gtest
+[12.359s] [ 60%] [32m[1mLinking CXX executable armor_detector_node[0m
+[12.785s] [ 60%] Built target armor_detector_node
+[38.191s] [ 66%] [32m[1mLinking CXX shared library libarmor_detector.so[0m
+[40.010s] [ 73%] Built target armor_detector
+[40.046s] [ 80%] [32mBuilding CXX object CMakeFiles/test_number_cls.dir/test/test_number_cls.cpp.o[0m
+[40.051s] [ 86%] [32mBuilding CXX object CMakeFiles/test_node_startup.dir/test/test_node_startup.cpp.o[0m
+[42.210s] [ 93%] [32m[1mLinking CXX executable test_number_cls[0m
+[43.794s] [ 93%] Built target test_number_cls
+[45.244s] [100%] [32m[1mLinking CXX executable test_node_startup[0m
+[46.705s] [100%] Built target test_node_startup
