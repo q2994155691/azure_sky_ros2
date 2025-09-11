@@ -13,7 +13,6 @@ namespace my_hardware_interface
 
 controller_interface::CallbackReturn CustomMecanumController::on_init()
 {
-  // 不調用基類方法，直接進行初始化
   try {
     auto_declare<std::vector<std::string>>("wheel_names", std::vector<std::string>());
     auto_declare<double>("velocity_conversion_factor", 4.0);
@@ -29,11 +28,11 @@ controller_interface::CallbackReturn CustomMecanumController::on_init()
 controller_interface::CallbackReturn CustomMecanumController::on_configure(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  // 簡化參數讀取
   wheel_names_ = get_node()->get_parameter("wheel_names").as_string_array();
   velocity_conversion_factor_ = get_node()->get_parameter("velocity_conversion_factor").as_double();
 
-  if (wheel_names_.size() != 4) {
+  if (wheel_names_.size() != 4) 
+  {
     RCLCPP_ERROR(get_node()->get_logger(), "Expected 4 wheel names, got %zu", wheel_names_.size());
     return controller_interface::CallbackReturn::ERROR;
   }
@@ -92,8 +91,6 @@ controller_interface::return_type CustomMecanumController::update(
 
 for (const auto & state_interface : state_interfaces_) {
   const std::string& full_name = state_interface.get_name();
-  
-  // 檢查是否以 "rc/" 開頭
   if (full_name.find("rc/") == 0) {
     // 提取接口名稱 (去掉 "rc/" 前綴)
     std::string interface_name = full_name.substr(3);  // 跳過 "rc/"

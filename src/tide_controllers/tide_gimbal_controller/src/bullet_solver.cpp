@@ -80,7 +80,7 @@ double BulletSolver::calculateRealZ(double pitch_angle, double fly_time) const
 void BulletSolver::selectMinYawArmor(geometry_msgs::msg::Point& pos)
 {
   bool use_1 = true;
-  yaw_ += v_yaw_ * time_delay_;
+  //yaw_ += v_yaw_ * time_delay_;
 
   double yaw_diff_min = 999.9;
   // 四块装甲板id逆时针排序
@@ -110,7 +110,7 @@ void BulletSolver::selectMinYawArmor(geometry_msgs::msg::Point& pos)
 void BulletSolver::selectMinDisArmor(geometry_msgs::msg::Point& pos)
 {
   bool use_1 = true;
-  yaw_ += v_yaw_ * time_delay_;
+  //yaw_ += v_yaw_ * time_delay_;
   double min_dis = 999.9;
 
   for (size_t i = 0; i < 4; i++)
@@ -137,7 +137,11 @@ bool BulletSolver::solve(double bullet_speed, double cur_pitch, double cur_yaw)
   bullet_speed_ = bullet_speed;
   cur_pitch_ = cur_pitch;
   cur_yaw_ = cur_yaw;
-  selectMinDisArmor(pos_);
+
+  tar_pos_.x = pos_.x - cam_offset_[0];
+  tar_pos_.y = pos_.y - cam_offset_[1]; 
+  tar_pos_.z = pos_.z - cam_offset_[2];
+  
   double temp_z = tar_pos_.z;
   double target_rho = calculateRho(tar_pos_);
   double output_yaw = std::atan2(tar_pos_.y, tar_pos_.x);
@@ -145,6 +149,7 @@ bool BulletSolver::solve(double bullet_speed, double cur_pitch, double cur_yaw)
 
   double error_z = 999;
 
+  // 弹道迭代計算
   for (size_t i = 0; i < 20; i++)
   {
     target_rho = calculateRho(tar_pos_);
@@ -162,17 +167,20 @@ bool BulletSolver::solve(double bullet_speed, double cur_pitch, double cur_yaw)
     }
   }
 
+  // 這些賦值必須在函數內部
   output_pitch_ = output_pitch;
   output_yaw_ = output_yaw;
 
-  if (std::isnan(output_pitch_) || std::isnan(output_yaw_) || std::isinf(output_pitch_) ||
-      std::isinf(output_yaw_))
+  // 檢查結果有效性
+  if (std::isnan(output_pitch_) || std::isnan(output_yaw_) || 
+      std::isinf(output_pitch_) || std::isinf(output_yaw_))
   {
     return false;
   }
 
   return true;
-}
+} // 確保這個大括號存在且位置正確
+
 
 void BulletSolver::ballistic_visualization()
 {

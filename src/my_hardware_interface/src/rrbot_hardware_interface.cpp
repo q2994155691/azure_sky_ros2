@@ -396,13 +396,9 @@ void RRBotHardwareInterface::stopAllMotors()
       bool result = sendCanFrame(can_device, can_device->tx_buff[i].data(), 8, id);
       if (!result)
       {
-        //RCLCPP_WARN(rclcpp::get_logger("RRBotHardwareInterface"), 
-        //            "Failed to send stop command to CAN ID: 0x%X", id);
       }
       else
       {
-        //RCLCPP_INFO(rclcpp::get_logger("RRBotHardwareInterface"), 
-        //            "Stop command sent to CAN ID: 0x%X", id);
       }
     }
   }

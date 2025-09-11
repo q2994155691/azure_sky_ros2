@@ -34,12 +34,12 @@ tide_gimbal_controller:
     # 必須指定的關節名稱（根據參數定義，這些不能為空）
     pitch:
       joint: "pitch_joint"    # 必須匹配你的 URDF 中的關節名稱
-      max: 5.125                      # 最大俯仰角度 (弧度)
-      min: 4.24                      # 最小俯仰角度 (弧度)
+      max: 0.438                      # 最大俯仰角度 (弧度)
+      min: -0.438                     # 最小俯仰角度 (弧度)
       reverse: false                 # 是否反向
       pid:
-        p: 30000.0
-        i: 10.0
+        p: 20000.0
+        i: 20.0
         d: 0.0
         i_clamp_max: 50000.0
         i_clamp_min: -50000.0
@@ -53,8 +53,8 @@ tide_gimbal_controller:
       min: -3.14                    # 最小偏航角度 (弧度)
       reverse: false                 # 是否反向
       pid:
-        p: 30000.0
-        i: 10.0
+        p: 15000.0
+        i: 20.0
         d: 20.0
         i_clamp_max: 75.0
         i_clamp_min: -75.0
