@@ -1,9 +1,0 @@
-[0.063s] Invoking command in '/home/luis/azure_sky_ros2/build/buff_detector': CMAKE_PREFIX_PATH=/home/luis/azure_sky_ros2/install/buff_interfaces:/home/luis/azure_sky_ros2/install/tide_msgs:/home/luis/azure_sky_ros2/install/serial:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs:/home/luis/azure_sky_ros2/install/rm_gimbal_description:/home/luis/azure_sky_ros2/install/rm_auto_record:/home/luis/azure_sky_ros2/install/hik_camera:/home/luis/azure_sky_ros2/install/auto_aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/luis/azure_sky_ros2/install/buff_interfaces/lib:/home/luis/azure_sky_ros2/install/tide_msgs/lib:/home/luis/azure_sky_ros2/install/serial/lib:/home/luis/azure_sky_ros2/install/ros2_socketcan_msgs/lib:/home/luis/azure_sky_ros2/install/rm_auto_record/lib:/home/luis/azure_sky_ros2/install/hik_camera/lib:/home/luis/azure_sky_ros2/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/buff_detector -- -j12 -l12
-[0.195s] [35m[1mConsolidate compiler generated dependencies of target buff_detector[0m
-[0.254s] [ 16%] [32mBuilding CXX object CMakeFiles/buff_detector_node.dir/rclcpp_components/node_main_buff_detector_node.cpp.o[0m
-[0.282s] [ 33%] [32mBuilding CXX object CMakeFiles/buff_detector.dir/src/detector_node.cpp.o[0m
-[0.285s] [ 50%] [32mBuilding CXX object CMakeFiles/buff_detector.dir/src/detector.cpp.o[0m
-[11.307s] [ 66%] [32m[1mLinking CXX executable buff_detector_node[0m
-[11.954s] [ 66%] Built target buff_detector_node
-[35.340s] [ 83%] [32m[1mLinking CXX shared library libbuff_detector.so[0m
-[37.089s] [100%] Built target buff_detector

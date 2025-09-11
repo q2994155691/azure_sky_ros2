@@ -1,6 +1,0 @@
-{
-  "package_name": "ros2_socketcan_msgs",
-  "non_idl_tuples": [
-    "/home/luis/azure_sky_ros2/src/ros2_socketcan/ros2_socketcan_msgs:msg/FdFrame.msg"
-  ]
-}

@@ -1,4 +1,0 @@
-Invoking command in '/home/luis/azure_sky_ros2/build/buff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/buff_interfaces -- -j12 -l12
-Invoked command in '/home/luis/azure_sky_ros2/build/buff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/luis/azure_sky_ros2/build/buff_interfaces -- -j12 -l12
-Invoking command in '/home/luis/azure_sky_ros2/build/buff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/buff_interfaces
-Invoked command in '/home/luis/azure_sky_ros2/build/buff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/luis/azure_sky_ros2/build/buff_interfaces

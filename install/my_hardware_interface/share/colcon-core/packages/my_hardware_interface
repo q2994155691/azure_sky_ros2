@@ -1,1 +1,0 @@
-controller_interface:geometry_msgs:hardware_interface:joint_state_publisher:pluginlib:rclcpp:rclcpp_lifecycle:realtime_tools:robot_state_publisher:ros2_socketcan:rviz2:serial:urdf:xacro
