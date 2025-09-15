@@ -26,7 +26,7 @@ controller_interface::CallbackReturn TideGimbalController::on_init()
     auto cmd = std::make_shared<CMD>();
     cmd->pitch_ref = 0.0;
     cmd->yaw_ref = 0.0;
-    cmd->mode = 0;
+    cmd->mode = 2;
 
     recv_cmd_ptr_.initRT(cmd);
 
@@ -174,12 +174,14 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
 
   auto cmd = *recv_cmd_ptr_.readFromRT();
   last_mode_ = mode_;
-  
+  /*
   if (bullet_solver_->tracking_) {
       mode_ = 2;  // 有目标：自瞄
   } else {
       mode_ = 0;  // 无目标：手动模式
   }
+  */
+ mode_ = 2;
   
   double pitch_fb = 0.0, yaw_fb = 0.0;
   double pitch_cmd = 0.0, yaw_cmd = 0.0;
@@ -204,10 +206,6 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   pitch_pos_fb_ = pitch_fb;
   yaw_pos_fb_ = yaw_fb;
 
-  RCLCPP_INFO_THROTTLE(logger, *get_node()->get_clock(), 200,
-                    "📍 云台位置: yaw=%.1f°, pitch=%.1f°", 
-                    yaw_pos_fb_*180/M_PI, pitch_pos_fb_*180/M_PI);
-
 
   if (!tracker_targets_.empty())
 {
@@ -231,6 +229,7 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     case 0:
     {
       // 增量控制实现
+      /*
       static double accumulated_pitch = 0.0;
       static double accumulated_yaw = 0.0;
       static bool first_run = true;
@@ -243,16 +242,17 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       double rc_sw2 = rc_sw2_state_interface_->get_value();
       double rc_wheel = rc_wheel_state_interface_->get_value()/660*PITCH_MAX_SPEED;
       double rc_connected = rc_connect_state_interface_->get_value();
-  
+      */
       // 使用静态Clock避免宏错误
       static rclcpp::Clock rc_debug_clock(RCL_STEADY_TIME);
   
       //RCLCPP_INFO_THROTTLE(logger, rc_debug_clock, 10,
-      //              "RC Status - WHEEL: %.0f", 
-      //                rc_wheel);
+      //           "RC Status - WHEEL: %.0f", 
+      //              rc_wheel);
   
       
       // 首次运行时初始化为当前位置
+      /*
       if (first_run) {
         accumulated_pitch = pitch_pos_fb_;
         accumulated_yaw = yaw_pos_fb_;
@@ -260,8 +260,9 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
         RCLCPP_INFO(logger, "Increment control initialized - pitch: %.3f, yaw: %.3f", 
                   accumulated_pitch, accumulated_yaw);
       }
-      
+      */
       // 将cmd->yaw_ref和cmd->pitch_ref当作角速度 (rad/s)
+      /*
       double dt = period.seconds();
       double pitch_increment = rc_wheel* dt;
       double yaw_increment = rc_ch2 * dt;
@@ -274,7 +275,9 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       
       pitch_cmd = accumulated_pitch;
       yaw_cmd = accumulated_yaw;
-      
+      */
+     pitch_cmd = cmd->pitch_ref;
+      yaw_cmd = cmd->yaw_ref;
       break;
     }
     case 1:
@@ -286,10 +289,10 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     }
     case 2:
     {
-      auto result = auto_aim_mode();
-      pitch_cmd = result.first;
-      yaw_cmd = result.second;
-      break;
+       auto result = auto_aim_mode();
+       pitch_cmd = result.first;
+       yaw_cmd = result.second;
+       break;
     }
     default:
       break;
@@ -442,113 +445,41 @@ std::pair<double, double> TideGimbalController::sentry_mode()
 
 std::pair<double, double> TideGimbalController::auto_aim_mode()
 {
+  static rclcpp::Clock rc_debug_clock(RCL_STEADY_TIME);
+
   if (!bullet_solver_->tracking_)
   {
-    if (rt_shooter_cmd_pub_->trylock())
-    {
+    if (rt_shooter_cmd_pub_->trylock()) {
       rt_shooter_cmd_pub_->unlockAndPublish();
     }
-    return std::make_pair(pitch_pos_fb_, yaw_pos_fb_);
+    return {pitch_pos_fb_, yaw_pos_fb_};
   }
-  
-  auto target = *bullet_solver_->tracker_target_.readFromRT();
-  if (target) {
-    // ... 你的调试代码 ...
-    
-    // ⭐ 添加坐标系转换
-    double cam_x = target->position.x;
-    double cam_y = target->position.y;
-    double cam_z = target->position.z;
-    
-    // 当前云台角度
-    double current_yaw = yaw_pos_fb_;
-    double current_pitch = pitch_pos_fb_;
-    
-    // 坐标系转换：相机坐标系 -> 世界坐标系
-    double cos_yaw = cos(current_yaw);
-    double sin_yaw = sin(current_yaw);
-    
-    // 简化版转换（只考虑yaw轴旋转）
-    double world_x = cam_x * cos_yaw - cam_y * sin_yaw;
-    double world_y = cam_x * sin_yaw + cam_y * cos_yaw;
-    double world_z = cam_z;
-    
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "🔄 坐标转换:");
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "   相机坐标: x=%.3f, y=%.3f, z=%.3f", cam_x, cam_y, cam_z);
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "   世界坐标: x=%.3f, y=%.3f, z=%.3f", world_x, world_y, world_z);
-    
-    // 基于世界坐标计算目标角度
-    double target_yaw_world = atan2(world_y, world_x) * 180.0 / M_PI;
-    double target_pitch_world = atan2(world_z, sqrt(world_x*world_x + world_y*world_y)) * 180.0 / M_PI;
-    
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "   世界坐标角度: yaw=%.1f°, pitch=%.1f°", target_yaw_world, target_pitch_world);
-    
-    // 角度差异分析
-    double yaw_diff = target_yaw_world - (current_yaw * 180.0 / M_PI);
-    double pitch_diff = target_pitch_world - (current_pitch * 180.0 / M_PI);
-    
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "   角度差异: Δyaw=%.1f°, Δpitch=%.1f°", yaw_diff, pitch_diff);
-    
-    // 创建转换后的目标
-    auto transformed_target = std::make_shared<Tracker>(*target);
-    transformed_target->position.x = world_x;
-    transformed_target->position.y = world_y;
-    transformed_target->position.z = world_z;
-    
-    bullet_solver_->tracker_target_.writeFromNonRT(transformed_target);
-  }
-
-  // 打印当前云台状态
-  RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                      "🤖 GIMBAL: pitch=%.1f°, yaw=%.1f°", 
-                      pitch_pos_fb_*180/M_PI, yaw_pos_fb_*180/M_PI);
 
   bool solve_success = bullet_solver_->solve(23.0, pitch_pos_fb_, yaw_pos_fb_);
   bullet_solver_->ballistic_visualization();
-
-  // ⭐ 修复：移除这里的return语句
-  // return std::make_pair(pitch_pos_fb_, yaw_pos_fb_);
 
   if (solve_success)
   {
     auto result = bullet_solver_->get_result();
 
-    RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                        "⚙️ BulletSolver结果: pitch=%.1f° (%.3f), yaw=%.1f° (%.3f)", 
-                        result.first*180/M_PI, result.first,
-                        result.second*180/M_PI, result.second);
+    RCLCPP_INFO(get_node()->get_logger(),
+                "[auto_aim_mode] solver pitch=%.4f  yaw=%.4f  (cur pitch=%.4f, cur yaw=%.4f)",
+                result.first, result.second, pitch_pos_fb_, yaw_pos_fb_);
 
-    // ⭐ 调试模式：只显示结果，不执行转动
-    static bool DEBUG_MODE = false;
-    if (DEBUG_MODE) {
-      RCLCPP_INFO_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 1000,
-                          "🚫 调试模式：不执行转动");
-      return std::make_pair(pitch_pos_fb_, yaw_pos_fb_);
-    }
-
-    if (abs(yaw_pos_fb_ - result.second) < 0.06)
-    {
+    if (std::abs(yaw_pos_fb_ - result.second) < 0.06) {
       rt_shooter_cmd_pub_->msg_.mode = 1;
     }
-    return result;
+    //return result;
+    return {pitch_pos_fb_, yaw_pos_fb_};
   }
   else
   {
-    RCLCPP_WARN_THROTTLE(get_node()->get_logger(), *get_node()->get_clock(), 2000,
-                        "❌ BulletSolver解算失败");
-    if (rt_shooter_cmd_pub_->trylock())
-    {
+    if (rt_shooter_cmd_pub_->trylock()) {
       rt_shooter_cmd_pub_->unlockAndPublish();
     }
-    return std::make_pair(pitch_pos_fb_, yaw_pos_fb_);
+    return {pitch_pos_fb_, yaw_pos_fb_};
   }
 }
-
 
 
 std::shared_ptr<TideGimbalController::Tracker> TideGimbalController::select_best_target()

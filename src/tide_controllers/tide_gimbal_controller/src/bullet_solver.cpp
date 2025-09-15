@@ -137,49 +137,38 @@ bool BulletSolver::solve(double bullet_speed, double cur_pitch, double cur_yaw)
   bullet_speed_ = bullet_speed;
   cur_pitch_ = cur_pitch;
   cur_yaw_ = cur_yaw;
-
+  
   tar_pos_.x = pos_.x - cam_offset_[0];
   tar_pos_.y = pos_.y - cam_offset_[1]; 
   tar_pos_.z = pos_.z - cam_offset_[2];
   
-  double temp_z = tar_pos_.z;
   double target_rho = calculateRho(tar_pos_);
-  double output_yaw = std::atan2(tar_pos_.y, tar_pos_.x);
-  double output_pitch = std::atan2(temp_z, target_rho);
-
-  double error_z = 999;
-
-  // 弹道迭代計算
+  double relative_yaw = std::atan2(tar_pos_.y, tar_pos_.x);
+  double relative_pitch = std::atan2(tar_pos_.z, target_rho);
+  
+  // 彈道迭代計算（修正relative_pitch）
+  double temp_z = tar_pos_.z;
   for (size_t i = 0; i < 20; i++)
   {
     target_rho = calculateRho(tar_pos_);
-    output_pitch = std::atan2(temp_z, target_rho);
-
-    fly_time_ = calculateFlyTime(target_rho, output_pitch);
-    double real_z = calculateRealZ(output_pitch, fly_time_);
-
-    error_z = tar_pos_.z - real_z;
+    relative_pitch = std::atan2(temp_z, target_rho);
+    fly_time_ = calculateFlyTime(target_rho, relative_pitch);
+    double real_z = calculateRealZ(relative_pitch, fly_time_);
+    double error_z = tar_pos_.z - real_z;
     temp_z += error_z;
-
-    if (std::abs(error_z) < 0.001)
-    {
-      break;
-    }
+    if (std::abs(error_z) < 0.001) break;
   }
-
-  // 這些賦值必須在函數內部
-  output_pitch_ = output_pitch;
-  output_yaw_ = output_yaw;
-
-  // 檢查結果有效性
-  if (std::isnan(output_pitch_) || std::isnan(output_yaw_) || 
-      std::isinf(output_pitch_) || std::isinf(output_yaw_))
-  {
-    return false;
-  }
-
+  
+  // 🔥 關鍵修正：輸出絕對角度
+  output_pitch_ = cur_pitch + relative_pitch;  // 當前角度 + 相對調整
+  output_yaw_ = cur_yaw + relative_yaw;        // 當前角度 + 相對調整
+  
+  std::cout << "[DEBUG] Relative angles: pitch=" << relative_pitch << ", yaw=" << relative_yaw << std::endl;
+  std::cout << "[DEBUG] Absolute angles: pitch=" << output_pitch_ << ", yaw=" << output_yaw_ << std::endl;
+  
   return true;
-} // 確保這個大括號存在且位置正確
+}
+
 
 
 void BulletSolver::ballistic_visualization()
@@ -187,9 +176,9 @@ void BulletSolver::ballistic_visualization()
   trajectory_marker.points.clear();
   geometry_msgs::msg::Point point{};
   geometry_msgs::msg::Point real_tar_pos{};
-  real_tar_pos.x = tar_pos_.x - cam_offset_[0];
-  real_tar_pos.y = tar_pos_.y - cam_offset_[1];
-  real_tar_pos.z = tar_pos_.z - cam_offset_[2];
+  real_tar_pos.x = tar_pos_.x ;
+  real_tar_pos.y = tar_pos_.y ;
+  real_tar_pos.z = tar_pos_.z ;
   double target_rho = std::sqrt(std::pow(real_tar_pos.x, 2) + std::pow(real_tar_pos.y, 2));
   int point_num = int(target_rho * 20);
 

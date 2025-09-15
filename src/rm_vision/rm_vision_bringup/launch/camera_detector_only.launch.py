@@ -16,7 +16,12 @@ def generate_launch_description():
             package=package,
             plugin=plugin,
             name='camera_node',
-            parameters=[node_params],
+            parameters=[node_params,
+            	{
+            	   'frame_id': 'cam0_link',                    # 使用 cam0_link
+                   'camera_optical_frame_id': 'cam0_optical_frame'
+            	}
+            ],
             extra_arguments=[{'use_intra_process_comms': True}]
         )
 

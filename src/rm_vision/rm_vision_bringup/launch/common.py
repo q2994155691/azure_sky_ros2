@@ -8,8 +8,8 @@ launch_params = yaml.safe_load(open(os.path.join(
     get_package_share_directory('rm_vision_bringup'), 'config', 'launch_params.yaml')))
 
 robot_description = Command(['xacro ', os.path.join(
-    get_package_share_directory('rm_gimbal_description'), 'urdf', 'rm_gimbal.urdf.xacro'),
-    ' xyz:=', launch_params['odom2camera']['xyz'], ' rpy:=', launch_params['odom2camera']['rpy']])
+    get_package_share_directory('my_hardware_interface'), 'urdf', 'rrbot.urdf.xacro'),
+    ' prefix:=', ''])
 
 robot_state_publisher = Node(
     package='robot_state_publisher',
@@ -25,7 +25,12 @@ armor_tracker_node = Node(
     executable='armor_tracker_node',
     output='both',
     emulate_tty=True,
-    parameters=[node_params],
+    parameters=[
+        node_params,
+        {
+            'target_frame': 'camera_optical_frame'  # 直接使用cam0_link，不是camera_link
+        }
+    ],
     ros_arguments=['--log-level', 'armor_tracker:='+launch_params['armor_tracker_log_level']],
 )
 

@@ -45,7 +45,7 @@
       max_match_yaw_diff: 0.8
 
       tracking_thres: 5
-      lost_time_thres: 1.0
+      lost_time_thres: 0.1
 
 /buff_detector:
   ros__parameters:
