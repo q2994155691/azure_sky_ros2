@@ -17,6 +17,7 @@
 #include <vector>
 #include <chrono>
 
+#include "auto_aim_interfaces/msg/target.hpp"
 #include "hardware_interface/handle.hpp"
 #include "controller_interface/controller_interface.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -77,7 +78,7 @@ public:
 private:
   using CMD = tide_msgs::msg::GimbalCmd;
   using STATE = tide_msgs::msg::GimbalState;
-  using Tracker = tide_msgs::msg::Target;
+  using Tracker = auto_aim_interfaces::msg::Target;
 
   using ShooterCmd = tide_msgs::msg::ShooterCmd;
 

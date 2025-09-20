@@ -48,7 +48,7 @@ BulletSolver::BulletSolver(double resistance_coff, double g, std::string frame, 
   aiming_point_marker.color.a = 1.0;
   aiming_point_marker.lifetime = rclcpp::Duration::from_seconds(0.1);
 
-  auto target = std::make_shared<tide_msgs::msg::Target>();
+  auto target = std::make_shared<auto_aim_interfaces::msg::Target>();
   tracker_target_.initRT(target);
 
   auto transform = *std::make_shared<geometry_msgs::msg::TransformStamped>();
@@ -137,35 +137,40 @@ bool BulletSolver::solve(double bullet_speed, double cur_pitch, double cur_yaw)
   bullet_speed_ = bullet_speed;
   cur_pitch_ = cur_pitch;
   cur_yaw_ = cur_yaw;
-  
-  tar_pos_.x = pos_.x - cam_offset_[0];
-  tar_pos_.y = pos_.y - cam_offset_[1]; 
-  tar_pos_.z = pos_.z - cam_offset_[2];
-  
-  double target_rho = calculateRho(tar_pos_);
-  double relative_yaw = std::atan2(tar_pos_.y, tar_pos_.x);
-  double relative_pitch = std::atan2(tar_pos_.z, target_rho);
-  
-  // 彈道迭代計算（修正relative_pitch）
+  selectMinDisArmor(pos_);
   double temp_z = tar_pos_.z;
+  double target_rho = calculateRho(tar_pos_);
+  double output_yaw = std::atan2(tar_pos_.y, tar_pos_.x);
+  double output_pitch = std::atan2(temp_z, target_rho);
+
+  double error_z = 999;
+
   for (size_t i = 0; i < 20; i++)
   {
     target_rho = calculateRho(tar_pos_);
-    relative_pitch = std::atan2(temp_z, target_rho);
-    fly_time_ = calculateFlyTime(target_rho, relative_pitch);
-    double real_z = calculateRealZ(relative_pitch, fly_time_);
-    double error_z = tar_pos_.z - real_z;
+    output_pitch = std::atan2(temp_z, target_rho);
+
+    fly_time_ = calculateFlyTime(target_rho, output_pitch);
+    double real_z = calculateRealZ(output_pitch, fly_time_);
+
+    error_z = tar_pos_.z - real_z;
     temp_z += error_z;
-    if (std::abs(error_z) < 0.001) break;
+
+    if (std::abs(error_z) < 0.001)
+    {
+      break;
+    }
   }
-  
-  // 🔥 關鍵修正：輸出絕對角度
-  output_pitch_ = cur_pitch + relative_pitch;  // 當前角度 + 相對調整
-  output_yaw_ = cur_yaw + relative_yaw;        // 當前角度 + 相對調整
-  
-  std::cout << "[DEBUG] Relative angles: pitch=" << relative_pitch << ", yaw=" << relative_yaw << std::endl;
-  std::cout << "[DEBUG] Absolute angles: pitch=" << output_pitch_ << ", yaw=" << output_yaw_ << std::endl;
-  
+
+  output_pitch_ = output_pitch;
+  output_yaw_ = output_yaw;
+
+  if (std::isnan(output_pitch_) || std::isnan(output_yaw_) || std::isinf(output_pitch_) ||
+      std::isinf(output_yaw_))
+  {
+    return false;
+  }
+
   return true;
 }
 

@@ -9,7 +9,7 @@
 #ifndef BULLET_SOLVER_HPP
 #define BULLET_SOLVER_HPP
 
-#include "tide_msgs/msg/target.hpp"
+#include "auto_aim_interfaces/msg/target.hpp"
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <geometry_msgs/msg/point.hpp>
@@ -40,7 +40,7 @@ public:
 
   visualization_msgs::msg::Marker trajectory_marker;
   visualization_msgs::msg::Marker aiming_point_marker;
-  realtime_tools::RealtimeBuffer<tide_msgs::msg::Target::SharedPtr> tracker_target_;
+  realtime_tools::RealtimeBuffer<auto_aim_interfaces::msg::Target::SharedPtr> tracker_target_;
   realtime_tools::RealtimeBuffer<geometry_msgs::msg::TransformStamped> tf_gimbal2target_;
   std::shared_ptr<realtime_tools::RealtimePublisher<visualization_msgs::msg::Marker>>
       rt_bullet_traj_pub_ = nullptr;

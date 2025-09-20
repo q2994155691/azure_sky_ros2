@@ -31,6 +31,7 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
 
 find_package(ament_cmake REQUIRED)
 find_package(backward_ros REQUIRED)
+find_package(auto_aim_interfaces REQUIRED)
 foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
@@ -53,7 +54,9 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   gimbal_controller_parameters
 )
 
-ament_target_dependencies(${PROJECT_NAME} PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS})
+ament_target_dependencies(${PROJECT_NAME} PUBLIC ${THIS_PACKAGE_INCLUDE_DEPENDS}
+  auto_aim_interfaces
+)
 
 pluginlib_export_plugin_description_file(controller_interface tide_gimbal_controller.xml)
 

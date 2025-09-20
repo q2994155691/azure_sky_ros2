@@ -173,15 +173,14 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   auto logger = get_node()->get_logger();
 
   auto cmd = *recv_cmd_ptr_.readFromRT();
-  last_mode_ = mode_;
-  /*
+ 
+  
   if (bullet_solver_->tracking_) {
       mode_ = 2;  // 有目标：自瞄
   } else {
       mode_ = 0;  // 无目标：手动模式
   }
-  */
- mode_ = 2;
+   last_mode_ = mode_;
   
   double pitch_fb = 0.0, yaw_fb = 0.0;
   double pitch_cmd = 0.0, yaw_cmd = 0.0;
@@ -229,7 +228,6 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     case 0:
     {
       // 增量控制实现
-      /*
       static double accumulated_pitch = 0.0;
       static double accumulated_yaw = 0.0;
       static bool first_run = true;
@@ -242,7 +240,6 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       double rc_sw2 = rc_sw2_state_interface_->get_value();
       double rc_wheel = rc_wheel_state_interface_->get_value()/660*PITCH_MAX_SPEED;
       double rc_connected = rc_connect_state_interface_->get_value();
-      */
       // 使用静态Clock避免宏错误
       static rclcpp::Clock rc_debug_clock(RCL_STEADY_TIME);
   
@@ -252,7 +249,6 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   
       
       // 首次运行时初始化为当前位置
-      /*
       if (first_run) {
         accumulated_pitch = pitch_pos_fb_;
         accumulated_yaw = yaw_pos_fb_;
@@ -260,9 +256,7 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
         RCLCPP_INFO(logger, "Increment control initialized - pitch: %.3f, yaw: %.3f", 
                   accumulated_pitch, accumulated_yaw);
       }
-      */
       // 将cmd->yaw_ref和cmd->pitch_ref当作角速度 (rad/s)
-      /*
       double dt = period.seconds();
       double pitch_increment = rc_wheel* dt;
       double yaw_increment = rc_ch2 * dt;
@@ -275,9 +269,8 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       
       pitch_cmd = accumulated_pitch;
       yaw_cmd = accumulated_yaw;
-      */
-     pitch_cmd = cmd->pitch_ref;
-      yaw_cmd = cmd->yaw_ref;
+     //pitch_cmd = cmd->pitch_ref;
+     //yaw_cmd = cmd->yaw_ref;
       break;
     }
     case 1:
@@ -469,8 +462,8 @@ std::pair<double, double> TideGimbalController::auto_aim_mode()
     if (std::abs(yaw_pos_fb_ - result.second) < 0.06) {
       rt_shooter_cmd_pub_->msg_.mode = 1;
     }
-    //return result;
-    return {pitch_pos_fb_, yaw_pos_fb_};
+    return result;
+    //return {pitch_pos_fb_, yaw_pos_fb_};
   }
   else
   {

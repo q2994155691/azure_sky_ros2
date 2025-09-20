@@ -11,8 +11,6 @@ find_package(rclcpp REQUIRED)
 find_package(tide_msgs REQUIRED)
 find_package(auto_aim_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(tf2_ros REQUIRED)
-find_package(tf2_geometry_msgs REQUIRED)
 
 # 添加可执行文件
 add_executable(autoaim_bridge_node src/autoaim_bridge_node.cpp)
@@ -28,8 +26,6 @@ ament_target_dependencies(autoaim_bridge_node
   rclcpp
   tide_msgs
   auto_aim_interfaces
-  tf2_ros
-  tf2_geometry_msgs
   geometry_msgs
 )
 
