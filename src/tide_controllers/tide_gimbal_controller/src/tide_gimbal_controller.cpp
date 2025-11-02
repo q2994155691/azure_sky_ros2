@@ -26,7 +26,7 @@ controller_interface::CallbackReturn TideGimbalController::on_init()
     auto cmd = std::make_shared<CMD>();
     cmd->pitch_ref = 0.0;
     cmd->yaw_ref = 0.0;
-    cmd->mode = 2;
+    cmd->mode = 0;
 
     recv_cmd_ptr_.initRT(cmd);
 
@@ -174,13 +174,14 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
 
   auto cmd = *recv_cmd_ptr_.readFromRT();
  
-  
+  last_mode_ = mode_;
   if (bullet_solver_->tracking_) {
       mode_ = 2;  // 有目标：自瞄
   } else {
       mode_ = 0;  // 无目标：手动模式
   }
-   last_mode_ = mode_;
+  
+  
   
   double pitch_fb = 0.0, yaw_fb = 0.0;
   double pitch_cmd = 0.0, yaw_cmd = 0.0;
@@ -231,14 +232,14 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       static double accumulated_pitch = 0.0;
       static double accumulated_yaw = 0.0;
       static bool first_run = true;
-      static double YAW_MAX_SPEED =5.0;
       
+      static double YAW_MAX_SPEED =5.0;
       static double PITCH_MAX_SPEED =5.0;
 
-      double rc_ch2 = rc_ch2_state_interface_->get_value()/660*YAW_MAX_SPEED;
+      double rc_ch2_scaled = rc_ch2_state_interface_->get_value()/660*YAW_MAX_SPEED;
       double rc_sw1 = rc_sw1_state_interface_->get_value();
       double rc_sw2 = rc_sw2_state_interface_->get_value();
-      double rc_wheel = rc_wheel_state_interface_->get_value()/660*PITCH_MAX_SPEED;
+      double rc_wheel_scaled = rc_wheel_state_interface_->get_value()/660*PITCH_MAX_SPEED;
       double rc_connected = rc_connect_state_interface_->get_value();
       // 使用静态Clock避免宏错误
       static rclcpp::Clock rc_debug_clock(RCL_STEADY_TIME);
@@ -249,7 +250,7 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   
       
       // 首次运行时初始化为当前位置
-      if (first_run) {
+      if (first_run||last_mode_==2) {
         accumulated_pitch = pitch_pos_fb_;
         accumulated_yaw = yaw_pos_fb_;
         first_run = false;
@@ -258,8 +259,8 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
       }
       // 将cmd->yaw_ref和cmd->pitch_ref当作角速度 (rad/s)
       double dt = period.seconds();
-      double pitch_increment = rc_wheel* dt;
-      double yaw_increment = rc_ch2 * dt;
+      double pitch_increment = rc_wheel_scaled* dt;
+      double yaw_increment = rc_ch2_scaled * dt;
       
       accumulated_pitch += pitch_increment;
       accumulated_yaw += yaw_increment;
@@ -359,7 +360,6 @@ TideGimbalController::on_activate(const rclcpp_lifecycle::State& /*previous_stat
       std::move(state_interfaces_[5]));
   rc_connect_state_interface_=std::make_unique<const hardware_interface::LoanedStateInterface>(
       std::move(state_interfaces_[6]));
-
   pitch_command_interface_ = std::make_unique<hardware_interface::LoanedCommandInterface>(
       std::move(command_interfaces_[0]));
   yaw_command_interface_ = std::make_unique<hardware_interface::LoanedCommandInterface>(

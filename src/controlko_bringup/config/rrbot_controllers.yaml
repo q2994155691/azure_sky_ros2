@@ -39,11 +39,11 @@ tide_gimbal_controller:
       reverse: false                 # 是否反向
       pid:
         p: 30000.0
-        i: 30.0
+        i: 100.0
         d: 0.0
-        i_clamp_max: 50000.0
-        i_clamp_min: -50000.0
-        antiwindup: true
+        i_clamp_max: 1000.0
+        i_clamp_min: -1000.0
+        antiwindup: false
       scan_add: 0.001
       scan_range: [4.3, 5.0]
     
@@ -53,17 +53,17 @@ tide_gimbal_controller:
       min: -3.14                    # 最小偏航角度 (弧度)
       reverse: false                 # 是否反向
       pid:
-        p: 10000.0
-        i: 100.0
-        d: 10.0
+        p: 30000.0
+        i: 20.0
+        d: 0.0
         i_clamp_max: 75.0
         i_clamp_min: -75.0
-        antiwindup: true
+        antiwindup: false
       scan_add: 0.005
       scan_range: [-1.0, 1.0]
     
     # 其他參數
-    open_loop: false
+    open_loop: true
     use_external_state_interface: false
     
     # 彈道解算器參數
@@ -73,7 +73,6 @@ tide_gimbal_controller:
       cam_offset: [0.0, 0.0, 0.0]
       time_delay: 0.0
     
-    # 話題配置 - 重要修改！
     tracker_topic: ["/tracker/target"]      # 改为桥接节点发布的话题
     shooter_cmd_topic: "/commands/shooter"
 

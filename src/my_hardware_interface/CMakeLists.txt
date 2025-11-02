@@ -15,6 +15,8 @@ find_package(ros2_socketcan REQUIRED)
 find_package(controller_interface REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(realtime_tools REQUIRED)
+find_package(auto_aim_interfaces REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 
 add_library(
@@ -42,6 +44,9 @@ ament_target_dependencies(
   
   geometry_msgs
   realtime_tools
+  
+  auto_aim_interfaces
+  tf2_ros
 )
 # prevent pluginlib from using boost
 target_compile_definitions(my_hardware_interface PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")

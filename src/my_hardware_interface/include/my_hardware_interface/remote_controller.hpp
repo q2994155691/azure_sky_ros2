@@ -90,9 +90,9 @@ public:
   bool is_all_data_valid() const;
 
 private:
-  rclcpp::Time last_channels_time_{ 0, 0, RCL_ROS_TIME };
-  rclcpp::Time last_switches_time_{ 0, 0, RCL_ROS_TIME };
-  rclcpp::Time last_wheel_time_{ 0, 0, RCL_ROS_TIME };
+  rclcpp::Time last_channels_time_{0, 0, RCL_STEADY_TIME};
+  rclcpp::Time last_switches_time_{0, 0, RCL_STEADY_TIME};
+  rclcpp::Time last_wheel_time_{0, 0, RCL_STEADY_TIME};
   
   // 檢查各個數據的連接狀態
   bool check_channels_connection(const rclcpp::Time& current_time);

@@ -19,6 +19,17 @@
 #include "tide_motor.hpp"
 #include "my_hardware_interface/remote_controller.hpp"
 
+#include "realtime_tools/realtime_publisher.hpp"
+#include "auto_aim_interfaces/msg/robot_status.hpp"
+#include "sensor_msgs/msg/joint_state.hpp"
+#include "tf2_ros/transform_broadcaster.h"
+#include "tf2/LinearMath/Quaternion.h"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "geometry_msgs/msg/quaternion.hpp"
+
+#include <geometry_msgs/msg/transform_stamped.hpp>
+
+
 #include "ros2_socketcan/socket_can_common.hpp" 
 #include "ros2_socketcan/socket_can_sender.hpp"
 #include "ros2_socketcan/socket_can_receiver.hpp"
@@ -80,6 +91,25 @@ public:
 
 
 private:
+// 添加发布器
+  rclcpp::Node::SharedPtr node_;
+  std::shared_ptr<realtime_tools::RealtimePublisher<auto_aim_interfaces::msg::RobotStatus>> 
+      rt_robot_status_pub_;
+  std::shared_ptr<realtime_tools::RealtimePublisher<sensor_msgs::msg::JointState>> 
+      rt_joint_state_pub_;
+  std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+  
+  // 关节索引（用于快速查找）
+  int yaw_joint_index_ = -1;
+  int pitch_joint_index_ = -1;
+  
+  // 辅助函数
+  void findJointIndices();
+  void publishRobotStatus(const rclcpp::Time& time);
+  void publishJointStates(const rclcpp::Time& time);
+  void broadcastTransform(const rclcpp::Time& time);
+  void sendGimbalAngleCommandToABoard(double yaw_angle, double pitch_angle);
+  
   std::vector<double> hw_states_;
   std::vector<double> hw_commands_;
   std::vector<double> joint_states_;
@@ -95,6 +125,7 @@ private:
   bool enable_virtual_control_{ false };
   bool is_remote_controller{ true };
 
+  bool is_open_loop_gimbal_{true};  // 標記開環雲台模式
   bool sendCanFrame(std::shared_ptr<CanDevice> device, const uint8_t* data, size_t len, uint32_t id);
   void configureMotorCan(std::shared_ptr<DJI_Motor> motor);
   void stopMotors();

@@ -5,7 +5,7 @@ namespace my_hardware_interface
 {
 
 RemoteController::RemoteController(const RC_Config_t& config)
-  : config_(config)
+  : config_(config)  
 {
   status = RC_LOST;
   measure = Measure();
