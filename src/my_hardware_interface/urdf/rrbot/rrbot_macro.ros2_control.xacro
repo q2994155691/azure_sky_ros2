@@ -99,7 +99,7 @@
        <joint name="pitch_joint">
             <param name="can_bus">can0</param>
             <param name="tx_id">2</param>
-            <param name="offset">6108.5</param>
+            <param name="offset">5500</param>
             <param name="motor_type">GM6020</param>
 
             <command_interface name="position"></command_interface>

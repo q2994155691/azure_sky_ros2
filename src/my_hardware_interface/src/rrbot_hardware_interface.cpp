@@ -611,7 +611,7 @@ hardware_interface::return_type RRBotHardwareInterface::write(
   {
     for (size_t i = 0; i < 3; i++)
     {
-      auto id = (i == 0) ? 0x300 : (i == 1) ? 0x1ff : 0x2ff;
+      auto id = (i == 0) ? 0x300 : (i == 1) ? 0x1f1 : 0x2f1;
       bool result = sendCanFrame(can_device, can_device->tx_buff[i].data(), 8, id);
       if (!result)
       {
@@ -620,7 +620,8 @@ hardware_interface::return_type RRBotHardwareInterface::write(
     }
   }
   if (is_open_loop_gimbal_ && !can_devices_.empty()) {
-    sendGimbalAngleCommandToABoard(gimbal_yaw_cmd, gimbal_pitch_cmd);
+    sendGimbalAngleCommandToABoard(gimbal_yaw_cmd, gimbal_pitch_cmd);//送指令到下位機
+
     static rclcpp::Clock steady_clock(RCL_STEADY_TIME);
     RCLCPP_INFO_THROTTLE(rclcpp::get_logger("RRBotHardwareInterface"),
                         steady_clock, 1000,
@@ -705,22 +706,25 @@ void RRBotHardwareInterface::broadcastTransform(const rclcpp::Time& time)
     
     //改为使用原版的简单角度计算，而不是state_positions_
     double yaw = 0.0, pitch = 0.0;
-    
+    static rclcpp::Clock steady_clock(RCL_STEADY_TIME);
     // 找到yaw和pitch电机，直接从原始编码器数据计算
     for (const auto& motor : motors_) {
         if (motor->config_.motor_name == "yaw_joint") {
-            //使用原版的简单转换，不经过复杂处理
-            double angle_raw = static_cast<double>(motor->measure.ecd);
-            yaw = (angle_raw / 8191.0) * 2.0 * M_PI;
-        } else if (motor->config_.motor_name == "pitch_joint") {
-            double angle_raw = static_cast<double>(motor->measure.ecd);
-            pitch = (angle_raw / 8191.0) * 2.0 * M_PI;
+		yaw = state_positions_[yaw_joint_index_];  // ✅ 直接用 state_positions
+        } 
+        else if (motor->config_.motor_name == "pitch_joint") {
+            pitch = state_positions_[pitch_joint_index_];
         }
     }
     
+    RCLCPP_INFO_THROTTLE(rclcpp::get_logger("RRBotHardwareInterface"), steady_clock, 1000,
+        "broadcastTransform - YAW: %.2f° | PITCH: %.2f° (都從 state_positions)",
+        yaw * 180.0 / M_PI,
+        pitch * 180.0 / M_PI);
+    
     //保持原版的TF计算
     tf2::Quaternion q;
-    q.setRPY(0, -pitch - M_PI/2, yaw);
+    q.setRPY(0, pitch, yaw);
     transform.transform.rotation.x = q.x();
     transform.transform.rotation.y = q.y();
     transform.transform.rotation.z = q.z();

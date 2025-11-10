@@ -175,11 +175,15 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
   auto cmd = *recv_cmd_ptr_.readFromRT();
  
   last_mode_ = mode_;
+  /*
   if (bullet_solver_->tracking_) {
       mode_ = 2;  // 有目标：自瞄
   } else {
       mode_ = 0;  // 无目标：手动模式
   }
+  */
+
+  mode_ = 2;
   
   
   
