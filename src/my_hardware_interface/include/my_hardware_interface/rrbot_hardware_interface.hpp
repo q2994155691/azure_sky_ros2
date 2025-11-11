@@ -29,7 +29,7 @@
 
 #include <geometry_msgs/msg/transform_stamped.hpp>
 
-
+#include "auto_aim_interfaces/msg/robot_status.hpp"
 #include "ros2_socketcan/socket_can_common.hpp" 
 #include "ros2_socketcan/socket_can_sender.hpp"
 #include "ros2_socketcan/socket_can_receiver.hpp"
@@ -91,6 +91,7 @@ public:
 
 
 private:
+  std::atomic<bool> has_vision_target_{false};
 // 添加发布器
   rclcpp::Node::SharedPtr node_;
   std::shared_ptr<realtime_tools::RealtimePublisher<auto_aim_interfaces::msg::RobotStatus>> 
@@ -131,6 +132,7 @@ private:
   void stopMotors();
   void stopAllMotors();
 
+  double vision_has_target_value_ = 0.0;
   double rc_ch1_ = 0.0;
   double rc_ch2_ = 0.0;
   double rc_ch3_ = 0.0;

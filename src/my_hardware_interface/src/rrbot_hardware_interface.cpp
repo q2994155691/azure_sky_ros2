@@ -324,6 +324,7 @@ std::vector<hardware_interface::CommandInterface> RRBotHardwareInterface::export
       }
     }
   }
+  interfaces.emplace_back("vision", "has_target", &vision_has_target_value_);
   return interfaces;
 }
 void RRBotHardwareInterface::configureMotorCan(std::shared_ptr<DJI_Motor> motor)
@@ -668,10 +669,15 @@ void RRBotHardwareInterface::sendGimbalAngleCommandToABoard(double yaw_angle, do
   data[1] = static_cast<uint8_t>(yaw_scaled & 0xFF);
   data[2] = static_cast<uint8_t>(pitch_scaled >> 8);
   data[3] = static_cast<uint8_t>(pitch_scaled & 0xFF);
+  data[4] = (vision_has_target_value_ > 0.5) ? 1 : 0;
+
+  
+  
   
   
   // 發送0x305
-  sendCanFrame(can_devices_[0], data.data(), 8, 0x305);
+    sendCanFrame(can_devices_[0], data.data(), 8, 0x305);
+
 
 }
 

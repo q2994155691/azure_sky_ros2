@@ -53,6 +53,7 @@ InterfaceConfiguration TideGimbalController::command_interface_configuration() c
   joint_names.push_back(params_.pitch.joint + "/position");
   joint_names.push_back(params_.yaw.joint + "/position");
   
+  joint_names.push_back("vision/has_target");
 
   return { interface_configuration_type::INDIVIDUAL, joint_names };
 }
@@ -331,6 +332,11 @@ controller_interface::return_type TideGimbalController::update(const rclcpp::Tim
     yaw_command_interface_->set_value(yaw_cmd_tmp);
   }
 
+  if (vision_target_interface_) {
+    double target_value = (bullet_solver_->tracking_) ? 1.0 : 0.0;
+    vision_target_interface_->set_value(target_value);
+  }
+
   if (rt_gimbal_state_pub_->trylock())
   {
     auto& gimbal_state = rt_gimbal_state_pub_->msg_;
@@ -368,6 +374,8 @@ TideGimbalController::on_activate(const rclcpp_lifecycle::State& /*previous_stat
       std::move(command_interfaces_[0]));
   yaw_command_interface_ = std::make_unique<hardware_interface::LoanedCommandInterface>(
       std::move(command_interfaces_[1]));
+  vision_target_interface_ = std::make_unique<hardware_interface::LoanedCommandInterface>(
+      std::move(command_interfaces_[2]));
 
   return controller_interface::CallbackReturn::SUCCESS;
 }

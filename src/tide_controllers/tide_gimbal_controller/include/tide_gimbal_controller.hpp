@@ -84,7 +84,7 @@ private:
 
   std::shared_ptr<control_toolbox::PidROS> pid_pitch_pos_, pid_yaw_pos_;
 
-  
+    std::unique_ptr<hardware_interface::LoanedCommandInterface> vision_target_interface_;
   std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_ch2_state_interface_;
   std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_sw1_state_interface_;
   std::unique_ptr<const hardware_interface::LoanedStateInterface> rc_sw2_state_interface_;
